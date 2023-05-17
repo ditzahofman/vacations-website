@@ -1,0 +1,378 @@
+
+
+20.4.2023, 20:17:29 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INDERT INTO vacation VALUES(
+    DEFUALT,
+    'roman-malon'
+    'romanya'
+   ...' at line 1
+----------------------------
+20.4.2023, 20:19:39 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INDERT INTO vacation VALUES(
+    DEFUALT,
+    'roman-malon',
+    'romanya',
+ ...' at line 1
+----------------------------
+20.4.2023, 20:20:46 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INDERT INTO vacation VALUES(
+    DEFUALT,
+    'roman-malon',
+    'romanya',
+ ...' at line 1
+----------------------------
+20.4.2023, 20:22:20 	 ER_BAD_FIELD_ERROR: Unknown column 'DEFUALT' in 'field list'
+----------------------------
+20.4.2023, 20:24:37 	 ER_NO_REFERENCED_ROW_2: Cannot add or update a child row: a foreign key constraint fails (`vacations`.`vacation`, CONSTRAINT `vacation_ibfk_1` FOREIGN KEY (`hospitalyStyleId`) REFERENCES `hospitalystyle` (`hospitalyStyleId`))
+----------------------------
+20.4.2023, 20:27:28 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:28:23 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:29:25 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:31:41 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:33:52 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:34:59 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:36:06 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:39:33 	 Unexpected token . in JSON at position 158
+----------------------------
+20.4.2023, 20:39:55 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:41:18 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:45:52 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:47:03 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:47:30 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:50:54 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''vacation' VALUES(
+    DEFAULT,
+    'Alecos Hotel Apartme',
+    'sdsdsd 46 ',...' at line 1
+----------------------------
+20.4.2023, 20:53:43 	 ER_BAD_FIELD_ERROR: Unknown column 'imageName' in 'field list'
+----------------------------
+20.4.2023, 20:54:24 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:56:59 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 20:57:16 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 21:01:48 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+20.4.2023, 21:09:09 	 id 3 not exist
+----------------------------
+20.4.2023, 21:15:59 	 id 4 not exist
+----------------------------
+20.4.2023, 21:17:53 	 id 3 not exist
+----------------------------
+20.4.2023, 21:23:27 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vcationId=9' at line 13
+----------------------------
+20.4.2023, 21:26:08 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vcationId = 9' at line 13
+----------------------------
+20.4.2023, 21:26:38 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationId = 9' at line 13
+----------------------------
+20.4.2023, 21:26:49 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationId = 9' at line 13
+----------------------------
+20.4.2023, 21:27:18 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationId = 9' at line 13
+----------------------------
+20.4.2023, 21:27:19 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationId = 9' at line 13
+----------------------------
+20.4.2023, 21:31:33 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''WHERE vacationId = 9'' at line 13
+----------------------------
+20.4.2023, 21:31:55 	 ER_BAD_FIELD_ERROR: Unknown column 'homeHotel' in 'field list'
+----------------------------
+20.4.2023, 21:32:20 	 ER_BAD_FIELD_ERROR: Unknown column 'stsrtDate' in 'field list'
+----------------------------
+20.4.2023, 22:29:22 	 "nameHotel" is required
+----------------------------
+20.4.2023, 22:30:30 	 "description" length must be at least 100 characters long
+----------------------------
+20.4.2023, 22:30:52 	 "hospitalyStyleId" is not allowed
+----------------------------
+20.4.2023, 22:31:19 	 "hospitalyStyleId" is not allowed
+----------------------------
+23.4.2023, 0:28:55 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:29:46 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:29:51 	 Route /api/register not exist
+----------------------------
+23.4.2023, 0:30:53 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:30:56 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:31:27 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:32:21 	 Route /api/register not exist
+----------------------------
+23.4.2023, 0:32:23 	 Route /api/register not exist
+----------------------------
+23.4.2023, 0:35:01 	 Route /api/auth/register not exist
+----------------------------
+23.4.2023, 0:37:10 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:37:25 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:37:26 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:37:30 	 Route /api/auth/register not exist
+----------------------------
+23.4.2023, 0:37:56 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:37:58 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:38:34 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:38:50 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:41:00 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:42:17 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:42:32 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:44:19 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:44:56 	 Route /api/auth/users not exist
+----------------------------
+23.4.2023, 0:46:41 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:49:36 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:50:14 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:51:49 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:54:10 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:55:32 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:55:33 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:56:28 	 Route /api/users not exist
+----------------------------
+23.4.2023, 0:56:30 	 Route /api/users not exist
+----------------------------
+23.4.2023, 1:00:07 	 Route /api/auth/register not exist
+----------------------------
+23.4.2023, 1:00:24 	 Route /api/register not exist
+----------------------------
+23.4.2023, 1:00:26 	 Route /api/register not exist
+----------------------------
+23.4.2023, 1:00:53 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+----------------------------
+23.4.2023, 1:03:28 	 ER_BAD_FIELD_ERROR: Unknown column 'DEFUALT' in 'field list'
+----------------------------
+23.4.2023, 1:07:24 	 ER_DUP_ENTRY: Duplicate entry '0' for key 'PRIMARY'
+----------------------------
+23.4.2023, 1:09:42 	 ER_DUP_ENTRY: Duplicate entry '0' for key 'PRIMARY'
+----------------------------
+23.4.2023, 1:11:29 	 ER_DUP_ENTRY: Duplicate entry '0' for key 'PRIMARY'
+----------------------------
+23.4.2023, 1:16:53 	 ER_DUP_ENTRY: Duplicate entry '0' for key 'PRIMARY'
+----------------------------
+23.4.2023, 1:17:32 	 ER_DUP_ENTRY: Duplicate entry '0' for key 'PRIMARY'
+----------------------------
+17.5.2023, 13:03:57 	 Route /api/update/vacations/9 not exist
+----------------------------
+17.5.2023, 13:04:37 	 Route /api/vacations/update/9 not exist
+----------------------------
+17.5.2023, 13:04:43 	 Route /api/vacations/update/9 not exist
+----------------------------
+17.5.2023, 13:05:20 	 Route /api/vacations/update/9 not exist
+----------------------------
+17.5.2023, 13:06:35 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''ncvv.jpg''
+    WHERE vacationId = 9' at line 12
+----------------------------
+17.5.2023, 13:11:34 	 Cannot set headers after they are sent to the client
+----------------------------
+17.5.2023, 13:11:46 	 Cannot set headers after they are sent to the client
+----------------------------
+17.5.2023, 13:11:48 	 Cannot set headers after they are sent to the client
+----------------------------
+17.5.2023, 16:26:02 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:27:32 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:27:34 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:29:19 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:29:21 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:29:23 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:29:26 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:35:31 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:35:33 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:35:57 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:36:01 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:36:03 	 "userId" is not allowed
+----------------------------
+17.5.2023, 16:36:59 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:38:51 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:38:53 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:42:25 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:42:28 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:48:04 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:48:06 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:48:07 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:50:58 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:51:00 	 "role" is not allowed
+----------------------------
+17.5.2023, 16:58:53 	 ER_BAD_FIELD_ERROR: Unknown column 'username' in 'where clause'
+----------------------------
+17.5.2023, 16:59:16 	 This email :56578@gmail.com  has already been taken!
+----------------------------
+17.5.2023, 17:04:06 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:04:14 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:09:02 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:09:04 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:09:20 	 This email :56578@gmail.com  has already been taken!
+----------------------------
+17.5.2023, 17:09:29 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:17:14 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:17:16 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:18:21 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:18:24 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:19:15 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:19:18 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:19:40 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:19:42 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:25:21 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:25:23 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:25:42 	 Cannot convert undefined or null to object
+----------------------------
+17.5.2023, 17:29:20 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:29:21 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:29:23 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:30:43 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:42:42 	 "password" length must be at least 8 characters long
+----------------------------
+17.5.2023, 17:43:16 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:44:03 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:44:58 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:45:57 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:47:07 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:47:09 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:47:40 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:47:42 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:49:17 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:49:32 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:49:34 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:49:35 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:52:11 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:56:43 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:56:45 	 The email or password is incorrect
+----------------------------
+17.5.2023, 17:57:54 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:04:17 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:15:45 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:16:09 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:20:26 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:22:53 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:29:46 	 The email or password is incorrect
+----------------------------
+17.5.2023, 18:39:05 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:39:09 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:45:19 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:48:07 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:51:20 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:53:10 	 Incorrect email or password
+----------------------------
+17.5.2023, 18:58:05 	 Incorrect email or password
+----------------------------
+17.5.2023, 19:00:38 	 Incorrect email or password
+----------------------------
+17.5.2023, 19:09:16 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'f8931ae128af3068020309290b9143ec39a330eaa70b431de02a62e4576cd30365995139721...' at line 1
+----------------------------
+17.5.2023, 19:10:17 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' 'f8931ae128af3068020309290b9143ec39a330eaa70b431de02a62e4576cd30365995139721...' at line 1
+----------------------------
+17.5.2023, 19:10:42 	 Incorrect email or password
+----------------------------
+17.5.2023, 19:10:45 	 Incorrect email or password
+----------------------------
+17.5.2023, 19:24:21 	 Incorrect email or password
+----------------------------
+17.5.2023, 19:24:23 	 Incorrect email or password
+----------------------------
+17.5.2023, 20:19:15 	 Route /api/followers/1 not exist
+----------------------------
+17.5.2023, 20:33:17 	 ER_BAD_NULL_ERROR: Column 'vacationId' cannot be null
+----------------------------
+17.5.2023, 20:38:26 	 id 1 not exist
+----------------------------
+17.5.2023, 20:43:29 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+17.5.2023, 20:47:31 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+17.5.2023, 20:49:45 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+17.5.2023, 21:21:08 	 ER_NO_SUCH_TABLE: Table 'vacations.vacations' doesn't exist
+----------------------------
+17.5.2023, 21:35:08 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE vacationId= 1' at line 5
+----------------------------
+17.5.2023, 21:38:37 	 ER_NO_SUCH_TABLE: Table 'vacations.vacations' doesn't exist
+----------------------------
