@@ -1,0 +1,20 @@
+.Menu a {
+   color: rgb(222, 224, 234) !important;
+   width: 20%;
+   
+}
+.a{
+   margin-left: 5% !important;
+  
+}
+
+.appBar{
+   background-color: rgb(143, 56, 59)  !important;
+}
+
+.Menu img{
+   width: 12%;
+   height: 12%;
+   position: relative;
+   left: 0%;
+}

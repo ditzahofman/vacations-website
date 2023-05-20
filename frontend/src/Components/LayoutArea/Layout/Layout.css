@@ -3,14 +3,22 @@
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
+    /* background-image: url("../../../Assets/Images/aircraft-1043836_1280.jpg"); */
+    background-image: url("../../../Assets/Images/travel-1038110_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
   
   .Layout .main-header {
-    background-color: #f1f1f1;
-    padding: 20px;
+    background-color: #f1f1f17a;
+    /* padding: 20px; */
   }
   
   .Layout .main-content {
     flex-grow: 1;
-    padding: 20px;
+    /* padding: 20px; */
+  }
+  .main-footer{
+    background-color: rgb(98, 126, 158);
   }
