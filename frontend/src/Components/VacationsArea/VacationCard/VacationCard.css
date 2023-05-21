@@ -1,3 +1,48 @@
+
+
+/* CSS for Card Component */
 .VacationCard {
-display: flex;	
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
+
+.card-content {
+  padding: 16px;
+}
+
+.card-image {
+  height: 140px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+.card-description {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-destination,
+.card-dates {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: gray;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.card-followers {
+  display: flex;
+  align-items: center;
+  color: gray;
+  font-size: 12px;
+}
+

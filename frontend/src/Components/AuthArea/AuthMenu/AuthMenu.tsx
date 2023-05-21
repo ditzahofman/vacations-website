@@ -9,6 +9,11 @@ function AuthMenu(): JSX.Element {
 
     useEffect(() => {
         setUser(authStore.getState().user)
+        const unsubscribe = authStore.subscribe(() => {
+            setUser(authStore.getState().user);
+        });
+        
+        return () => unsubscribe();
     }, [])
     return (
         <div className="AuthMenu">
@@ -20,7 +25,7 @@ function AuthMenu(): JSX.Element {
                    
                 </>
             }
-            {user && <>
+            {user&& <>
                 <span>Hello {user.firstName+user.lastName}  |</span>
                 <NavLink to={"/logout"}>Logout |</NavLink>
             </>

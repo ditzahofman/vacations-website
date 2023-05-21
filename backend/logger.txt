@@ -430,3 +430,255 @@
 ----------------------------
 21.5.2023, 3:45:12 	 Cannot set headers after they are sent to the client
 ----------------------------
+21.5.2023, 16:05:33 	 Route /api/auth/register/ not exist
+----------------------------
+21.5.2023, 16:09:09 	 Route /api/auth/register/ not exist
+----------------------------
+21.5.2023, 16:11:07 	 Route /api/uth/register not exist
+----------------------------
+21.5.2023, 16:11:14 	 Route /api/auth/register not exist
+----------------------------
+21.5.2023, 16:24:45 	 "password" length must be at least 8 characters long
+----------------------------
+21.5.2023, 16:32:40 	 This email :3333@gmail.com  has already been taken!
+----------------------------
+21.5.2023, 16:34:28 	 This email :3333@gmail.com  has already been taken!
+----------------------------
+21.5.2023, 16:38:53 	 This email :3333@gmail.com  has already been taken!
+----------------------------
+21.5.2023, 16:39:18 	 This email :3333@gmail.com  has already been taken!
+----------------------------
+21.5.2023, 16:39:58 	 This email :3333@gmail.com  has already been taken!
+----------------------------
+21.5.2023, 16:40:57 	 Incorrect email or password
+----------------------------
+22.5.2023, 1:03:59 	 You are not logged in
+----------------------------
+22.5.2023, 1:04:03 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:50 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:44:55 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:08 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:08 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:08 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:08 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:08 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:45:15 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:15 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:15 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:15 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:15 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:45:57 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:57 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:57 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:57 	 You are not logged in
+----------------------------
+22.5.2023, 1:45:57 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:46:04 	 You are not logged in
+----------------------------
+22.5.2023, 1:46:04 	 You are not logged in
+----------------------------
+22.5.2023, 1:46:04 	 You are not logged in
+----------------------------
+22.5.2023, 1:46:04 	 You are not logged in
+----------------------------
+22.5.2023, 1:46:04 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:50:14 	 You are not logged in
+----------------------------
+22.5.2023, 1:50:14 	 You are not logged in
+----------------------------
+22.5.2023, 1:50:14 	 You are not logged in
+----------------------------
+22.5.2023, 1:50:14 	 You are not logged in
+----------------------------
+22.5.2023, 1:50:14 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:52:59 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:53:16 	 You are not logged in
+----------------------------
+22.5.2023, 1:53:16 	 You are not logged in
+----------------------------
+22.5.2023, 1:53:16 	 You are not logged in
+----------------------------
+22.5.2023, 1:53:16 	 You are not logged in
+----------------------------
+22.5.2023, 1:53:16 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:57:46 	 You are not logged in
+----------------------------
+22.5.2023, 1:57:46 	 You are not logged in
+----------------------------
+22.5.2023, 1:57:46 	 You are not logged in
+----------------------------
+22.5.2023, 1:57:46 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 1:57:46 	 You are not logged in
+----------------------------
+22.5.2023, 1:59:54 	 You are not logged in
+----------------------------
+22.5.2023, 1:59:54 	 You are not logged in
+----------------------------
+22.5.2023, 1:59:54 	 You are not logged in
+----------------------------
+22.5.2023, 1:59:54 	 You are not logged in
+----------------------------
+22.5.2023, 1:59:54 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.5.2023, 2:08:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:08:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:08:36 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:09:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:09:07 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:09:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:14:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:14:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:14:17 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:14:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:14:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:14:43 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:15:00 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:15:00 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:15:00 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:15:49 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:15:49 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:15:49 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:18:15 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:18:15 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:18:15 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:20:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:20:16 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:20:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:22:32 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:22:32 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:22:32 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:26:51 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:26:51 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:26:51 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:27:04 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:31:40 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:31:40 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:31:40 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:31:46 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:31:46 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:31:46 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:34:12 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:34:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:34:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:34:30 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:34:30 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:34:30 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:34:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:34:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:34:48 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:35:08 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:35:08 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:35:08 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:35:40 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:35:40 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:35:40 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:35:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:35:58 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:35:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:37:18 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:37:18 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:37:18 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:37:22 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\ncvv.jpg'
+----------------------------
+22.5.2023, 2:37:22 	 Route /api/vacations/images/ not exist
+----------------------------
+22.5.2023, 2:37:22 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+22.5.2023, 2:38:57 	 connect ECONNREFUSED ::1:3306
+----------------------------

@@ -9,6 +9,7 @@ class VacationdModel {
     public price: number
     public image: UploadedFile
     public imageName: string
+  
 
 
     public constructor(vacation: VacationdModel) {
@@ -20,6 +21,7 @@ class VacationdModel {
         this.price = vacation.price
         this.image = vacation.image
         this.imageName = vacation.imageName
+      
        
     }
 

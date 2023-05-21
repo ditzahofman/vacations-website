@@ -1,5 +1,4 @@
 import { createStore } from "redux";
-import CredentialsModel from "../Models/Credentials-model";
 import UserModel from "../Models/User-model";
 import jwtDecode from "jwt-decode";
 

@@ -8,6 +8,7 @@ class VacationdModel{
     public price: number
     public image: FileList
     public imageName: string
+    public followerCount:number
 }
 
     export default VacationdModel

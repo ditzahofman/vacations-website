@@ -7,13 +7,18 @@ import CredentialsModel from "../Models/Credentials-model";
 class AuthService {
 
     public async register(user: UserModel): Promise<void> {
+        try {
+            const response = await axios.post<string>(appConfig.registerUrl, user)
 
-        const response = await axios.post<string>(appConfig.registerUrl, user)
+            const token = response.data
+    
+            //send token to redux
+            authStore.dispatch({type:AuthActionType.Register, payload:token}) 
+        } catch (error) {
+           alert(error) 
+        }
 
-        const token = response.data
-
-        //send token to redux
-        authStore.dispatch({type:AuthActionType.Register, payload:token})
+        
 
     }
 
