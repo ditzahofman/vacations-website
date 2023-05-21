@@ -5,6 +5,11 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EventIcon from '@mui/icons-material/Event';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+
+interface VacationCardProps{
+  
+}
+
 function VacationCard(): JSX.Element {
     return (
         <div className="VacationCard">

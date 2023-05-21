@@ -376,3 +376,57 @@
 ----------------------------
 17.5.2023, 21:38:37 	 ER_NO_SUCH_TABLE: Table 'vacations.vacations' doesn't exist
 ----------------------------
+21.5.2023, 2:37:17 	 "destination" is required
+----------------------------
+21.5.2023, 2:39:48 	 "destination" is required
+----------------------------
+21.5.2023, 2:41:40 	 "description" is required
+----------------------------
+21.5.2023, 2:46:24 	 "destination" is required
+----------------------------
+21.5.2023, 2:52:02 	 "destination" is required
+----------------------------
+21.5.2023, 2:54:45 	 "destination" is required
+----------------------------
+21.5.2023, 3:00:40 	 "destination" is required
+----------------------------
+21.5.2023, 3:01:12 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:01:35 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:04:54 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:08:28 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:10:57 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:11:12 	 ER_BAD_NULL_ERROR: Column 'destination' cannot be null
+----------------------------
+21.5.2023, 3:16:17 	 "description" length must be less than or equal to 800 characters long
+----------------------------
+21.5.2023, 3:17:16 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:17:52 	 "imageName" is not allowed to be empty
+----------------------------
+21.5.2023, 3:18:02 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:19:01 	 "imageName" is not allowed to be empty
+----------------------------
+21.5.2023, 3:20:15 	 "imageName" is not allowed to be empty
+----------------------------
+21.5.2023, 3:20:23 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:24:57 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:29:03 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:30:52 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:30:56 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:31:24 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:31:26 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+21.5.2023, 3:45:12 	 Cannot set headers after they are sent to the client
+----------------------------

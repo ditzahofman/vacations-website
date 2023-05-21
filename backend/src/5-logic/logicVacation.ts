@@ -3,12 +3,9 @@ import dal from "../2-utills/dal"
 import HospitalyStyleModel from "../4-models/hospitalyStyle-model"
 import VacationdModel from "../4-models/vacation-model"
 import { ResourceNotFoundErrorModel, ValidationErrorModel } from "../4-models/error-models"
+import { v4 } from "uuid"
 
-async function getAllHospitalyStyle(): Promise<HospitalyStyleModel[]> {
-    const sql = "SELECT * FROM hospitalyStyle"
-    const HospitalyStyle = await dal.execute(sql)
-    return HospitalyStyle
-}
+
 
 async function getAllVacations(): Promise<VacationdModel[]> {
     const sql = ` SELECT v.*, COUNT(f.userId) AS followerCount
@@ -39,33 +36,31 @@ async function updateVacation(vacation: VacationdModel): Promise<VacationdModel>
     const error = vacation.validate()
     if (error) throw new ValidationErrorModel(error)
 
+    if (vacation.image) {
+        const extention = vacation.image.name.substring(vacation.image.name.lastIndexOf("."))
+        vacation.imageName = v4() + extention
+        await vacation.image.mv("./src/1-assets/images/" + vacation.imageName)
+        delete vacation.image
+    }
+    
     const sql = `
     UPDATE vacation
     SET
-    nameHotel = ?,
-    location = ?,
-    adress = ?,
+    destination = ?,
     description = ?,
-    fullDescription = ?,
     startDate = ?,
     endDate = ?,
-    hospitalyStyleId = ?,
-    pricePerNight = ?,
-    totalPrice = ?,
+    price = ?,
     imageName = ?
     WHERE vacationId = ?`
 
     const info: OkPacket = await dal.execute(sql, [
-        vacation.nameHotel,
-        vacation.location,
-        vacation.adress,
+
+        vacation.destination,
         vacation.description,
-        vacation.fullDescription,
         vacation.startDate,
         vacation.endDate,
-        vacation.hospitalyStyleId,
-        vacation.pricePerNight,
-        vacation.totalPrice,
+        vacation.price,
         vacation.imageName,
         vacation.vacationId])
 
@@ -79,21 +74,22 @@ async function addVacation(vacation: VacationdModel): Promise<VacationdModel> {
     const error = vacation.validate()
     if (error) throw new ValidationErrorModel(error)
 
+    if (vacation.image) {
+        const extention = vacation.image.name.substring(vacation.image.name.lastIndexOf("."))
+        vacation.imageName = v4() + extention
+        await vacation.image.mv("./src/1-assets/images/" + vacation.imageName)
+        delete vacation.image
+    }
 
     const sql = `
-    INSERT INTO vacation VALUES( DEFAULT,? ,? ,? ,? ,? ,? ,? ,? ,? ,? ,? )`
+    INSERT INTO vacation VALUES( DEFAULT, ? ,? ,? ,? ,? ,? )`
 
     const info: OkPacket = await dal.execute(sql, [
-        vacation.nameHotel,
-        vacation.location,
-        vacation.adress,
+        vacation.destination,
         vacation.description,
-        vacation.fullDescription,
         vacation.startDate,
         vacation.endDate,
-        vacation.hospitalyStyleId,
-        vacation.pricePerNight,
-        vacation.totalPrice,
+        vacation.price,
         vacation.imageName
     ])
     vacation.vacationId = info.insertId
@@ -113,7 +109,6 @@ async function deleteVacation(id: number): Promise<void> {
 export default {
     getAllVacations,
     getOneVacation,
-    getAllHospitalyStyle,
     addVacation,
     deleteVacation,
     updateVacation

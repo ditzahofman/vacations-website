@@ -5,15 +5,6 @@ import VacationdModel from "../4-models/vacation-model"
 const router = express()
 
 
-//Get all Hosting styles
-router.get("/hospitaly-style", async(request: Request, response: Response, next: NextFunction) => {
-    try {
-        const hospitalyStyle=await logicVacation.getAllHospitalyStyle()
-        response.json(hospitalyStyle)
-    } catch (err) {
-        next(err)
-    }
-})
 
 //Get all vacations
 router.get("/vacations", async(request: Request, response: Response, next: NextFunction) => {
@@ -39,7 +30,7 @@ router.get("/vacations/:vacationId", async(request: Request, response: Response,
 //Add new vacation
 router.post("/vacations", async(request: Request, response: Response, next: NextFunction) => {
     try {
-        
+        request.body.image = request.files?.image
         const vacation = new VacationdModel(request.body)
         const addedVacation= await logicVacation.addVacation(vacation)
         response.status(201).json(addedVacation)
@@ -62,6 +53,7 @@ router.delete("/vacations/delete/:vacationId([0-9]+)", async(request: Request, r
 //Update vacation by id
 router.put("/vacations/update/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
     try {
+        request.body.image = request.files?.image
        request.body.vacationId = +request.params.vacationId
         const vacation = new VacationdModel(request.body)
       const updateVacation = await logicVacation.updateVacation(vacation)

@@ -6,10 +6,13 @@ import routeNotFound from "./3-middleware/route-not-found";
 import catchAll from "./3-middleware/catch-all";
 import appconfig from "./2-utills/appconfig";
 import followerController from "./6-controllers/followers-controller";
+import fileUpload from "express-fileupload";
 const server = express();
+
 
 server.use(cors());
 server.use(express.json())
+server.use(fileUpload());
 server.use("/api", authController);
 server.use("/api", vacationsControllers);
 server.use("/api",followerController);
