@@ -5,10 +5,12 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import FlightIcon from '@mui/icons-material/Flight';
 import logo from "../../../Assets/Images/vacation-website-high-resolution-logo-white-on-transparent-background.png"
+import AuthMenu from "../../AuthArea/AuthMenu/AuthMenu";
 function Menu(): JSX.Element {
     return (
         <div className="Menu">
              <AppBar position="static" className="appBar">
+             <AuthMenu/>
       <Toolbar>
       <img src ={logo}/>
         <Typography variant="h6"> <FlightIcon /> </Typography>

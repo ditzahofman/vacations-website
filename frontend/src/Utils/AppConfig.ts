@@ -1,10 +1,11 @@
 
 //Create url for axios
 class Config {
-    public DataUrl = "http://localhost:3001/api/?/";
-   // public DataImagesUrl = "http://localhost:3030/api/?/images/";
-   // public registerUrl = "http://localhost:3030/api/auth/register/";
-   // public loginUrl = "http://localhost:3030/api/auth/login/";
+    public vacationUrl = "http://localhost:3001/api/vacations/";
+    public followerUrl = "http://localhost:3001/api/followers/";
+   public vacationImagesUrl = "http://localhost:3001/api/vacations/images/";
+   public registerUrl = "http://localhost:3001/api/auth/register/";
+   public loginUrl = "http://localhost:3001/api/auth/login/";
     
 }
 

@@ -16,7 +16,7 @@ router.post("/followers", async(request: Request, response: Response, next: Next
     }
 })
 
-router.delete("/followers/delete/:userId/:vacationId", async(request: Request, response: Response, next: NextFunction) => {
+router.delete("/followers/:userId/:vacationId", async(request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.userId
         const vacation = +request.params.vacationId

@@ -1,0 +1,29 @@
+.Register{
+    margin-top: 4%;
+}
+.Register h3{
+    color: brown;
+}
+.Register  form {
+    display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  display: inline-block;
+  border: 1px solid rgb(33, 33, 86);
+  background-color: rgba(116, 116, 135, 0.274);
+  padding: 1%;
+
+  }
+  
+  .Register .textField {
+    margin-bottom:4%;
+    color:brown !important;
+    background-color: rgba(245, 245, 220, 0.735); 
+    flex: 1;   
+  }
+  .Register  .submitButton {
+   align-self: flex-end;
+   margin-bottom: 2%;
+   background-color: brown !important;
+  }

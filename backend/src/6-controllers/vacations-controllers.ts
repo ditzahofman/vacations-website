@@ -40,7 +40,7 @@ router.post("/vacations", async(request: Request, response: Response, next: Next
 })
 
 //Delete vacation by id
-router.delete("/vacations/delete/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
+router.delete("/vacations/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.vacationId
       await logicVacation.deleteVacation(id)
@@ -51,7 +51,7 @@ router.delete("/vacations/delete/:vacationId([0-9]+)", async(request: Request, r
 })
 
 //Update vacation by id
-router.put("/vacations/update/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
+router.put("/vacations/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
     try {
         request.body.image = request.files?.image
        request.body.vacationId = +request.params.vacationId
