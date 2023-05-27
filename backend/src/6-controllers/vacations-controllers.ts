@@ -8,9 +8,10 @@ const router = express()
 
 
 //Get all vacations
-router.get("/vacations",async(request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations/:userId",async(request: Request, response: Response, next: NextFunction) => {
     try {
-        const vacations = await logicVacation.getAllVacations()
+        const userId = +request.params.userId
+        const vacations = await logicVacation.getAllVacations(userId)
         response.json(vacations)
     } catch (err) {
         next(err)

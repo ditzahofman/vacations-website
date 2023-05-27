@@ -15,7 +15,7 @@ function Login(): JSX.Element {
     try {
         authService.loggin(credentials)
         alert("wellcome")
-        navigate("/home")
+        navigate("/vacations")
     } catch (err:any) {
         alert(err.message)
     }

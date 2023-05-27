@@ -1,8 +1,14 @@
 
 .VacationList{
+    padding-top: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1%;
    display: inline-flexbox;
     align-items: center;
+
+    /* background-image: linear-gradient(45deg, #4ac217, #9bc489, #c09209); */
+  background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

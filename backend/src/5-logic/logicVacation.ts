@@ -6,14 +6,20 @@ import { v4 } from "uuid"
 
 
 
-async function getAllVacations(): Promise<VacationdModel[]> {
-    const sql = ` SELECT v.*, COUNT(f.userId) AS followerCount
-    FROM vacation v
-    LEFT JOIN followers f ON v.vacationId = f.vacationId
-    GROUP BY v.vacationId
-    ORDER BY v.startDate ASC `
-
-    const vacations = await dal.execute(sql)
+async function getAllVacations(userId:number): Promise<VacationdModel[]> {
+    // const sql = ` SELECT v.*, COUNT(f.userId) AS followerCount
+    // FROM vacation v
+    // LEFT JOIN followers f ON v.vacationId = f.vacationId
+    // GROUP BY v.vacationId
+    // ORDER BY v.startDate ASC `
+const sql = `SELECT V.* , 
+EXISTS(SELECT * FROM followers  WHERE followers.vacationId =v.vacationId and followers.userId = ? ) as isFollowing
+,COUNT(f.userId)   AS followerCount
+FROM vacation AS v LEFT JOIN followers AS F
+ON V.vacationId = F.vacationId
+GROUP by v.vacationId
+ORDER by v.startDate;`
+    const vacations = await dal.execute(sql,[userId])
     return vacations
 }
 

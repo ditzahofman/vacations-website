@@ -10,15 +10,16 @@ function Menu(): JSX.Element {
     return (
         <div className="Menu">
              <AppBar position="static" className="appBar">
-             <AuthMenu/>
-      <Toolbar>
+            
+             <Toolbar>
       <img src ={logo}/>
-        <Typography variant="h6"> <FlightIcon /> </Typography>
+        {/* <Typography variant="h6"> <FlightIcon /> </Typography> */}
         
-        <Typography variant="h6" className="a"  > <NavLink to={"/home"} > <HomeIcon /></NavLink></Typography>
-        <Typography variant="h6" className="a" > <NavLink to={"/vacations"} > Vacations</NavLink></Typography>
+        {/* <Typography variant="h6" className="a"  > <NavLink to={"/home"} > <HomeIcon /></NavLink></Typography> */}
+        <Typography variant="h6" className="authMenu"><AuthMenu/></Typography> 
         
       </Toolbar>
+     
     </AppBar>
             
         </div>

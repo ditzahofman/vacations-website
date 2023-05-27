@@ -6,10 +6,13 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  overflow: hidden;
+ 
 }
 
 .card-content {
   padding: 16px;
+  height: 250px;
 }
 
 .card-image {
@@ -23,8 +26,11 @@
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
+  overflow-y: auto;
+  /* height: 30%; */
+  max-height: 50%;
+ 
 }
-
 .card-destination,
 .card-dates {
   margin-bottom: 4px;

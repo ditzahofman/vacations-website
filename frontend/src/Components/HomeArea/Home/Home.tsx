@@ -2,21 +2,40 @@
 import "./Home.css";
 import plann from "../../../Assets/Images/aeroplane-2026921_1280.webp"
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-
+import { NavLink, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { AuthState, authStore } from "../../../Redux/AuthState";
+import UserModel from "../../../Models/User-model";
+import logo from "../../../Assets/Images/web-3120321_1920.png"
 function Home(): JSX.Element {
+    const [user, setUser] = useState<UserModel>()
+const navigate = useNavigate()
+    useEffect(() => {
+        setUser(authStore.getState().user)
+        const unsubscribe = authStore.subscribe(() => {
+            setUser(authStore.getState().user);
+        
+        });
+        
+        return () => unsubscribe();
+    }, [])
+
+    
     return (
         <div className="Home">
-            {/* <h1>WELLCOME ! <FlightIcon />
-     </h1> */}
-     {/* <img src={plann}> */}
-            <div className="welcome-container">
-          
+            {!user &&
+                 <div className="welcome-container">
                 <h1 className="welcome-title">Welcome !</h1>
                 <p className="site-description">Explore popular destinations, plan your dream getaway, and stay updated on special offers and travel tips. Sign up for free to access additional features and start your journey to unforgettable vacations.</p>
                 <p className="closing-message">Happy travels,<br />The Vacation Site Team</p>
-                <button className="get-started-button">Get Started</button>
+                <button className="get-started-button"><NavLink to={"/login"}>Get Started</NavLink></button>
             </div>
-
+        }
+        {user&&
+            <>
+            {navigate("/vacations")}
+            </>
+        }
         </div>
     );
 }

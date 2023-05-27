@@ -9,10 +9,10 @@ function LogOut(): JSX.Element {
     useEffect(() => {
         authService.logout()
         alert("bye bye")
-        navigate("/Login")
+        navigate("/home")
     }, [])
 
-    return (null);
+    return
 }
 
 export default LogOut;

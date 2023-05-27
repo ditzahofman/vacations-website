@@ -1,27 +1,59 @@
 import "./VacationCard.css";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, CardContent, CardMedia, FormControlLabel, Grid, IconButton, Switch, Typography } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EventIcon from '@mui/icons-material/Event';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import VacationdModel from "../../../Models/Vacation-model";
+import VacationModel from "../../../Models/Vacation-model";
 import appConfig from "../../../Utils/AppConfig";
 import { Favorite as FavoriteIcon } from '@mui/icons-material';
 import vacationService from "../../../Services/VacationService";
+import { authStore } from "../../../Redux/AuthState";
+import UserModel from "../../../Models/User-model";
 
 interface VacationCardProps {
-  vacation: VacationdModel
+  vacation: VacationModel
 }
 
 function VacationCard(props: VacationCardProps): JSX.Element {
 
-  const [isFollowed, setIsFollowed] = useState(false);
+  const [isFollowing, setIsFollowing] = useState<boolean>(props.vacation.isFollowing === 1);
+  const [user, setUser] = useState<UserModel | undefined>();
   const [isExpanded, setIsExpanded] = useState(false);
-async function handleToggleFollow() {
  
-    setIsFollowed(!isFollowed);
-  };
+  useEffect(() => {
+    setUser(authStore.getState().user);
+
+    const unsubscribe = authStore.subscribe(() => {
+      setUser(authStore.getState().user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  async function handleToggleFollow(): Promise<void> {
+    try {
+      if (user && user.userId) {
+        if (props.vacation.isFollowing === 1) {
+          // If already followed, send a delete request to remove the follower
+          await vacationService.unFollower(user.userId,props.vacation.vacationId);
+          // props.vacation.followerCount=props.vacation.followerCount-1
+        
+        } else {
+          // If not followed, send a post request to add the follower
+          await vacationService.addFollower(user.userId, props.vacation.vacationId);
+          // props.vacation.followerCount+=1
+        }
+
+        // Toggle the state after successful API call
+        setIsFollowing((prevIsFollowing) => !prevIsFollowing);
+        
+      }
+    } catch (error) {
+      console.log('Error toggling follow:', error);
+    }
+  }
 
   const toggleExpandDescription = () => {
     setIsExpanded(!isExpanded);
@@ -51,13 +83,13 @@ async function handleToggleFollow() {
             <FormControlLabel
               control={
                 <Switch
-                  checked={isFollowed}
+                  checked={isFollowing}
                   onChange={handleToggleFollow}
                   name="toggleFollow"
                   color="primary"
                 />
               }
-              label={isFollowed ? 'Following' : 'Follow'}
+              label= {props.vacation.isFollowing === 1 ? "Following" : "Not Following"}
             />
             <Grid item>
               <IconButton size="small">
@@ -90,8 +122,7 @@ async function handleToggleFollow() {
           <Typography variant="body2" color="text.secondary">
             <AttachMoneyIcon /> Price: {props.vacation.price}$
           </Typography>
-
-        </CardContent>
+                 </CardContent>
       </Card>
     </div>
   );

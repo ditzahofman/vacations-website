@@ -5,11 +5,12 @@
 }
 .a{
    margin-left: 5% !important;
+   
   
 }
 
 .appBar{
-   background-color: rgb(143, 56, 59)  !important;
+   background-color: rgb(8, 67, 18)!important;
 }
 
 .Menu img{
@@ -17,4 +18,10 @@
    height: 12%;
    position: relative;
    left: 0%;
+}
+.Menu .authMenu{
+ position: absolute;
+right: 2%;
+border:  1px white solid;
+padding: 1%;
 }
