@@ -12,7 +12,7 @@
 
 .card-content {
   padding: 16px;
-  height: 250px;
+  height: 210px;
 }
 
 .card-image {
@@ -52,3 +52,16 @@
   font-size: 12px;
 }
 
+.card-image-container {
+  position: relative;
+}
+
+.location-icon {
+  position: absolute;
+  bottom:  0;
+  left: 0;
+  padding: 8px;
+font-size: larger;
+font-weight: 800;
+background-color: rgba(240, 248, 255, 0.452);
+}

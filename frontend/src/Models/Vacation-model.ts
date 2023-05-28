@@ -3,8 +3,8 @@ class VacationdModel{
     public vacationId: number
     public destination: string
     public description: string
-    public startDate: string
-    public endDate: string
+    public startDate: Date
+    public endDate: Date
     public price: number
     public image: FileList
     public imageName: string

@@ -11,9 +11,13 @@ import { Favorite as FavoriteIcon } from '@mui/icons-material';
 import vacationService from "../../../Services/VacationService";
 import { authStore } from "../../../Redux/AuthState";
 import UserModel from "../../../Models/User-model";
+import DeleteIcon from '@mui/icons-material/Delete';
+import UpdateIcon from '@mui/icons-material/Update';
+
 
 interface VacationCardProps {
   vacation: VacationModel
+  userRole: string;
 }
 
 function VacationCard(props: VacationCardProps): JSX.Element {
@@ -38,12 +42,12 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         if (props.vacation.isFollowing === 1) {
           // If already followed, send a delete request to remove the follower
           await vacationService.unFollower(user.userId,props.vacation.vacationId);
-          // props.vacation.followerCount=props.vacation.followerCount-1
+        
         
         } else {
           // If not followed, send a post request to add the follower
           await vacationService.addFollower(user.userId, props.vacation.vacationId);
-          // props.vacation.followerCount+=1
+       
         }
 
         // Toggle the state after successful API call
@@ -66,40 +70,60 @@ function VacationCard(props: VacationCardProps): JSX.Element {
       return  props.vacation.description.slice(0, 100) + '...';
     }
   };
-
+  const isAdmin = props.userRole === 'Admin'
   return (
+  
     <div className="VacationCard">
       <Card>
+      <div className="card-image-container">
         <CardMedia
-        className="card-image"
+          className="card-image"
           component="img"
           height="140"
           src={appConfig.vacationImagesUrl + props.vacation.imageName}
           alt="Card Image"
         />
-        {/* <img src={appConfig.vacationImagesUrl+props.vacation.imageName}/> */}
+        <div className="location-icon">
+          <LocationOnIcon />{props.vacation.destination}
+        </div>
+      </div>
+      
         <CardContent className="card-content">
-          <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={isFollowing}
-                  onChange={handleToggleFollow}
-                  name="toggleFollow"
-                  color="primary"
-                />
-              }
-              label= {props.vacation.isFollowing === 1 ? "Following" : "Not Following"}
-            />
-            <Grid item>
-              <IconButton size="small">
-                <FavoriteIcon />
-              </IconButton>
-              <Typography variant="body2" color="text.secondary">
-                {props.vacation.followerCount}
-              </Typography>
-            </Grid>
-          </Grid>
+        {isAdmin ? (
+  <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
+    <IconButton size="small" color="primary">
+      Delete
+      <DeleteIcon />
+    </IconButton>
+    <IconButton size="small" color="primary">
+      Update
+      <UpdateIcon />
+    </IconButton>
+  </Grid>
+) : (
+  <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
+    <FormControlLabel
+      control={
+        <Switch
+          checked={isFollowing}
+          onChange={handleToggleFollow}
+          name="toggleFollow"
+          color="primary"
+        />
+      }
+      label={props.vacation.isFollowing === 1 ? "Following" : "Not Following"}
+    />
+    <Grid item>
+      <IconButton size="small">
+        <FavoriteIcon />
+      </IconButton>
+      <Typography variant="body2" color="text.secondary">
+        {props.vacation.followerCount}
+      </Typography>
+    </Grid>
+  </Grid>
+)}
+
           <Typography variant="body2" color="text.secondary" className="card-description">
           {renderDescription()}
         </Typography >
@@ -113,9 +137,9 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             {isExpanded ? 'Read Less' : 'Read More'}
           </Typography>
         )}
-          <Typography variant="body2" color="text.secondary" className="card-destination">
+          {/* <Typography variant="body2" color="text.secondary" className="card-destination">
             <LocationOnIcon /> Location: {props.vacation.destination}
-          </Typography>
+          </Typography> */}
           <Typography variant="body2" color="text.secondary" className="card-dates">
             <EventIcon /> Dates: {new Date(props.vacation.startDate).toLocaleDateString()} - {new Date(props.vacation.endDate).toLocaleDateString()}
           </Typography>
