@@ -53,16 +53,15 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
 
         case vacationActionType.AddFollower:
             const indexToAddFolowers = newState.vacations.findIndex(v => v.vacationId === action.paylod)
-            if (indexToAddFolowers > 0) {
-                newState.vacations[indexToAddFolowers].isFollowing = 1
+                newState.vacations[indexToAddFolowers].isFollowing = true
                 newState.vacations[indexToAddFolowers].followerCount++
-            }
+                
+           
             break
 
         case vacationActionType.DeleteFollower:
             const indexToDeleteFolowers = newState.vacations.findIndex(v => v.vacationId === action.paylod)
-            if (indexToDeleteFolowers > 0)
-               newState.vacations[indexToDeleteFolowers].isFollowing = 0
+             newState.vacations[indexToDeleteFolowers].isFollowing = false
             newState.vacations[indexToDeleteFolowers].followerCount--
             break
     }

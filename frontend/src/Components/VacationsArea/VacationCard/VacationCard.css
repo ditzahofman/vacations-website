@@ -10,9 +10,13 @@
  
 }
 
+.card:hover{
+  background-color: rgba(211, 234, 236, 0.543) !important;
+  box-shadow: inset;
+}
 .card-content {
   padding: 16px;
-  height: 210px;
+  height: 250px;
 }
 
 .card-image {
@@ -27,9 +31,11 @@
   font-size: 14px;
   line-height: 1.5;
   overflow-y: auto;
-  /* height: 30%; */
+  height: 30%;
   max-height: 50%;
- 
+  /* border: solid 1px gray;
+  border-radius: 6%; */
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
 }
 .card-destination,
 .card-dates {
@@ -64,4 +70,9 @@
 font-size: larger;
 font-weight: 800;
 background-color: rgba(240, 248, 255, 0.452);
+}
+.price{
+  background-color: rgba(69, 145, 153, 0.452);
+  font-size:larger;
+ font-weight: 400;
 }

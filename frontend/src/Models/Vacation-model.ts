@@ -8,7 +8,7 @@ class VacationdModel{
     public price: number
     public image: FileList
     public imageName: string
-    public isFollowing:number
+    public isFollowing:boolean
     public followerCount:number
 
 }

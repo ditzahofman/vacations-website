@@ -6,8 +6,6 @@
 
 
 .welcome-container {
-    /* background: linear-gradient(to bottom, rgb(181, 103, 103), rgb(63, 63, 98), gray); */
-  
     padding: 20px;
     animation: slideIn 1s ease-in-out;
     /* Apply the slideIn animation */
@@ -22,9 +20,9 @@
     color: #0c4722;
     border: 4px solid #e2e3e6;
     font-size: xx-large;
-    position: absolute;
-    /* left: 35%; */
-    left: 30%;
+    position: relative;
+    left:30%;
+    /* left: 50%; */
     margin-top:2%;
     /* rotate: -10deg; */
     background-color: #f1f1f180;
@@ -47,7 +45,7 @@
     text-shadow: 2px 3px 6px rgba(13, 16, 14, 0.5);
     font-size: 40px;
     
-    color: #348328;
+    color: #288374;
     animation: fadeIn 1s ease-in-out;
     /* Apply the fadeIn animation */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -74,7 +72,7 @@
     font-weight: 600;
   }
   .get-started-button  {
-    background-color: #12862d;
+    background-color: #128682;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -114,10 +112,30 @@
   .heading {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
-    color: #115f34;
+    color: #115f59;
     text-align: center;
     margin-top: 15%;
     font-weight: 800;
     animation: fadeIn 1s ease-in-out;
     
+  }
+.globus{
+    position: absolute;
+    right: 13%;
+    bottom: -7%;
+    width: 30%;
+  }
+  .aeroplane{
+    position: absolute;
+    left: 8%;
+    bottom: 65%;
+    width: 20%;
+    rotate: -20deg;
+  }
+
+  .map{
+position: absolute;
+    left: 7%;
+    bottom: 2%;
+    width: 25%;
   }

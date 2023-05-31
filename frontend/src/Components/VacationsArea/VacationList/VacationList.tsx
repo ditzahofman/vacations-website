@@ -19,8 +19,6 @@ function VacationList(): JSX.Element {
         const unsubscribe = authStore.subscribe(() => {
             setUser(authStore.getState().user);
            
-
-            
         });
         
         return () => unsubscribe();
@@ -46,8 +44,7 @@ function VacationList(): JSX.Element {
     <AddIcon />
   </IconButton>
 )}
-			{vacations.map(v=><VacationCard key={v.vacationId} vacation={v} userRole={user.role}/>)}
-
+			      {vacations.map(v=><VacationCard key={v.vacationId} vacation={v}  user={user}/>)}
         </div>
     );
 }
