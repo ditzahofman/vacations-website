@@ -1,29 +1,60 @@
 import "./Menu.css";
 import { NavLink } from "react-router-dom";
-import { AppBar, Toolbar, Typography } from '@mui/material';
-
-import HomeIcon from '@mui/icons-material/Home';
-import FlightIcon from '@mui/icons-material/Flight';
-import logo from "../../../Assets/Images/vacation-website-high-resolution-logo-white-on-transparent-background.png"
+import { AppBar, IconButton, Toolbar, SelectChangeEvent, Box } from '@mui/material';
+import logo from "../../../Assets/Images/vacation-website-high-resolution-logo-white-on-transparent-background.png";
 import AuthMenu from "../../AuthArea/AuthMenu/AuthMenu";
+import { Home, Info, Flight } from "@mui/icons-material";
+import { useState, ChangeEvent } from "react";
+import NavbarForTheLittleScreen from "../NavbarFor THe Little Screen/NavbarForTheLittleScreen";
 function Menu(): JSX.Element {
-    return (
-        <div className="Menu">
-             <AppBar position="static" className="appBar">
-            
-             <Toolbar>
-      <img src ={logo}/>
-        {/* <Typography variant="h6"> <FlightIcon /> </Typography> */}
-        
-        {/* <Typography variant="h6" className="a"  > <NavLink to={"/home"} > <HomeIcon /></NavLink></Typography> */}
-        <Typography variant="h6" className="authMenu"><AuthMenu/></Typography> 
-        
-      </Toolbar>
-     
-    </AppBar>
-            
-        </div>
-    );
+  const [selectedLink, setSelectedLink] = useState('');
+  
+
+  const handleLinkChange = (event: SelectChangeEvent<string>) => {
+    setSelectedLink(event.target.value);
+  };
+
+  const isSmallScreen = window.innerWidth < 600;
+
+  return (
+    <div className="Menu">
+       <AppBar position="static" className="appBar">
+    <Toolbar>
+      
+      {isSmallScreen ? (
+        <>
+     <NavbarForTheLittleScreen/>
+       <div >
+        <img src={logo} alt="Logo"className="logoInLittleScreen" />
+      </div>
+      </>
+      ) : (<>
+      <div >
+        <img src={logo} alt="Logo"className="logo" />
+      </div>
+        <div className="links">
+        <IconButton color="inherit" aria-label="home">
+          <NavLink  className="link" to={"home"}><Home /> Home</NavLink>
+        </IconButton>
+        <IconButton color="inherit" aria-label="about" >
+          <NavLink  className="link" to={"about"}><Info /> About</NavLink>
+        </IconButton>
+        <IconButton  color="inherit" aria-label="travels" className="link">
+          <NavLink className="link" to={"/vacations"}><Flight /> Travels</NavLink>
+        </IconButton>
+      </div>
+       <Box className="authMenu">
+       <IconButton color="inherit" aria-label="auth-menu">
+         <AuthMenu />
+       </IconButton>
+     </Box>
+        </>
+      )}
+    </Toolbar>
+  </AppBar>
+    </div>
+  );
 }
 
 export default Menu;
+

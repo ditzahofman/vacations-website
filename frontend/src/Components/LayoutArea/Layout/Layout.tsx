@@ -14,8 +14,7 @@ function Layout(): JSX.Element {
         <Routing/>
       </main>
       <footer className="main-footer">
-        {/* Add footer content here */}
-        <p>&copy; {new Date().toLocaleString()} My Website. All rights reserved.</p>
+          
         <Footer/>
       </footer>
         </div>

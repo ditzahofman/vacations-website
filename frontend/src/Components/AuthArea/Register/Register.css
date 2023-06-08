@@ -1,4 +1,4 @@
-.Register{
+/* .Register{
     margin-top: 4%;
 }
 .Register h3{
@@ -22,8 +22,18 @@
     background-color: rgba(245, 245, 220, 0.735); 
     flex: 1;   
   }
-  .Register  .submitButton {
+  /* .Register  .submitButton {
    align-self: flex-end;
    margin-bottom: 2%;
    background-color: brown !important;
+  } */ 
+  .lock{
+    background-color: rgb(212, 147, 62)!important;
+      font-size: x-large !important;
+  }
+  .Register  .submit{
+background-color: rgb(238, 174, 89);
+  }
+  .Register  .submit:hover{
+    background-color: rgb(219, 144, 45);
   }

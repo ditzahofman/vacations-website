@@ -3,14 +3,37 @@ import logicVacation from "../5-logic/logicVacation"
 import VacationdModel from "../4-models/vacation-model"
 import blockNonLogedIn from "../3-middleware/verify-logged-in"
 import path from "path"
+import cyber from "../2-utills/cyber"
+import verifyAdmin from "../3-middleware/verify-admin"
 const router = express()
 
-
-
-//Get all vacations
-router.get("/vacations/:userId",async(request: Request, response: Response, next: NextFunction) => {
+//get all continents
+router.get("/continents",async(request: Request, response: Response, next: NextFunction) => {
+    try {
+        const continents = await logicVacation.getAllContinents()
+        response.json(continents)
+    } catch (err) {
+        next(err)
+    }
+})
+//Get Vacation package according to the customer's wishes
+router.get("/vacation-package/:userId/:continentId/:startDate/:price",[blockNonLogedIn],async(request: Request, response: Response, next: NextFunction) => {
     try {
         const userId = +request.params.userId
+        const continentId=+request.params.continentId
+        const startDate=request.params.startDate
+        const price=+request.params.price
+        const vacations = await logicVacation.vacationPackageAccordingToCustomer(userId,continentId,startDate,price)
+        response.json(vacations)
+    } catch (err) {
+        next(err)
+    }
+})
+
+//Get all vacations
+router.get("/vacations",[blockNonLogedIn],async(request: Request, response: Response, next: NextFunction) => {
+    try {
+        const userId = await cyber.verifyUser(request)
         const vacations = await logicVacation.getAllVacations(userId)
         response.json(vacations)
     } catch (err) {
@@ -40,7 +63,7 @@ router.get("/vacations/images/:imageName" ,async(request: Request, response: Res
 // })
 
 //Add new vacation
-router.post("/vacations", async(request: Request, response: Response, next: NextFunction) => {
+router.post("/vacations",  verifyAdmin,async(request: Request, response: Response, next: NextFunction) => {
     try {
         request.body.image = request.files?.image
         const vacation = new VacationdModel(request.body)
@@ -52,7 +75,7 @@ router.post("/vacations", async(request: Request, response: Response, next: Next
 })
 
 //Delete vacation by id
-router.delete("/vacations/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
+router.delete("/vacations/:vacationId([0-9]+)",verifyAdmin, async(request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.vacationId
       await logicVacation.deleteVacation(id)
@@ -63,7 +86,7 @@ router.delete("/vacations/:vacationId([0-9]+)", async(request: Request, response
 })
 
 //Update vacation by id
-router.put("/vacations/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
+router.put("/vacations/:vacationId([0-9]+)",verifyAdmin, async(request: Request, response: Response, next: NextFunction) => {
     try {
         request.body.image = request.files?.image
        request.body.vacationId = +request.params.vacationId

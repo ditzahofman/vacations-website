@@ -4,10 +4,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Layout from './Components/LayoutArea/Layout/Layout';
+import interseptoreService from './Services/InterseptorService';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+interseptoreService.createInterseptors()
 root.render(
    
     <BrowserRouter>

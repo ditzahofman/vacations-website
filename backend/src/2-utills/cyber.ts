@@ -2,6 +2,7 @@ import UserModel from "../4-models/user-model";
 import jwt from "jsonwebtoken"
 import { Request } from "express";
 import crypto from "crypto"
+import RoleModel from "../4-models/role-model";
 
 const secretkey = "vacationsTours"
 
@@ -42,7 +43,49 @@ function verifyToken(request:Request):Promise<boolean>{
 
 }
 
+async function verifyAdmin (request: Request): Promise<boolean>  {
 
+    // First check if user logged in
+    const isLoggedIn = await verifyToken(request);
+    // If not logged in
+    if (!isLoggedIn) return false;
+  
+    // Extract token
+    const header = request.header('authorization');
+    const token = header.substring(7);
+  
+    // Extract container from token
+    const container: any = jwt.decode(token);
+  
+    // Extract user
+    const user: UserModel = container.user;
+  
+    // Return true if user is admin, otherwise return false
+    return user.role === RoleModel.Admin;
+  
+  };
+  
+ async function verifyUser (request: Request): Promise<number>{
+  
+    // First check if user logged in
+    const isLoggedIn = await verifyToken(request);
+    // If not logged in
+    if (!isLoggedIn) return null;
+  
+    // Extract token
+    const header = request.header('authorization');
+    const token = header.substring(7);
+  
+    // Extract container from token
+    const container: any = jwt.decode(token);
+  
+    // Extract user
+    const user: UserModel = container.user;
+  
+    // Return user
+    return user.userId 
+    
+  };
 
 function hash(plainSText:string){
 
@@ -55,5 +98,7 @@ function hash(plainSText:string){
 export default {
     getNewToken,
     verifyToken,
-    hash
+    hash,
+    verifyAdmin,
+    verifyUser
 }

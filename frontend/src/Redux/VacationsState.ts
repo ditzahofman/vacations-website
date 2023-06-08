@@ -10,6 +10,7 @@ export class VacationsState {
 
 export enum vacationActionType {
     FetchVacations,
+    FetchPackageVaction,
     AddVacation,
     DeleteVacation,
     UpdateVacation,
@@ -33,6 +34,10 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             newState.vacations = action.paylod
             break
 
+        case vacationActionType.FetchPackageVaction:
+            newState.vacations = action.paylod
+            break
+
         case vacationActionType.AddVacation:
             newState.vacations.push(action.paylod)
             newState.vacations.sort((vacation1, vacation2) => new Date(vacation1.startDate).getTime() - new Date(vacation2.startDate).getTime())
@@ -53,15 +58,15 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
 
         case vacationActionType.AddFollower:
             const indexToAddFolowers = newState.vacations.findIndex(v => v.vacationId === action.paylod)
-                newState.vacations[indexToAddFolowers].isFollowing = true
-                newState.vacations[indexToAddFolowers].followerCount++
-                
-           
+            newState.vacations[indexToAddFolowers].isFollowing = true
+            newState.vacations[indexToAddFolowers].followerCount++
+
+
             break
 
         case vacationActionType.DeleteFollower:
             const indexToDeleteFolowers = newState.vacations.findIndex(v => v.vacationId === action.paylod)
-             newState.vacations[indexToDeleteFolowers].isFollowing = false
+            newState.vacations[indexToDeleteFolowers].isFollowing = false
             newState.vacations[indexToDeleteFolowers].followerCount--
             break
     }

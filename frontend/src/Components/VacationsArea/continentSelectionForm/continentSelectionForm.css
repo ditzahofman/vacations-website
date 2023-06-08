@@ -1,0 +1,14 @@
+.continentSelectionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .continentSelectionForm .MuiTextField-root {
+    margin-bottom: 16px;
+    background-color: aliceblue;
+  }
+  
+  
+  

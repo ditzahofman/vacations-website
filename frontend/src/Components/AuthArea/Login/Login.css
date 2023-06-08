@@ -1,36 +1,11 @@
-.Login{
-    margin-top: 4%;
-}
-.Login h3{
-    color: rgb(9, 55, 21);
-}
-.Login  form {
-    display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 0 auto;
+.Login {
+  margin-top: 1%;
+   border: 1px solid rgb(58, 96, 222);
+  box-sizing: border-box;
   display: inline-block;
-  border: 1px solid rgb(15, 96, 48);
-  background-color: rgba(116, 116, 135, 0.274);
-  padding: 1%;
+}
 
-  }
-  
-  .Login .textField {
-    margin-bottom:4%;
-    color:rgb(20, 86, 38) !important;
-    background-color: rgba(245, 245, 220, 0.735); 
-    flex: 1;   
-  }
-  .Login .submitButton {
-   align-self: flex-end;
-   margin-bottom: 2%;
-   background-color: rgb(11, 68, 40) !important;
-  }
-  .register-link{
-    background-color: rgba(250, 235, 215, 0.799);
-    margin-top: 1%;
-  }
-  .Login a{
-color: rgb(16, 92, 41);
-  }
+.lock{
+  background-color: rgb(212, 147, 62)!important;
+    font-size: x-large !important;
+}

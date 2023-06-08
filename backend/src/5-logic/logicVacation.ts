@@ -3,15 +3,18 @@ import dal from "../2-utills/dal"
 import VacationdModel from "../4-models/vacation-model"
 import { ResourceNotFoundErrorModel, ValidationErrorModel } from "../4-models/error-models"
 import { v4 } from "uuid"
+import ContinentModel from "../4-models/continent-model"
+
+//get all continent
+async function getAllContinents():Promise<ContinentModel[]>{
+const sql = `SELECT * FROM continents`
+const continents = await dal.execute(sql)
+return continents
+}
 
 
-
+//get all vacations
 async function getAllVacations(userId:number): Promise<VacationdModel[]> {
-    // const sql = ` SELECT v.*, COUNT(f.userId) AS followerCount
-    // FROM vacation v
-    // LEFT JOIN followers f ON v.vacationId = f.vacationId
-    // GROUP BY v.vacationId
-    // ORDER BY v.startDate ASC `
 const sql = `SELECT V.* , 
 EXISTS(SELECT * FROM followers  WHERE followers.vacationId =v.vacationId and followers.userId = ? ) as isFollowing
 ,COUNT(f.userId)   AS followerCount
@@ -24,6 +27,20 @@ ORDER by v.startDate;`
 }
 
 
+//Get Vacation package according to the customer's wishes
+async function vacationPackageAccordingToCustomer(userId:number,continent:number,stratDate:string,price:number):Promise<VacationdModel[]>{
+const sql = `SELECT V.* , 
+EXISTS(SELECT * FROM followers  WHERE followers.vacationId =v.vacationId and followers.userId =? ) as isFollowing
+,COUNT(f.userId)   AS followerCount
+FROM vacation AS v LEFT JOIN followers AS F
+ON V.vacationId = F.vacationId
+WHERE v.continentId = ? AND v.startDate> ?  AND v.price< ?
+GROUP by v.vacationId
+ORDER by v.startDate;`
+
+const vacations= await dal.execute(sql,[userId,continent,stratDate,price])
+return vacations
+}
 
 async function getOneVacation(vcationId: number): Promise<VacationdModel> {
     const sql = `
@@ -114,6 +131,8 @@ async function deleteVacation(id: number): Promise<void> {
 }
 
 export default {
+    getAllContinents,
+    vacationPackageAccordingToCustomer,
     getAllVacations,
     getOneVacation,
     addVacation,

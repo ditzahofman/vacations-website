@@ -2248,3 +2248,303 @@
 ----------------------------
 31.5.2023, 12:27:50 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
 ----------------------------
+1.6.2023, 1:44:21 	 connect ECONNREFUSED ::1:3306
+----------------------------
+1.6.2023, 1:45:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 1:46:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 1:47:52 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 1:52:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 4:27:43 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 4:32:35 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 4:43:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 4:44:23 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 13:36:29 	 connect ECONNREFUSED ::1:3306
+----------------------------
+1.6.2023, 14:02:23 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 17:13:19 	 connect ECONNREFUSED ::1:3306
+----------------------------
+1.6.2023, 17:13:57 	 Incorrect email or password
+----------------------------
+1.6.2023, 17:14:09 	 Incorrect email or password
+----------------------------
+1.6.2023, 17:14:24 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 17:18:57 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 23:32:33 	 Route /api/continents/28 not exist
+----------------------------
+1.6.2023, 23:36:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 23:37:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+1.6.2023, 23:40:22 	 Route /api/vacation-package/28/// not exist
+----------------------------
+1.6.2023, 23:49:12 	 Route /api/vacation-package/28/2/2023-06-16/1000 not exist
+----------------------------
+1.6.2023, 23:58:54 	 Incorrect email or password
+----------------------------
+2.6.2023, 0:02:25 	 Incorrect email or password
+----------------------------
+2.6.2023, 0:55:31 	 Route /api/vacation-package/28/undefined// not exist
+----------------------------
+2.6.2023, 1:30:45 	 Incorrect email or password
+----------------------------
+2.6.2023, 1:33:18 	 Incorrect email or password
+----------------------------
+2.6.2023, 2:00:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+2.6.2023, 2:08:03 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:08:58 	 connect ECONNREFUSED ::1:3306
+----------------------------
+4.6.2023, 3:12:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:13:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:16:07 	 Route /api/vacation-package/28/4// not exist
+----------------------------
+4.6.2023, 3:21:01 	 Route /api/vacation-package/28//2023-06-15/1000 not exist
+----------------------------
+4.6.2023, 3:22:01 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:29:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:33:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 3:58:33 	 Incorrect email or password
+----------------------------
+4.6.2023, 3:58:54 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 4:00:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 4:01:08 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 4:03:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+4.6.2023, 23:39:12 	 connect ECONNREFUSED ::1:3306
+----------------------------
+5.6.2023, 0:03:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+5.6.2023, 1:38:09 	 "email" is required
+----------------------------
+5.6.2023, 1:38:30 	 "email" is required
+----------------------------
+5.6.2023, 1:39:09 	 "email" is required
+----------------------------
+6.6.2023, 1:28:37 	 connect ECONNREFUSED ::1:3306
+----------------------------
+6.6.2023, 1:29:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+6.6.2023, 1:32:03 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+6.6.2023, 1:32:03 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+6.6.2023, 1:40:52 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+6.6.2023, 1:40:52 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\nmj.jpg'
+----------------------------
+8.6.2023, 3:04:18 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:04:44 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:20:58 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:21:18 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:24:26 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:26:05 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:26:38 	 id 19 not exist
+----------------------------
+8.6.2023, 3:26:46 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:27:29 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:29:25 	 id 20 not exist
+----------------------------
+8.6.2023, 3:30:34 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:33:38 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:35:26 	 id 22 not exist
+----------------------------
+8.6.2023, 3:36:11 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:37:49 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:46:11 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 3:58:49 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:15:17 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:16:00 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:16:29 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:16:29 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:21:27 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:23:38 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:23:49 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:23:56 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:25:03 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:26:17 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:29:41 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:30:40 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:31:17 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:32:35 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:35:32 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:35:36 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:35:41 	 id 32 not exist
+----------------------------
+8.6.2023, 4:35:51 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:36:16 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:36:42 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:40:30 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:47:41 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:47:49 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:49:53 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:50:00 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:50:10 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:53:07 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:53:16 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:55:23 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:55:30 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:56:29 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:56:35 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:57:03 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 4:59:03 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:00:15 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:01:01 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:01:07 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:01:15 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:09:12 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:09:58 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:10:33 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:11:22 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:12:00 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:12:36 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:15:20 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:16:02 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:17:05 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:22:55 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:24:21 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:25:14 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:26:13 	 Incorrect email or password
+----------------------------
+8.6.2023, 5:26:24 	 "password" is not allowed to be empty
+----------------------------
+8.6.2023, 5:26:42 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:29:10 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:29:59 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:36:21 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:43:51 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:45:28 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:46:38 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:48:39 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:53:44 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:56:14 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 5:59:32 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:01:09 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:02:29 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:02:49 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:22:01 	 You are not authorized
+----------------------------
+8.6.2023, 6:23:44 	 You are not authorized
+----------------------------
+8.6.2023, 6:24:35 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:25:09 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+8.6.2023, 6:27:40 	 "count" is not allowed
+----------------------------
+8.6.2023, 6:38:52 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:39:38 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:40:02 	 "count" is not allowed
+----------------------------
+8.6.2023, 6:45:34 	 "count" is not allowed
+----------------------------
+8.6.2023, 6:50:16 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+8.6.2023, 6:53:27 	 You are not authorized
+----------------------------
+8.6.2023, 6:56:40 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+8.6.2023, 6:57:03 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 6:57:37 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+8.6.2023, 6:58:58 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------

@@ -8,8 +8,15 @@
   margin: 1%;
   justify-content: center;
    /* max-height: 50%; */
+ background-color: rgba(240, 248, 255, 0.594);
+ background-color: rgb(220, 235, 248);
 }
 .VacationList>*{
   margin: 1%; 
   justify-content: center;
 }
+
+.add{
+  background-color: aliceblue;
+}
+

@@ -31,6 +31,8 @@ class AuthService {
         //send token to redux
         authStore.dispatch({type:AuthActionType.Loggin, payload:token})
 
+        
+
     }
 
     public  logout():void{

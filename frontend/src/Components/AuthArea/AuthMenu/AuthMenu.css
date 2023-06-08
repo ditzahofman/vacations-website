@@ -1,6 +1,15 @@
 .AuthMenu {
-    
+    margin-top: 2%;
   text-align: right;
-   
+  color: aliceblue !important;
 }
-
+ 
+.AuthMenu> a{
+  color: aliceblue !important;
+  font-size: medium;
+}
+ 
+.AuthMenu span{
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,3 +1,9 @@
-.AdminButtons {
-	
+.AdminButtons .delete ,.AdminButtons .edit {
+	background-color: aliceblue;
+   margin-left: 3px;
+   size: 70%;
+}
+.AdminButtons span{
+    color: black;
+  
 }

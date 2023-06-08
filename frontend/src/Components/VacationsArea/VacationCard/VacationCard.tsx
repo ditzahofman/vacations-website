@@ -9,20 +9,19 @@ import UserModel from "../../../Models/User-model";
 import AdminButtons from "../AdminButtons/AdminButtons";
 import UserButtons from "../UserButtons/UserButtons";
 import appConfig from "../../../Utils/AppConfig";
+import vacationService from "../../../Services/VacationService";
 // import soundFile from "../../../Assets/Sound/button-124476.mp3"
 
 
 interface VacationCardProps {
   vacation: VacationModel
   user: UserModel
+
 }
 
 function VacationCard(props: VacationCardProps): JSX.Element {
 
   const [isExpanded, setIsExpanded] = useState(false);
-
-  
-
 
   const toggleExpandDescription = () => {
     setIsExpanded(!isExpanded);
@@ -36,11 +35,18 @@ function VacationCard(props: VacationCardProps): JSX.Element {
     }
   };
 
-  const handleClick = (vacationId:number) => {
-    const audio = new Audio("../"); // Replace with the path to your sound file
-    audio.play();
-    //vacation to update
-  };
+  async function deleteMe() {
+    try {
+        // Validate if the admin is sure:
+        if (!window.confirm("Are you sure?")) return;    
+       await vacationService.deleteVacation(props.vacation.vacationId);
+       alert("Vacation has been deleted");
+    }
+    catch (err: any) {
+       alert(err.message);
+    }
+}
+
 
   const isAdmin = props.user.role === 'Admin'
 
@@ -50,6 +56,15 @@ function VacationCard(props: VacationCardProps): JSX.Element {
       <Box boxShadow={7}>
       <Card className="card">
         <div className="card-image-container">
+
+        {isAdmin ? (<div className="buttonsCard">
+            <AdminButtons deletVacation={deleteMe}  />
+            </div>
+          ) : (<div className="buttonsCard">
+            <UserButtons vacation={props.vacation} user={props.user} />
+            </div>
+          )}
+
           <CardMedia
             className="card-image"
             component="img"
@@ -65,13 +80,6 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         </div>
 
         <CardContent className="card-content">
-
-          {isAdmin ? (
-            <AdminButtons />
-          ) : (
-            <UserButtons vacation={props.vacation} user={props.user} />
-          )}
-
           <Typography variant="body2" color="text.secondary" className="card-description">
             {renderDescription()}
           </Typography >
@@ -92,8 +100,8 @@ function VacationCard(props: VacationCardProps): JSX.Element {
           <Typography variant="body2" color="text.secondary" className="price">
           <AttachMoneyIcon />Price: {props.vacation.price}
           </Typography>
-          <Button onClick={()=>{
-            handleClick(props.vacation.vacationId)
+          <Button className="detailsButton" onClick={()=>{
+        
           }}>More Details</Button>
         </CardContent>
       

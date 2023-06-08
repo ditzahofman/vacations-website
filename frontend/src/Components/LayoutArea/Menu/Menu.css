@@ -1,27 +1,66 @@
-.Menu a {
-   color: rgb(222, 224, 234) !important;
-   width: 20%;
-   
-}
-.a{
-   margin-left: 5% !important;
-   
-  
-}
-
-.appBar{
-   background-color: rgba(13, 78, 70, 0.751)!important;
-}
-
-.Menu img{
-   width: 12%;
-   height: 12%;
-   position: relative;
-   left: 0%;
-}
-.Menu .authMenu{
+.Menu {
+   display: flex;
+    height: 100%;
+    margin: 0%;
+    z-index: 1000;
+  }
+ 
+ .appBar {
+   background-color:rgb(28, 102, 181) !important;
+   padding: 0%;
+   margin: 0%;
+   height: 100%;
+ }
+ 
+ .Menu .logo {
+   width: 100px; /* Set the desired width */
+   height:90%;
+   margin-right: 10px; /* Adjust the margin as needed */
+ }
+ .logoInLittleScreen{
+   width: 30%; /* Set the desired width */
+   height: auto;
  position: absolute;
-right: 2%;
-border:  1px white solid;
-padding: 1%;
-}
+ right: 0%;
+ top: 0%;
+ }
+ .links {
+   display: flex;
+   align-items: center;
+ 
+ }
+ 
+ .link {
+   margin-right: 10px; 
+   color: aliceblue ;
+ }
+
+ .authMenu {
+  position: absolute; 
+  right: 2%;
+  color: aliceblue ;
+  border: solid white ;
+  
+ }
+ 
+ .selectButton {
+   margin-left: 10px; /* Adjust the margin as needed */
+ }
+ 
+ @media (max-width: 600px) {
+   .selectButton {
+     display: block;
+     margin-left: 0;
+      }
+   
+   .selectButton .MuiSelect-select {
+     padding: 8px 12px; /* Adjust the padding as needed */
+     font-size: 14px; /* Adjust the font size as needed */
+   }
+   
+   .MuiIconButton-label {
+     display: none;
+   }
+ }
+ 
+ 

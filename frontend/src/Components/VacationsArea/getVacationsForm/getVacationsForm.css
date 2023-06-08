@@ -1,0 +1,46 @@
+.getVacationsForm{
+  width: 100%;
+    position: absolute;
+    top: 20%;
+  text-align: center;
+ 
+}
+.getVacationsForm form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.025);
+    border: solid rgba(194, 204, 216, 0.571) 1px;
+    border-radius: 4%;
+     }
+  
+.getVacationsForm .MuiTextField-root {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .getVacationsForm .textField {
+    flex: 1;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background-color: aliceblue;
+  }
+  
+  .getVacationsForm .button {
+    margin-top: 16px;
+  }
+  
+  .getVacationsForm form {
+    width:80%;
+    margin-left: 10%;
+    padding: 1%;
+    box-shadow: 1px 2px 4px 1px rgb(216, 232, 228);
+  }
+  .getVacationsForm div{
+   
+  }
+
+  
+  
+  
+  
