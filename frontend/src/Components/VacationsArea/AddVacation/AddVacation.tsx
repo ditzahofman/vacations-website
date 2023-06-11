@@ -17,7 +17,7 @@ if(!user) navigate("/login")
     async function send(vacation:VacationdModel):Promise<void>{
         try {
             const addedvacation=await vacationService.addVacation(vacation)
-            console.log(addedvacation)
+            console.log(vacation)
         } catch (error) {
             alert(error)
         }

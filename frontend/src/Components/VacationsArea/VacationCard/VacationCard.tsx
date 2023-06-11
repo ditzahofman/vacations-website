@@ -61,7 +61,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             <AdminButtons deletVacation={deleteMe}  />
             </div>
           ) : (<div className="buttonsCard">
-            <UserButtons vacation={props.vacation} user={props.user} />
+            <UserButtons vacation={props.vacation} user={props.user}  />
             </div>
           )}
 

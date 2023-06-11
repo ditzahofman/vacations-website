@@ -2548,3 +2548,243 @@
 ----------------------------
 8.6.2023, 6:58:58 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
 ----------------------------
+8.6.2023, 8:36:07 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 8:48:50 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 8:49:22 	 "destination" is required
+----------------------------
+8.6.2023, 8:51:19 	 "destination" is required
+----------------------------
+8.6.2023, 8:51:46 	 Route /api/vacations/images/ not exist
+----------------------------
+8.6.2023, 8:52:15 	 "destination" is required
+----------------------------
+8.6.2023, 8:55:26 	 ER_WRONG_VALUE_COUNT_ON_ROW: Column count doesn't match value count at row 1
+----------------------------
+8.6.2023, 8:59:45 	 You are not authorized
+----------------------------
+11.6.2023, 23:26:18 	 connect ECONNREFUSED ::1:3306
+----------------------------
+11.6.2023, 23:27:33 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:28:59 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:33:49 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:44:28 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:47:16 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:53:23 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:54:48 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:55:06 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:56:09 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:56:39 	 Route /api/vacations/images/ not exist
+----------------------------
+11.6.2023, 23:57:28 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:00:32 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:00:33 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:00:34 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:00:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:01:07 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:01:16 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:01:27 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:03:55 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:04:33 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:04:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:05:52 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:05:58 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:06:03 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:06:49 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:08:29 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:10:11 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:12:30 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:14:57 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:20:02 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:20:27 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:20:33 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:22:55 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:23:19 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:23:32 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:25:42 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:30:30 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:32:54 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:33:05 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:35:08 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:35:55 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:36:29 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:37:45 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:38:21 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:39:53 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:40:18 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:46:42 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:47:03 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:48:08 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:49:10 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:50:31 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:52:04 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:52:40 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:54:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:55:18 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:55:26 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:56:16 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:56:33 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:56:59 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:57:09 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:57:12 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:57:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:58:10 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:58:18 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:58:28 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:58:58 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:59:23 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:59:29 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:59:37 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 0:59:54 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:02:13 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:02:57 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:03:05 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:03:10 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:06:49 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:16:17 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:16:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:17:00 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:20:06 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:24:03 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:27:23 	 Incorrect email or password
+----------------------------
+12.6.2023, 1:36:29 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:37:03 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:39:29 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:40:00 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:40:25 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:40:49 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:42:14 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:43:30 	 Incorrect email or password
+----------------------------
+12.6.2023, 1:43:54 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:51:35 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:55:54 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 1:59:18 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:03:48 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:06:05 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:07:27 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:09:07 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:09:19 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:13:12 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:16:54 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:17:21 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:19:11 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:25:57 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:29:11 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:31:41 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:32:47 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:34:47 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:35:53 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:39:41 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:48:19 	 Route /api/vacations/images/ not exist
+----------------------------
+12.6.2023, 2:52:08 	 Route /api/vacations/images/ not exist
+----------------------------

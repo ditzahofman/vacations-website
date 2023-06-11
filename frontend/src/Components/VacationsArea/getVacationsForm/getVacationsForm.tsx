@@ -40,7 +40,7 @@ function GetVacationsForm(): JSX.Element {
         className="textField"
         required
           id="date"
-          label="Date"
+          label="Date 📅"
           type="date"
           variant="outlined"
           margin="normal"
@@ -53,7 +53,7 @@ function GetVacationsForm(): JSX.Element {
          className="textField"
          required
           id="price"
-          label="Price"
+          label="Price 💳"
           type="number"
           variant="outlined"
           margin="normal"

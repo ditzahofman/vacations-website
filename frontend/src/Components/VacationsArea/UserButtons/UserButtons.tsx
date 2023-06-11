@@ -44,21 +44,20 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
 			<Grid container alignItems="center" justifyContent="space-between" className="card-actions">
               <FormControlLabel
                 control={
-                    <IconButton onClick={handleToggleFollow}>
-                    {isFollowing ? <FavoriteIcon style={{ color: 'teal' }} /> : <FavoriteBorderIcon />}
+                    <IconButton onClick={handleToggleFollow} className="like">
+                    {isFollowing ? <FavoriteIcon style={{ color: 'orange' }} /> : <FavoriteBorderIcon />}
                   </IconButton>
                
                 }
-                label={props.vacation.isFollowing ? "Following" : "Not Following"}
+                label={props.vacation.isFollowing ? "👍🏻" : "👎🏻"}
               />
-             
-              <Grid item>
-                                <GroupIcon />  {/* or <GroupIcon /> */}
-                      <Typography variant="body2" color="textSecondary">
-                  {props.vacation.followerCount}
+                  <Typography   className="folowers">
+                      <GroupIcon /> +{props.vacation.followerCount}
                 </Typography>
-              </Grid>
-            </Grid>
+                         </Grid>
+            {/* or <GroupIcon /> */}
+            
+                  
         </div>
     );
 }

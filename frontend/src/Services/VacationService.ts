@@ -38,8 +38,15 @@ class VacationService {
     }
 
     public async addVacation(vacation: VacationModel): Promise<void> {
-        const headers = { "Content-Type": "multipart/form-data" }; 
-        const response = await axios.post(appConfig.vacationUrl, vacation,{headers})
+        const formData = new FormData() 
+        formData.append("continentId",vacation.continentId.toString())
+        formData.append("destination",vacation.destination)
+        formData.append("description",vacation.description)
+        formData.append("startDate",vacation.startDate)
+        formData.append("endDate",vacation.endDate)
+        formData.append("price",vacation.price.toString())
+        formData.append("image",vacation.image[0])
+        const response = await axios.post(appConfig.vacationUrl,formData )
         const addVacation = response.data
 
         vacationsStore.dispatch({ type: vacationActionType.AddVacation, paylod: addVacation })

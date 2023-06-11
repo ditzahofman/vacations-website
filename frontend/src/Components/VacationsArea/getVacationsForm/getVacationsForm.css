@@ -1,8 +1,9 @@
 .getVacationsForm{
   width: 100%;
-    position: absolute;
+    position: relative;
     top: 20%;
   text-align: center;
+  padding: 1%;
  
 }
 .getVacationsForm form {
@@ -37,7 +38,8 @@
     box-shadow: 1px 2px 4px 1px rgb(216, 232, 228);
   }
   .getVacationsForm div{
-   
+ justify-content: center;
+ 
   }
 
   

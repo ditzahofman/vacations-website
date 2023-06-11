@@ -30,7 +30,7 @@ vacationService.getAllContinents()
 			 <TextField
        className="select"
           id="continent"
-          label="Continent"
+          label="Continent 🌏"
           select
           variant="outlined"
           margin="normal"

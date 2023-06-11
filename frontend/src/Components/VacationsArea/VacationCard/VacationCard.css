@@ -16,8 +16,9 @@
 }
 .buttonsCard{
   position: absolute;
+
  z-index: 1000;
- color: azure !important;
+
 
 }
 .card-image {
@@ -43,12 +44,7 @@
   color: gray;
 }
 
-.card-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 4px;
-}
+
 
 .card-followers {
   display: flex;

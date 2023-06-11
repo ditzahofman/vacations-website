@@ -1,16 +1,14 @@
-.VacationList {
+.VacationList  .MyCards{
   padding-top: 2%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 1%;
   justify-content: center;
-   /* max-height: 50%; */
- background-color: rgba(240, 248, 255, 0.594);
- background-color: rgb(220, 235, 248);
-}
+  
+ }
 .VacationList>*{
   margin: 1%; 
   justify-content: center;
@@ -19,4 +17,13 @@
 .add{
   background-color: aliceblue;
 }
+.VacationList h2{
+  position: relative;
+  left: 2% !important;
+  top: 10%;
+ font-size: 2rem;
+ color: rgb(111, 71, 12);
+}
+
+
 

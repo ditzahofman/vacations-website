@@ -12,7 +12,7 @@ function useVerifyLoggedIn() {
 
     // If we don't heave a token
     if (!authStore.getState().token) {
-      navigate('/login');
+      navigate('/home');
     }
 
   }, []);
