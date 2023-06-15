@@ -23,7 +23,7 @@ function Login(): JSX.Element {
   }
   return (
     <div className="Login">
-      <Container component="main" maxWidth="xs">
+      <Container className="login" component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{

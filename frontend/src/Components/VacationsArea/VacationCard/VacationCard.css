@@ -11,7 +11,8 @@
 
 .card-content {
   padding: 8px;
-  height: 180px
+  height: 130px;
+
   
 }
 .buttonsCard{
@@ -22,7 +23,7 @@
 
 }
 .card-image {
-  height: 120px;
+  height: 70%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   object-fit: cover;
@@ -34,14 +35,16 @@
   font-size: 14px;
   line-height: 1;
   overflow-y: auto;
-  max-height: 50%; /* Set a maximum height relative to the parent container */
+  height: 60%;
+  max-height: 70%; /* Set a maximum height relative to the parent container */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important
 }
 .card-destination,
 .card-dates {
   margin-bottom: 2px;
-  font-size: 12px;
-  color: gray;
+  font-size: 20px;
+  
+  color: rgb(18, 10, 10);
 }
 
 
@@ -59,7 +62,7 @@
 
 .location-icon {
   position: absolute;
-  bottom:  0;
+  bottom:  10%;
   left: 0;
   padding: 8px;
 font-size: larger;
@@ -67,9 +70,17 @@ font-weight: 800;
 background-color: rgba(240, 248, 255, 0.452);
 }
 .price{
-  background-color: rgba(69, 145, 153, 0.452);
-  font-size:larger;
+  border: solid 1px grey;
+  background-color: orange;
+  position: relative;
+  left: 2%;
+ font-style: italic;
+  font-size:medium;
  font-weight: 400;
+ width: 30%;
+ color: rgb(14, 13, 13);
+ font-weight: 800;
+
 }
 .detailsButton{
   margin-top: 1%;

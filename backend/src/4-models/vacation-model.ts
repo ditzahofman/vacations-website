@@ -15,6 +15,7 @@ class VacationdModel {
 
     public constructor(vacation: VacationdModel) {
         this.vacationId = vacation.vacationId
+        this.continentId = vacation.continentId
         this.destination = vacation.destination
         this.description = vacation.description
         this.startDate = vacation.startDate
@@ -28,6 +29,7 @@ class VacationdModel {
 
     private static validationSchema = joi.object({
         vacationId: joi.number().optional().positive(),
+        continentId:joi.number().required().positive(),
         destination: joi.string().min(3).max(30).required(),
         description: joi.string().min(5).max(1200).required(),
         startDate: joi.string().required(),

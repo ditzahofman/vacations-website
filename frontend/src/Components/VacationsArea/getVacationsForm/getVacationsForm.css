@@ -1,9 +1,8 @@
 .getVacationsForm{
   width: 100%;
     position: relative;
-    top: 20%;
   text-align: center;
-  padding: 1%;
+  
  
 }
 .getVacationsForm form {
@@ -42,7 +41,13 @@
  
   }
 
+  .getVacationsForm .filterFormUser{
+    display: flex;
+    flex-wrap: wrap;
+  }
   
-  
-  
+  .getVacationsForm , h2{
+margin: 0%;
+color: rgb(29, 51, 83) !important;
+  }
   

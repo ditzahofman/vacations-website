@@ -8,6 +8,7 @@
   .continentSelectionForm .MuiTextField-root {
     margin-bottom: 16px;
     background-color: aliceblue;
+    display: inline-block;
   }
   
   

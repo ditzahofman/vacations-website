@@ -3,12 +3,22 @@ import "./Home.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
 import GetVacationsForm from "../../VacationsArea/getVacationsForm/getVacationsForm";
-import useUser from "../../../Utils/UseUser";
 import VacationList from "../../VacationsArea/VacationList/VacationList";
+import { authStore } from "../../../Redux/AuthState";
+import { useEffect, useState } from "react";
+import UserModel from "../../../Models/User-model";
 
 function Home(): JSX.Element {
-   const user = useUser()
+   const [user, setUser] = useState<UserModel>()
 
+   useEffect(() => {
+       setUser(authStore.getState().user)
+       const unsubscribe = authStore.subscribe(() => {
+           setUser(authStore.getState().user);
+       });
+       
+       return () => unsubscribe();
+   }, [setUser])
     return (
         <div className="homeComponent">
   {!user && (

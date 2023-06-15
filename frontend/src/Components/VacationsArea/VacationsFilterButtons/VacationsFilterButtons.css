@@ -1,0 +1,23 @@
+.VacationsFilterButtons .filterButtons {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white !important;
+    color: rgb(51, 101, 159) !important;
+    margin-bottom: 2%;
+  }
+  
+  .checkedIcon {
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(51, 101, 159);
+  }
+  .VacationsFilterButtons{
+    margin-top: 10%;
+    margin-left: 30%;
+  }

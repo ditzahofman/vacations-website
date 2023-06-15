@@ -1,4 +1,4 @@
-.Login {
+.login{
   margin-top: 1%;
    border: 1px solid rgb(58, 96, 222);
   box-sizing: border-box;
@@ -8,4 +8,8 @@
 .lock{
   background-color: rgb(212, 147, 62)!important;
     font-size: x-large !important;
+}
+.Login{
+  width: 100%;
+  
 }

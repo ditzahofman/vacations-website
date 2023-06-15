@@ -2,10 +2,10 @@ import axios from "axios";
 import appConfig from "../Utils/AppConfig";
 import VacationdModel from "../Models/Vacation-model";
 import VacationModel from "../Models/Vacation-model";
-import UserModel from "../Models/User-model";
 import FollowerModel from "../Models/Follower-model";
 import { vacationActionType, vacationsStore } from "../Redux/VacationsState";
 import continentModel from "../Models/Continent-model";
+
 
 class VacationService {
 
@@ -16,19 +16,19 @@ class VacationService {
     }
 
     public async getAllVacations(): Promise<VacationdModel[]> {
-
+        let vacations=vacationsStore.getState().vacations
+        if(!vacations||vacations.length<0){
         const response = await axios.get<VacationModel[]>(appConfig.vacationUrl )
-        const vacations = response.data
+         vacations = response.data
         // send vacations to redux 
-
         vacationsStore.dispatch({ type: vacationActionType.FetchVacations, paylod: vacations })
-
+        }
         return vacations
     }
 
-    public async getVacationPackege(userId:number,continent:number,stratDate:string,price:number):Promise<VacationdModel[]>{ 
+    public async getVacationPackege(userId:number,continentId:number,stratDate:string,price:number):Promise<VacationdModel[]>{ 
 
-        const response = await axios.get<VacationModel[]>(`${appConfig.vacationPackageUrl}/${userId}/${continent}/${stratDate}/${price}`)
+        const response = await axios.get<VacationModel[]>(`${appConfig.vacationPackageUrl}/${userId}/${continentId}/${stratDate}/${price}`)
         const vacationsPockage = response.data
         // send vacations to redux 
 
@@ -55,9 +55,11 @@ class VacationService {
 
 
     public async deleteVacation(vacationId:number): Promise<void> {
+
        await axios.delete(appConfig.vacationUrl+vacationId)
 
         vacationsStore.dispatch({ type: vacationActionType.DeleteVacation, paylod: vacationId })
+        console.log(vacationsStore.getState().vacations)
 
     }
 

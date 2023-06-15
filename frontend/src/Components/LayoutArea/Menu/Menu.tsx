@@ -6,7 +6,10 @@ import AuthMenu from "../../AuthArea/AuthMenu/AuthMenu";
 import { Home, Info, Flight } from "@mui/icons-material";
 import { useState, ChangeEvent } from "react";
 import NavbarForTheLittleScreen from "../NavbarFor THe Little Screen/NavbarForTheLittleScreen";
+
+import { authStore } from "../../../Redux/AuthState";
 function Menu(): JSX.Element {
+  const user = authStore.getState().user
   const [selectedLink, setSelectedLink] = useState('');
   
 
@@ -39,9 +42,10 @@ function Menu(): JSX.Element {
         <IconButton color="inherit" aria-label="about" >
           <NavLink  className="link" to={"about"}><Info /> About</NavLink>
         </IconButton>
+        {user?.role==="Admin"&&
         <IconButton  color="inherit" aria-label="travels" className="link">
-          <NavLink className="link" to={"/vacations"}><Flight /> Travels</NavLink>
-        </IconButton>
+          <NavLink className="link" to={"/vacations"}><Flight /> Chart</NavLink>
+        </IconButton>}
       </div>
        <Box className="authMenu">
        <IconButton color="inherit" aria-label="auth-menu">

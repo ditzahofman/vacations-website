@@ -1,46 +1,66 @@
+import jwtDecode from "jwt-decode";
 import { createStore } from "redux";
 import UserModel from "../Models/User-model";
-import jwtDecode from "jwt-decode";
 
+// 1. Auth State
 export class AuthState {
-    public token: string
-    public user: UserModel = null
+    
+    public token: string = null;
+    public user: UserModel = null;
 
+    public constructor() {
+
+        // Take token from session storage, restore if exists:
+        this.token = sessionStorage.getItem("token");
+        if(this.token) {
+            const container: { user: UserModel } = jwtDecode(this.token); 
+            this.user = container.user;
+        }
+    }
 
 }
 
+// 2. Auth Action Type
 export enum AuthActionType {
     Register,
-    Loggin,
+    Login,
     Logout
 }
 
+// 3. Auth Action
 export interface AuthAction {
-    type: AuthActionType
-    payload?: string
+    type: AuthActionType;
+    payload?: string; // string because of the token, optional because logout needs no payload.
 }
 
-export function AuthReducer(currentState = new AuthState(), action: AuthAction): AuthState {
+// 4. Auth Reducer
+export function authReducer(currentState = new AuthState(), action: AuthAction): AuthState {
 
-    const newState = { ...currentState }
+    // Duplicate current state: 
+    const newState = { ...currentState };
 
+    // Perform the needed operation: 
     switch (action.type) {
 
-        case AuthActionType.Register:
-        case AuthActionType.Loggin:
-            newState.token = action.payload
-            const container: { user: UserModel } = jwtDecode(newState.token)
-            newState.user = container.user
-            sessionStorage.setItem("user" , newState.token)
-            break
+        case AuthActionType.Register: 
+        case AuthActionType.Login: 
+            newState.token = action.payload;
+            const container: { user: UserModel } = jwtDecode(newState.token); 
+            newState.user = container.user;
+            sessionStorage.setItem("token", newState.token);
+            break;
 
         case AuthActionType.Logout:
-            newState.token = null
-            newState.user = null
-            break
+            newState.token = null;
+            newState.user = null;
+            sessionStorage.removeItem("token");
+            break;
     }
-    return newState
 
+    // Return the new state: 
+    return newState;
 }
 
-export const authStore = createStore(AuthReducer)
+
+// 5. Auth Store
+export const authStore = createStore(authReducer);

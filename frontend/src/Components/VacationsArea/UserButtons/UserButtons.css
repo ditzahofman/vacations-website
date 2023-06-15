@@ -1,22 +1,23 @@
 .UserButtons {
 	
 }
-.like {
-    background-color:rgba(51, 76, 134, 0.913)!important;
+.UserButtons .like {
+    background-color:white!important;
    margin-left: 14px!important;
    size: 70%;
 }
-.folowers{
+.UserButtons .folowers{
     position: absolute;
-    right: -190%;
-    padding-top: 1%;
+    bottom:-30%;
+    right: 5%;
+    /* padding-top: 1%; */
     margin-top: 1%;
     padding: 2%;
    size:70%;
-    background-color: rgba(51, 76, 134, 0.913)!important; 
+    /* background-color: white!important;  */
     font-size: larger;
     font-weight: bolder;
-    border-radius: 1000%;
+    /* border-radius: 1000%; */
     color: orange;
 }
 .card-actions {

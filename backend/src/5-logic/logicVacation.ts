@@ -70,6 +70,7 @@ async function updateVacation(vacation: VacationdModel): Promise<VacationdModel>
     const sql = `
     UPDATE vacation
     SET
+    continentId = ?
     destination = ?,
     description = ?,
     startDate = ?,
@@ -80,6 +81,7 @@ async function updateVacation(vacation: VacationdModel): Promise<VacationdModel>
 
     const info: OkPacket = await dal.execute(sql, [
 
+        vacation.continentId,
         vacation.destination,
         vacation.description,
         vacation.startDate,
@@ -106,9 +108,10 @@ async function addVacation(vacation: VacationdModel): Promise<VacationdModel> {
     }
 
     const sql = `
-    INSERT INTO vacation VALUES( DEFAULT, ? ,? ,? ,? ,? ,? )`
+    INSERT INTO vacation VALUES( DEFAULT, ? ,? ,? ,? ,? ,?,? )`
 
     const info: OkPacket = await dal.execute(sql, [
+        vacation.continentId,
         vacation.destination,
         vacation.description,
         vacation.startDate,

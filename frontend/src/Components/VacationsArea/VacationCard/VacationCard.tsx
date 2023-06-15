@@ -76,10 +76,15 @@ function VacationCard(props: VacationCardProps): JSX.Element {
           <div className="location-icon">
             <LocationOnIcon />{props.vacation.destination}
           </div>
-
+ <Typography variant="body2" color="text.secondary" className="price">
+         <b>  {props.vacation.price}$ </b>
+          </Typography>
         </div>
 
         <CardContent className="card-content">
+        <Typography variant="body2" color="text.secondary" className="card-dates">
+            <EventIcon />  {new Date(props.vacation.startDate).toLocaleDateString()}⇝{new Date(props.vacation.endDate).toLocaleDateString()}
+          </Typography>
           <Typography variant="body2" color="text.secondary" className="card-description">
             {renderDescription()}
           </Typography >
@@ -94,15 +99,11 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             </Typography>
           )}
 
-          <Typography variant="body2" color="text.secondary" className="card-dates">
-            <EventIcon /> Dates: {new Date(props.vacation.startDate).toLocaleDateString()} - {new Date(props.vacation.endDate).toLocaleDateString()}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" className="price">
-          <AttachMoneyIcon />Price: {props.vacation.price}
-          </Typography>
-          <Button className="detailsButton" onClick={()=>{
+          
+         
+          {/* <Button className="detailsButton" onClick={()=>{
         
-          }}>More Details</Button>
+          }}>More Details</Button> */}
         </CardContent>
       
       </Card>

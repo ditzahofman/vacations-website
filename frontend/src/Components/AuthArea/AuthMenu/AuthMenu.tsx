@@ -17,7 +17,7 @@ function AuthMenu(): JSX.Element {
         });
         
         return () => unsubscribe();
-    }, [])
+    }, [user])
     return (
         <div className="AuthMenu">
             {!user &&

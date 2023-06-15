@@ -1,4 +1,4 @@
-import { Grid, IconButton } from "@mui/material";
+import { Grid, IconButton, Tooltip } from "@mui/material";
 import "./AdminButtons.css";
 import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
@@ -17,13 +17,16 @@ function AdminButtons(props: AdminButtonsProps): JSX.Element {
     <div className="AdminButtons">
       <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
         {/* <span>Delete</span> */}
+        <Tooltip title="Delete Vacation">
         <IconButton className="delete" size="small" onClick={props.deletVacation}>
           <DeleteIcon />
         </IconButton>
-        
+        </Tooltip>
+        <Tooltip title="Update Vacation">
         <IconButton className="edit" size="small">
           <UpdateIcon />
         </IconButton>
+        </Tooltip>
       </Grid>
     </div>
   );

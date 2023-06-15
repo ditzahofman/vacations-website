@@ -1,4 +1,8 @@
 class VacationdModel{
+    [x: string]: any
+    findIndex(arg0: (v: any) => boolean) {
+        throw new Error("Method not implemented.")
+    }
         
     public vacationId: number
     public continentId:number

@@ -2,6 +2,14 @@
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../Assets/Images/geography-42292_1280.jpg");
+  background-blend-mode: lighten;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
 }
 .Home {
   position:absolute;
@@ -9,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../../Assets//Images/hallstatt-3609863_1280.jpg");
+  background-image: url("../../../Assets//Images/bastei-3014467_1280.jpg");
   background-size: cover;
   background-position: center;
 }

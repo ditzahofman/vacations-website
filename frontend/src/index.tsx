@@ -6,16 +6,18 @@ import { BrowserRouter } from 'react-router-dom';
 import Layout from './Components/LayoutArea/Layout/Layout';
 import interseptoreService from './Services/InterseptorService';
 
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 interseptoreService.createInterseptors()
 root.render(
-   
+ 
     <BrowserRouter>
     <Layout/>
     </BrowserRouter>
-  
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,16 +1,15 @@
 import { createStore } from "redux";
-import FollowerModel from "../Models/Follower-model";
+
 import VacationdModel from "../Models/Vacation-model";
 
 export class VacationsState {
 
     public vacations: VacationdModel[]
-    // public followers: FollowerModel[]
+    
 }
 
 export enum vacationActionType {
     FetchVacations,
-    FetchPackageVaction,
     AddVacation,
     DeleteVacation,
     UpdateVacation,
@@ -34,10 +33,7 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             newState.vacations = action.paylod
             break
 
-        case vacationActionType.FetchPackageVaction:
-            newState.vacations = action.paylod
-            break
-
+    
         case vacationActionType.AddVacation:
             newState.vacations.push(action.paylod)
             newState.vacations.sort((vacation1, vacation2) => new Date(vacation1.startDate).getTime() - new Date(vacation2.startDate).getTime())
@@ -47,6 +43,7 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             const indexToDelete = newState.vacations.findIndex(v => v.vacationId === action.paylod)
             if (indexToDelete > 0)
                 newState.vacations.splice(indexToDelete, 1)
+                console.log(newState.vacations)
             break
 
         case vacationActionType.UpdateVacation:

@@ -29,7 +29,7 @@ class AuthService {
         const token = response.data
 
         //send token to redux
-        authStore.dispatch({type:AuthActionType.Loggin, payload:token})
+        authStore.dispatch({type:AuthActionType.Login, payload:token})
 
         
 
