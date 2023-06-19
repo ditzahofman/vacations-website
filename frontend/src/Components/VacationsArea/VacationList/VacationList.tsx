@@ -22,7 +22,7 @@ function VacationList(): JSX.Element {
   const user = authStore.getState().user
 
   const [vacations, setVacations] = useState<VacationModel[]>([])
-  const [filteredVacations, setFilteredVacations] = useState<VacationModel[] >();
+  const [filteredVacations, setFilteredVacations] = useState<VacationModel[]>();
 
   const navigate = useNavigate();
 
@@ -51,6 +51,7 @@ function VacationList(): JSX.Element {
   const handleFilterChange = (filteredVacations: VacationModel[]) => {
     setFilteredVacations(filteredVacations);
   };
+  
 
   async function GetAllVacations() {
     try {
@@ -78,7 +79,7 @@ function VacationList(): JSX.Element {
 
               <Tooltip title="Chart">
                 <IconButton className="filterButtons add" onClick={() => navigate("/chart")}>
-                <BarChartIcon />
+                  <BarChartIcon />
                 </IconButton>
               </Tooltip>
             </div>
@@ -115,29 +116,27 @@ function VacationList(): JSX.Element {
                   all Vacations
                 </Button>
               </Tooltip>
-              {/* <Button onClick={GetAllVacations} className="filterButton" variant="contained">All </Button>
-              <Button className="filterButton" variant="contained" > ❤️</Button> */}
-
-
               <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
 
             </div>
             <div className="MyCards">
               <p className="listTitle">Dreams Vacations</p>
               <GetVacationsForm onFilter={handleFilterChange} />
-              {filteredVacations && filteredVacations.length > 0 ?
-               (
+              {filteredVacations && filteredVacations.length > 0 ? (
                 filteredVacations.map((v) => <VacationCard key={v.vacationId} vacation={v} user={user} />)
-
               ) : (
                 <>
-                  {filteredVacations && filteredVacations.length === 0 && <p className="noFound">Sory no results have been found</p>}
-                  {!filteredVacations && vacations?.map((v) => <VacationCard key={v.vacationId} vacation={v} user={user} />)}
-                  <Button className="back" onClick={GetAllVacations}  ><b>back</b> </Button>
-
-
+                  {filteredVacations && filteredVacations.length === 0 && (
+                    <p className="noFound">Sorry, no results have been found</p>
+                  )}
+                  {!filteredVacations &&
+                    vacations?.map((v) => <VacationCard key={v.vacationId} vacation={v} user={user} />)}
+                  <Button className="back" onClick={GetAllVacations}>
+                    <b>Back</b>
+                  </Button>
                 </>
               )}
+
             </div>
           </div>
         </>

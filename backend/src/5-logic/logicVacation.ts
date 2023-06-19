@@ -13,7 +13,7 @@ return continents
 }
 
 
-//get all vacations
+//get all vacations with all details
 async function getAllVacations(userId:number): Promise<VacationdModel[]> {
 const sql = `SELECT V.* , 
 EXISTS(SELECT * FROM followers  WHERE followers.vacationId =v.vacationId and followers.userId = ? ) as isFollowing
