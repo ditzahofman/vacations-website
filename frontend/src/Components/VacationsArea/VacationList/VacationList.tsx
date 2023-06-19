@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import "./VacationList.css";
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
-import VacationdModel from "../../../Models/Vacation-model";
 import vacationService from "../../../Services/VacationService";
 import VacationCard from "../VacationCard/VacationCard";
-import { Button, Checkbox, IconButton } from "@mui/material";
+import { Button, IconButton, Pagination } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RoleModel from "../../../Models/Role-model";
 import { useNavigate } from "react-router-dom";
@@ -19,10 +18,12 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import { authStore } from "../../../Redux/AuthState";
 
 function VacationList(): JSX.Element {
-  const user = authStore.getState().user
+  const user = authStore.getState().user;
 
-  const [vacations, setVacations] = useState<VacationModel[]>([])
-  const [filteredVacations, setFilteredVacations] = useState<VacationModel[]>();
+  const [vacations, setVacations] = useState<VacationModel[]>([]);
+  const [filteredVacations, setFilteredVacations] = useState<VacationModel[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const vacationsPerPage = 6;
 
   const navigate = useNavigate();
 
@@ -36,32 +37,40 @@ function VacationList(): JSX.Element {
         })
         .catch((e) => alert(e));
     }
+
     const unsubscribe = vacationsStore.subscribe(() => {
-      setVacations([])
+      setVacations([]);
+    });
 
-    }
-    )
     return () => {
-      unsubscribe()
-    }
+      unsubscribe();
+    };
   }, [user, vacations]);
-
-
 
   const handleFilterChange = (filteredVacations: VacationModel[]) => {
     setFilteredVacations(filteredVacations);
+    setCurrentPage(1); // Reset to the first page when the filters change
   };
-  
 
-  async function GetAllVacations() {
+  const GetAllVacations = async () => {
     try {
       const allVacations = await vacationService.getAllVacations();
       setFilteredVacations(allVacations);
     } catch (err: any) {
       alert(err.message);
     }
-  }
+  };
+
   useVerifyLoggedIn();
+
+  // Calculate pagination data
+  const indexOfLastVacation = currentPage * vacationsPerPage;
+  const indexOfFirstVacation = indexOfLastVacation - vacationsPerPage;
+  const currentVacations = filteredVacations.slice(indexOfFirstVacation, indexOfLastVacation);
+
+  const handlePageChange = (event: React.ChangeEvent<unknown>, pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div className="VacationList">
@@ -122,24 +131,38 @@ function VacationList(): JSX.Element {
             <div className="MyCards">
               <p className="listTitle">Dreams Vacations</p>
               <GetVacationsForm onFilter={handleFilterChange} />
-              {filteredVacations && filteredVacations.length > 0 ? (
-                filteredVacations.map((v) => <VacationCard key={v.vacationId} vacation={v} user={user} />)
-              ) : (
-                <>
-                  {filteredVacations && filteredVacations.length === 0 && (
-                    <p className="noFound">Sorry, no results have been found</p>
-                  )}
-                  {!filteredVacations &&
-                    vacations?.map((v) => <VacationCard key={v.vacationId} vacation={v} user={user} />)}
-                  <Button className="back" onClick={GetAllVacations}>
-                    <b>Back</b>
-                  </Button>
-                </>
-              )}
+              {currentVacations.length > 0 ? (
+                currentVacations.map((v) => (
+                  <VacationCard key={v.vacationId} vacation={v} user={user} />
 
+                ))
+
+              ) : (<>
+                <p className="noFound">Sorry, no results have been found</p>
+                <Button className="back" onClick={GetAllVacations}>
+                  <b>Back</b>
+                </Button>
+              </>
+
+              )}
+              <div className="pagination">
+                <Pagination
+                  count={Math.ceil(filteredVacations.length / vacationsPerPage)}
+                  page={currentPage}
+                  onChange={handlePageChange}
+                  variant="outlined"
+                  shape="rounded"
+                  color="primary"
+                />
+
+              </div>
             </div>
+
+
           </div>
+
         </>
+
       )}
     </div>
   );

@@ -22,7 +22,14 @@ class VacationdModel{
         maxLength: { value: 500, message: 'Description too long' },
       }
       public static startDateValidation = {
-        required: { value: true, message: 'Missing start date' }
+        required: { value: true, message: 'Missing start date' },
+        validate: (value: string) => {
+            const today = new Date().toISOString().split('T')[0];
+            if (value < today) {
+              return 'The start date cannot be in the past';
+            }
+            return true;
+          }
       }
       public static endDateValidation = {
         required: { value: true, message: 'Missing end date' }

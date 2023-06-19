@@ -1,12 +1,9 @@
 import { Button, TextField } from "@mui/material";
 import "./getVacationsForm.css";
-import { useEffect, useState } from "react";
 import VacationModel from "../../../Models/Vacation-model";
-import vacationService from "../../../Services/VacationService";
 import { useForm } from "react-hook-form";
 import { authStore } from "../../../Redux/AuthState";
 import ContinentSelectionForm from "../continentSelectionForm/continentSelectionForm";
-import VacationCard from "../VacationCard/VacationCard";
 import filterVacationsService from "../../../Services/FilterVactionsService";
 
 interface GetVacationProps {
@@ -20,8 +17,8 @@ function GetVacationsForm(props: GetVacationProps): JSX.Element {
 
  async function sendAndGet (vacation: VacationModel)  {
     try {
-      const vacationsPackage = await filterVacationsService.filterByFormUser(
-       
+      const vacationsPackage = filterVacationsService.filterByFormUser(
+
         vacation.continentId,
         vacation.startDate,
         vacation.price

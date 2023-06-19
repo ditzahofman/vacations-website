@@ -8,20 +8,24 @@ import { useNavigate } from "react-router-dom";
 import { authStore } from "../../../Redux/AuthState";
 
 import React, { useState } from "react";
+import VacationModel from "../../../Models/Vacation-model";
 
 function AddVacation(): JSX.Element {
   const user = authStore.getState().user.role;
   const navigate = useNavigate();
-  if (user!=="Admin") navigate("/login");
 
-  const { register, handleSubmit ,formState} = useForm<VacationdModel>();
+
+  const { register, handleSubmit, formState: { errors }, setError } = useForm<VacationModel>();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  async function send(vacation: VacationdModel): Promise<void> {
+  async function send(vacation: VacationModel): Promise<void> {
     try {
       console.log(vacation);
-      if(vacation.endDate>vacation.startDate) alert("It is not possible to enter an earlier end date than a start date")
-      const addedvacation = await vacationService.addVacation(vacation);
+      if (vacation.endDate <= vacation.startDate) {
+        setError("endDate", { message: "End date must be later than the start date" });
+        return;
+      }
+      const addedVacation = await vacationService.addVacation(vacation);
       alert("The vacation was successfully added");
       navigate("/home");
     } catch (error) {
@@ -38,7 +42,7 @@ function AddVacation(): JSX.Element {
       };
       reader.readAsDataURL(file);
     }
-  };
+  }
 
   return (
     <div className="AddVacation">
@@ -47,28 +51,29 @@ function AddVacation(): JSX.Element {
         <ContinentSelectionForm onSubmit={register("continentId")} />
         <TextField label="Destination" 
          {...register("destination",VacationdModel.destinationValidation) } 
-         helperText={formState.errors.destination?.message}
+         helperText={errors.destination?.message}
          focused />
 
         <br />
         <TextField label="Description" 
         {...register("description",VacationdModel.descriptionValidation)}
-        helperText={formState.errors.description?.message}
+        helperText={errors.description?.message}
        focused />
         <br />
         <TextField type="date" label="Start Date"
          {...register("startDate",VacationdModel.startDateValidation)}
-         helperText={formState.errors.startDate?.message}
+         helperText={errors.startDate?.message}
         focused />
         <br />
         <TextField type="date" label="End Date"
          {...register("endDate",VacationdModel.endDateValidation)} 
-         helperText={formState.errors.endDate?.message}
-         focused />
+         helperText={errors.endDate?.message}
+         focused 
+         />
         <br />
         <TextField type="number" label="Price"
          {...register("price",VacationdModel.priceValidation)}
-         helperText={formState.errors.price?.message}
+         helperText={errors.price?.message}
          focused />
         <br />
         <FormControl>
