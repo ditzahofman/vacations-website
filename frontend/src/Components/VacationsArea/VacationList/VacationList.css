@@ -40,8 +40,8 @@ top: 10%;
   position: relative;
   /* left: 2% !important; */
   font-size: 2rem;
-  color: rgb(241, 235, 232);
-  text-shadow: 8px 8px 8px 8px rgba(239, 243, 244, 0.927);
+  color: rgb(241, 235, 232)!important;
+  /* text-shadow: 8px 8px 8px 8px rgba(239, 243, 244, 0.927); */
   width: 100%;
 
 }
@@ -66,10 +66,14 @@ top: 10%;
 }
 
 .linksList {
-  margin-top: 0%;
+  margin-top: 1%;
   margin-left: 1%;
- }
 
+ }
+.linksList> h2{
+  color: aliceblue;
+
+}
 .VacationList .noFound{
 font-size: 40px;
 color: rgb(29, 51, 83);

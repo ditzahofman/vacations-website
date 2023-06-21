@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import "./VacationList.css";
-import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import vacationService from "../../../Services/VacationService";
 import VacationCard from "../VacationCard/VacationCard";
-import { Button, IconButton, Pagination } from "@mui/material";
+import { Button, Fab, IconButton, Pagination } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RoleModel from "../../../Models/Role-model";
 import { useNavigate } from "react-router-dom";
@@ -11,13 +10,16 @@ import useVerifyLoggedIn from "../../../Utils/UseVerifyLoggedIn";
 import GetVacationsForm from "../getVacationsForm/getVacationsForm";
 import VacationModel from "../../../Models/Vacation-model";
 import { vacationsStore } from "../../../Redux/VacationsState";
-import Tooltip from '@material-ui/core/Tooltip';
-import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff'
+import Tooltip from '@mui/material/Tooltip';
 import VacationsFilterButtons from "../VacationsFilterButtons/VacationsFilterButtons";
-import BarChartIcon from '@material-ui/icons/BarChart';
+import BarChartIcon from '@mui/icons-material/BarChart';
 import { authStore } from "../../../Redux/AuthState";
+import NavigationIcon from '@mui/icons-material/Navigation';
+;
+
 
 function VacationList(): JSX.Element {
+  useVerifyLoggedIn();
   const user = authStore.getState().user;
 
   const [vacations, setVacations] = useState<VacationModel[]>([]);
@@ -33,7 +35,7 @@ function VacationList(): JSX.Element {
         .getAllVacations()
         .then((v) => {
           setVacations(v);
-          setFilteredVacations(v); // Initialize filtered vacations with all vacations
+          setFilteredVacations(v); // 
         })
         .catch((e) => alert(e));
     }
@@ -49,19 +51,15 @@ function VacationList(): JSX.Element {
 
   const handleFilterChange = (filteredVacations: VacationModel[]) => {
     setFilteredVacations(filteredVacations);
-    setCurrentPage(1); // Reset to the first page when the filters change
+    setCurrentPage(1); 
   };
 
-  const GetAllVacations = async () => {
-    try {
-      const allVacations = await vacationService.getAllVacations();
-      setFilteredVacations(allVacations);
-    } catch (err: any) {
-      alert(err.message);
-    }
-  };
+  function handleRefreshButtonClick() {
+    window.location.reload();
 
-  useVerifyLoggedIn();
+  }
+
+
 
   // Calculate pagination data
   const indexOfLastVacation = currentPage * vacationsPerPage;
@@ -91,27 +89,40 @@ function VacationList(): JSX.Element {
                   <BarChartIcon />
                 </IconButton>
               </Tooltip>
+          
             </div>
             <div className="MyCards">
               {vacations?.map((v) => (
                 <VacationCard key={v.vacationId} vacation={v} user={user} />
               ))}
             </div>
+
           </div>
         </>
       ) : (
         // User view
         <>
-
-          {/* <h1>All vacations in one place 🛬</h1> */}
           <div className="containerList">
             <div className="linksList">
-              <h2>Filters</h2>
-              <Tooltip title="All Vacations">
+              <h2>Filters:</h2>
+         
+              <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
+
+            </div>
+            <div className="MyCards">
+              <p className="listTitle">Dreams Vacations</p>
+              
+              <GetVacationsForm onFilter={handleFilterChange} />
+              
+  {currentVacations.length > 0 ? (
+    <>
+      {currentVacations.map((v) => (
+        <VacationCard key={v.vacationId} vacation={v} user={user} />
+      ))}
+          <Tooltip title="All Vacations">
                 <Button
                   variant="contained"
-                  startIcon={<AllInclusiveIcon />}
-                  onClick={GetAllVacations}
+                  onClick={ handleRefreshButtonClick}
                   style={{
                     borderRadius: '0',
                     backgroundColor: 'white',
@@ -125,27 +136,25 @@ function VacationList(): JSX.Element {
                   all Vacations
                 </Button>
               </Tooltip>
-              <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
-
-            </div>
-            <div className="MyCards">
-              <p className="listTitle">Dreams Vacations</p>
-              <GetVacationsForm onFilter={handleFilterChange} />
-              {currentVacations.length > 0 ? (
-                currentVacations.map((v) => (
-                  <VacationCard key={v.vacationId} vacation={v} user={user} />
-
-                ))
-
+    </>
               ) : (<>
                 <p className="noFound">Sorry, no results have been found</p>
-                <Button className="back" onClick={GetAllVacations}>
-                  <b>Back</b>
-                </Button>
+                <Fab variant="extended" className="back">
+                  <NavigationIcon
+                    sx={{ mr: 2 }}
+                    onClick={handleRefreshButtonClick} />
+                  <b>back</b>
+                </Fab>
+              
               </>
 
               )}
-              <div className="pagination">
+             
+            </div>
+          
+          </div>
+          
+          <div className="pagination">
                 <Pagination
                   count={Math.ceil(filteredVacations.length / vacationsPerPage)}
                   page={currentPage}
@@ -156,11 +165,6 @@ function VacationList(): JSX.Element {
                 />
 
               </div>
-            </div>
-
-
-          </div>
-
         </>
 
       )}

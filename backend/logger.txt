@@ -3242,3 +3242,51 @@
 ----------------------------
 19.6.2023, 20:02:49 	 You are not authorized
 ----------------------------
+20.6.2023, 14:23:56 	 connect ECONNREFUSED ::1:3306
+----------------------------
+20.6.2023, 16:27:37 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:28:04 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:28:55 	 id 105 not exist
+----------------------------
+20.6.2023, 16:29:16 	 id 106 not exist
+----------------------------
+20.6.2023, 16:30:19 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:30:35 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:30:40 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:31:09 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:31:41 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:43:54 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:49:17 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:49:21 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+20.6.2023, 16:50:41 	 id 112 not exist
+----------------------------
+20.6.2023, 16:50:57 	 id 112 not exist
+----------------------------
+20.6.2023, 16:51:17 	 id 112 not exist
+----------------------------
+21.6.2023, 0:42:59 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 9:24:04 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 9:25:35 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 11:36:43 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 11:36:46 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 11:37:01 	 connect ECONNREFUSED ::1:3306
+----------------------------
+21.6.2023, 16:27:35 	 "password" is not allowed to be empty
+----------------------------
+21.6.2023, 19:43:53 	 connect ECONNREFUSED ::1:3306
+----------------------------

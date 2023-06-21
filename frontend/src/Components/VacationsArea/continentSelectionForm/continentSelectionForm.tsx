@@ -13,6 +13,8 @@ interface ContinentSelectionFormProps {
 function ContinentSelectionForm(props:ContinentSelectionFormProps): JSX.Element {
 
     const [continent , setcontinent] = useState<continentModel[]>([])
+    
+    
     useEffect(()=>{
 vacationService.getAllContinents()
 .then((c)=>setcontinent(c))
@@ -20,9 +22,12 @@ vacationService.getAllContinents()
     },[])
 
     function getValueFromSelect(event: React.ChangeEvent<{ value: unknown }>) {
-      const selectedContinentId = +event.target.value;
+     let selectedContinentId = +event.target.value;
       const syntheticEvent = { target: { value: selectedContinentId }, type: "change" };
+      
       props.onSubmit.onChange(syntheticEvent);
+    
+ 
     }
     
     return (
@@ -40,8 +45,8 @@ vacationService.getAllContinents()
           {...props.onSubmit}
         >
           {continent.map((c) => (
-            <MenuItem key={c.continentId} value={c.continentId}>
-              {c.continentName}
+            <MenuItem className="option" key={c.continentId} value={c.continentId}>
+              {c.continentName}  
             </MenuItem>
           ))}
         </TextField>

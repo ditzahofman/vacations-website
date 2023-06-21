@@ -12,10 +12,10 @@
   }
   
   .checkedIcon {
-    border: 1px solid #000;
+    border: 1px solid #c07910;
     border-radius: 50%;
     background-color: white;
-    color: rgb(51, 101, 159);
+    color: rgb(171, 119, 16);
   }
   .VacationsFilterButtons{
     margin-top: 10%;

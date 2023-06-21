@@ -5,8 +5,8 @@ import { useState } from "react";
 import UserModel from "../../../Models/User-model";
 import vacationService from "../../../Services/VacationService";
 import { Favorite as FavoriteIcon } from '@mui/icons-material';
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import GroupIcon from "@material-ui/icons/Person"
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import GroupIcon from "@mui/icons-material//Person"
 
 interface UserButtonsProps {
 	vacation: VacationdModel
@@ -52,7 +52,7 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
                 label={props.vacation.isFollowing ? "👍🏻" : "👎🏻"}
               />
                   <Typography   className="folowers">
-                      <GroupIcon /> +{props.vacation.followerCount}
+                  <GroupIcon />+{props.vacation.followerCount}
                 </Typography>
                          </Grid>
             {/* or <GroupIcon /> */}

@@ -17,9 +17,9 @@
     /* background-color: white!important;  */
     font-size: larger;
     font-weight: bolder;
-    /* border-radius: 1000%; */
-    color: orange;
-}
+    color: rgb(11, 11, 61);
+ 
+ }
 .card-actions {
     display: flex;
     align-items: center;

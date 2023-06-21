@@ -13,7 +13,7 @@ interface GetVacationProps {
 function GetVacationsForm(props: GetVacationProps): JSX.Element {
   const user = authStore.getState().user;
 
-  const { register, handleSubmit } = useForm<VacationModel>();
+  const { register, handleSubmit ,reset} = useForm<VacationModel>();
 
  async function sendAndGet (vacation: VacationModel)  {
     try {
@@ -23,7 +23,7 @@ function GetVacationsForm(props: GetVacationProps): JSX.Element {
         vacation.startDate,
         vacation.price
       );
-
+      reset();
       props.onFilter(vacationsPackage);
     } catch (error) {
       alert(error);
@@ -58,10 +58,10 @@ function GetVacationsForm(props: GetVacationProps): JSX.Element {
           margin="normal"
           {...register("price")}
         />
-        <Button type="submit" variant="contained" color="primary" className="button">
+        <Button type="submit" variant="contained"  className="button">
           Search
         </Button>
-      </form>
+             </form>
     </div>
   );
 }

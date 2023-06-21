@@ -8,8 +8,22 @@
   .continentSelectionForm .MuiTextField-root {
     margin-bottom: 16px;
     background-color: aliceblue;
-    display: inline-block;
+    display:block ;
+    text-align: center;
+
   }
+  .option{
+    display: block !important;
+
+  }
+.option:hover{
+  
+  background-color: rgb(86, 93, 129) !important;
+}
+  
+
+ 
+  
   
   
   
