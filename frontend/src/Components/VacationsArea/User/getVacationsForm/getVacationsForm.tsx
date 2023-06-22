@@ -1,10 +1,10 @@
 import { Button, TextField } from "@mui/material";
 import "./getVacationsForm.css";
-import VacationModel from "../../../Models/Vacation-model";
+import VacationModel from "../../../../Models/Vacation-model";
 import { useForm } from "react-hook-form";
-import { authStore } from "../../../Redux/AuthState";
-import ContinentSelectionForm from "../continentSelectionForm/continentSelectionForm";
-import filterVacationsService from "../../../Services/FilterVactionsService";
+import { authStore } from "../../../../Redux/AuthState";
+import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
+import filterVacationsService from "../../../../Services/FilterVactionsService";
 
 interface GetVacationProps {
   onFilter: (filteredVacations: VacationModel[] | undefined) => void;

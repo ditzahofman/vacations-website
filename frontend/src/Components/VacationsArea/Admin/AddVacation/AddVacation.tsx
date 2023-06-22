@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
 import "./AddVacation.css";
-import VacationdModel from "../../../Models/Vacation-model";
+import VacationdModel from "../../../../Models/Vacation-model";
 import { Button, FormControl, TextField } from "@mui/material";
-import vacationService from "../../../Services/VacationService";
-import ContinentSelectionForm from "../continentSelectionForm/continentSelectionForm";
+import vacationService from "../../../../Services/VacationService";
+import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
 import { useNavigate } from "react-router-dom";
-import { authStore } from "../../../Redux/AuthState";
+import { authStore } from "../../../../Redux/AuthState";
 
 import React, { useState } from "react";
-import VacationModel from "../../../Models/Vacation-model";
+import VacationModel from "../../../../Models/Vacation-model";
 
 function AddVacation(): JSX.Element {
   const user = authStore.getState().user.role;
@@ -46,36 +46,36 @@ function AddVacation(): JSX.Element {
 
   return (
     <div className="AddVacation">
+      <div>
       <form onSubmit={handleSubmit(send)}>
         <h2>Add Vacation</h2>
         <ContinentSelectionForm onSubmit={register("continentId")} />
-        <TextField label="Destination" 
+        <TextField label="Destination"   className="textField"
          {...register("destination",VacationdModel.destinationValidation) } 
          helperText={errors.destination?.message}
          focused />
 
-        <br />
-        <TextField label="Description" 
+        <TextField label="Description"   className="textField"
         {...register("description",VacationdModel.descriptionValidation)}
         helperText={errors.description?.message}
        focused />
-        <br />
-        <TextField type="date" label="Start Date"
+      
+        <TextField type="date" label="Start Date"   className="textField"
          {...register("startDate",VacationdModel.startDateValidation)}
          helperText={errors.startDate?.message}
         focused />
-        <br />
-        <TextField type="date" label="End Date"
+       
+        <TextField type="date" label="End Date"   className="textField"
          {...register("endDate",VacationdModel.endDateValidation)} 
          helperText={errors.endDate?.message}
          focused 
          />
-        <br />
-        <TextField type="number" label="Price"
+       
+        <TextField type="number" label="Price" 
          {...register("price",VacationdModel.priceValidation)}
          helperText={errors.price?.message}
          focused />
-        <br />
+      
         <FormControl>
           <label htmlFor="image">Image</label>
           <input
@@ -85,14 +85,16 @@ function AddVacation(): JSX.Element {
             {...register("image",VacationdModel.imageValidation)}
             required
             onChange={handleImageChange}
+            className="imgFile"
           />
         </FormControl>
-        <br />
         {selectedImage && <img src={selectedImage} alt="Selected" />}
         <Button className="button" type="submit" variant="contained" color="primary">
           Submit
         </Button>
       </form>
+      </div>
+      <img />
     </div>
   );
 }

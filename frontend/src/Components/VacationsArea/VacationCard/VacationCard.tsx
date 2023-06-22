@@ -6,10 +6,11 @@ import EventIcon from '@mui/icons-material/Event';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import VacationModel from "../../../Models/Vacation-model";
 import UserModel from "../../../Models/User-model";
-import AdminButtons from "../AdminButtons/AdminButtons";
-import UserButtons from "../UserButtons/UserButtons";
+import AdminButtons from "../Admin/AdminButtons/AdminButtons";
+import UserButtons from "../User/UserButtons/UserButtons";
 import appConfig from "../../../Utils/AppConfig";
 import vacationService from "../../../Services/VacationService";
+import { useNavigate } from "react-router-dom";
 // import soundFile from "../../../Assets/Sound/button-124476.mp3"
 
 
@@ -46,7 +47,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
        alert(err.message);
     }
 }
-
+ const navigate = useNavigate()
 
   const isAdmin = props.user.role === 'Admin'
 
@@ -58,7 +59,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         <div className="card-image-container">
 
         {isAdmin ? (<div className="buttonsCard">
-            <AdminButtons deletVacation={deleteMe}  />
+            <AdminButtons deletVacation={deleteMe} updateVaction={()=>{navigate("/update")} } />
             </div>
           ) : (<div className="buttonsCard">
             <UserButtons vacation={props.vacation} user={props.user}  />

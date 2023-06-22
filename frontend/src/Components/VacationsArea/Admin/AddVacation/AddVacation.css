@@ -1,5 +1,9 @@
 .AddVacation {
+  
 	
+  background-image: url("../../../../Assets/Images/background-g304829845_1920.jpg");
+
+  overflow-x: hidden;
 }
 .AddVacation form {
     margin: 1rem;
@@ -7,13 +11,22 @@
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-     background-color: white;
-    grid-column: 2;
+       grid-column: 2;
     box-shadow: 1px 2px 4px 2px grey;
     width: 400px;
     min-width: 9rem;
+    align-items: left;
+background-color: rgba(240, 248, 255, 0.466);
+   
   }
-
+form .imgFile {
+  position: relative;
+  left: 40%;
+  margin: 1%;
+}
+  form .textField{
+    margin: 1.5%;
+  }
   form>.button {
     transition: all 0.1s;
     border-radius: 0.5rem;

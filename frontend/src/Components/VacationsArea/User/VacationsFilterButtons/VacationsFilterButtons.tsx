@@ -6,7 +6,7 @@ import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import EventAvailableIcon from '@mui/icons-material//EventAvailable';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import './VacationsFilterButtons.css';
-import VacationModel from '../../../Models/Vacation-model';
+import VacationModel from '../../../../Models/Vacation-model';
 import { FormControlLabel } from '@mui/material';
 
 interface VacationsFilterButtonsProps {

@@ -27,6 +27,10 @@ function Menu(): JSX.Element {
       {isSmallScreen ? (
         <>
      <NavbarForTheLittleScreen/>
+     {user?.role==="Admin"&&
+        <IconButton  color="inherit" aria-label="travels" className="link">
+          <NavLink className="link" to={"/vacations"}><Flight /> Chart</NavLink>
+        </IconButton>}
        <div >
         <img src={logo} alt="Logo"className="logoInLittleScreen" />
       </div>
@@ -42,10 +46,7 @@ function Menu(): JSX.Element {
         <IconButton color="inherit" aria-label="about" >
           <NavLink  className="link" to={"about"}><Info /> About</NavLink>
         </IconButton>
-        {user?.role==="Admin"&&
-        <IconButton  color="inherit" aria-label="travels" className="link">
-          <NavLink className="link" to={"/vacations"}><Flight /> Chart</NavLink>
-        </IconButton>}
+       
       </div>
        <Box className="authMenu">
        <IconButton color="inherit" aria-label="auth-menu">

@@ -1,9 +1,9 @@
 import "./UserButtons.css";
 import { FormControlLabel, Grid, IconButton, Switch, Typography } from "@mui/material";
-import VacationdModel from "../../../Models/Vacation-model";
+import VacationdModel from "../../../../Models/Vacation-model";
 import { useState } from "react";
-import UserModel from "../../../Models/User-model";
-import vacationService from "../../../Services/VacationService";
+import UserModel from "../../../../Models/User-model";
+import vacationService from "../../../../Services/VacationService";
 import { Favorite as FavoriteIcon } from '@mui/icons-material';
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import GroupIcon from "@mui/icons-material//Person"
