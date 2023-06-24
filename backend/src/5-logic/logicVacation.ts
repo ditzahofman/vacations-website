@@ -70,7 +70,7 @@ async function updateVacation(vacation: VacationdModel): Promise<VacationdModel>
     const sql = `
     UPDATE vacation
     SET
-    continentId = ?
+    continentId = ?,
     destination = ?,
     description = ?,
     startDate = ?,
@@ -89,6 +89,7 @@ async function updateVacation(vacation: VacationdModel): Promise<VacationdModel>
         vacation.price,
         vacation.imageName,
         vacation.vacationId])
+        
 
     if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(vacation.vacationId);
     return vacation

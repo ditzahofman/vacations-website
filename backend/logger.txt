@@ -3300,3 +3300,127 @@
 ----------------------------
 22.6.2023, 0:15:01 	 connect ECONNREFUSED ::1:3306
 ----------------------------
+22.6.2023, 14:35:31 	 connect ECONNREFUSED ::1:3306
+----------------------------
+22.6.2023, 15:17:56 	 Route /api/vacations/NaN not exist
+----------------------------
+22.6.2023, 15:19:01 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 16:38:06 	 Route /api/vacations/ not exist
+----------------------------
+22.6.2023, 16:53:14 	 Route /api/vacations/ not exist
+----------------------------
+22.6.2023, 16:56:54 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'destination = 'poland',
+    description = 'Poland, in Central Europe, is a ca...' at line 4
+----------------------------
+22.6.2023, 17:03:17 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'destination = 'poland',
+    description = 'Poland, in Central Europe, is a ca...' at line 4
+----------------------------
+22.6.2023, 19:28:36 	 connect ECONNREFUSED ::1:3306
+----------------------------
+22.6.2023, 19:32:11 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 19:32:45 	 You are not authorized
+----------------------------
+22.6.2023, 19:34:43 	 You are not authorized
+----------------------------
+22.6.2023, 19:34:46 	 You are not authorized
+----------------------------
+22.6.2023, 20:22:26 	 "continentId" is required
+----------------------------
+22.6.2023, 20:25:02 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:26:01 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:27:03 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:29:51 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:19 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:22 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:25 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:27 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:28 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:31:29 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 20:32:52 	 You are not authorized
+----------------------------
+22.6.2023, 20:40:31 	 You are not authorized
+----------------------------
+22.6.2023, 20:40:33 	 You are not authorized
+----------------------------
+22.6.2023, 20:40:34 	 You are not authorized
+----------------------------
+22.6.2023, 20:40:35 	 You are not authorized
+----------------------------
+22.6.2023, 20:42:56 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 20:43:08 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 20:43:09 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 20:43:25 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 20:43:26 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 21:15:45 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 21:15:47 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 21:15:54 	 You are not authorized
+----------------------------
+22.6.2023, 21:15:56 	 You are not authorized
+----------------------------
+22.6.2023, 21:15:58 	 You are not authorized
+----------------------------
+22.6.2023, 21:16:00 	 You are not authorized
+----------------------------
+22.6.2023, 21:16:01 	 You are not authorized
+----------------------------
+22.6.2023, 21:16:36 	 You are not authorized
+----------------------------
+22.6.2023, 21:16:37 	 You are not authorized
+----------------------------
+22.6.2023, 21:16:38 	 You are not authorized
+----------------------------
+22.6.2023, 21:21:05 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 21:56:52 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 21:56:55 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 21:56:58 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 21:57:30 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 22:30:30 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 22:31:56 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 22:32:32 	 Cannot set headers after they are sent to the client
+----------------------------
+22.6.2023, 23:09:54 	 Route /api/vacations/129 not exist
+----------------------------
+22.6.2023, 23:21:53 	 Route /api/vacations/update/9 not exist
+----------------------------
+22.6.2023, 23:25:44 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 23:27:07 	 "destination" length must be less than or equal to 30 characters long
+----------------------------
+22.6.2023, 23:27:14 	 "destination" length must be less than or equal to 30 characters long
+----------------------------
+22.6.2023, 23:34:54 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 23:36:06 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 23:36:23 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 23:36:27 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+22.6.2023, 23:36:58 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------

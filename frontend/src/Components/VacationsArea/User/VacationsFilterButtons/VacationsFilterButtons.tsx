@@ -87,7 +87,7 @@ function VacationsFilterButtons(props: VacationsFilterButtonsProps): JSX.Element
           onChange={handleNowChange}
           icon={<FlightTakeoffIcon />}
           checkedIcon={<FlightTakeoffIcon className="checkedIcon" />}
-          className="filterButtons circle"
+          className="filterButtons "
         />
       </Tooltip>
 
@@ -97,7 +97,7 @@ function VacationsFilterButtons(props: VacationsFilterButtonsProps): JSX.Element
           onChange={handleWillBeChange}
           icon={<EventAvailableIcon />}
           checkedIcon={<EventAvailableIcon className="checkedIcon" />}
-          className="filterButtons circle"
+          className="filterButtons "
         />
       </Tooltip>
 
@@ -108,7 +108,7 @@ function VacationsFilterButtons(props: VacationsFilterButtonsProps): JSX.Element
           onChange={handleFavoriteChange}
           icon={<FavoriteIcon />}
           checkedIcon={<FavoriteIcon className="checkedIcon" />}
-          className="filterButtons circle"
+          className="filterButtons "
         />
         
       </Tooltip>

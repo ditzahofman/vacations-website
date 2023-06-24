@@ -81,6 +81,7 @@ function VacationList(): JSX.Element {
       {user?.role === RoleModel.Admin ? (
         // Admin view
         <>
+        <h2>AROUND THE WORLD</h2>
           <div className="containerList">
             <div className="linksList">
               <h2>Hello {user.firstName} !</h2>
@@ -118,7 +119,7 @@ function VacationList(): JSX.Element {
         <>
           <div className="containerList">
             <div className="linksList">
-              <h2>Filters:</h2>
+              <h3>Filters:</h3>
 
               <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
 

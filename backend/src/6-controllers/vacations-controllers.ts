@@ -52,15 +52,15 @@ router.get("/vacations/images/:imageName" ,async(request: Request, response: Res
 })
 
 //Get vacation by id
-// router.get("/vacations/:vacationId", async(request: Request, response: Response, next: NextFunction) => {
-//     try {
-//         const vacationId = +request.params.vacationId
-//         const vacations = await logicVacation.getOneVacation(vacationId)
-//         response.json(vacations)
-//     } catch (err) {
-//         next(err)
-//     }
-// })
+router.get("/vacations/:vacationId", async(request: Request, response: Response, next: NextFunction) => {
+    try {
+        const vacationId = +request.params.vacationId
+        const vacations = await logicVacation.getOneVacation(vacationId)
+        response.json(vacations)
+    } catch (err) {
+        next(err)
+    }
+})
 
 //Add new vacation
 router.post("/vacations",  verifyAdmin,async(request: Request, response: Response, next: NextFunction) => {
@@ -86,13 +86,13 @@ router.delete("/vacations/:vacationId([0-9]+)",verifyAdmin, async(request: Reque
 })
 
 //Update vacation by id
-router.put("/vacations/:vacationId([0-9]+)",verifyAdmin, async(request: Request, response: Response, next: NextFunction) => {
+router.put("/vacations/:vacationId([0-9]+)", async(request: Request, response: Response, next: NextFunction) => {
     try {
         request.body.image = request.files?.image
        request.body.vacationId = +request.params.vacationId
         const vacation = new VacationdModel(request.body)
       const updateVacation = await logicVacation.updateVacation(vacation)
-        response.sendStatus(204).json(updateVacation)
+      response.json(updateVacation)
     } catch (err) {
         next(err)
     }

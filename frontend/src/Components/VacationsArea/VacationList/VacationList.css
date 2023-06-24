@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../Assets/Images/geography-42292_1280.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.779), rgba(173, 89, 5, 0.71)), url("../../../Assets/Images/bastei-3014467_1280.jpg");
   background-size: cover;
   background-position: center;
-  width: 80%;
+  width: 90%;
   margin-left: 2%;
   margin: 1%;
   box-shadow: white 2px 3px 4px 2px;
@@ -38,12 +38,16 @@ width: 1000px;
 top: 10%;
 
 }
+.VacationList h3{
+  font-size: 2rem;
+  color: white;
+}
 
 .VacationList h2 {
   position: relative;
   /* left: 2% !important; */
   font-size: 2rem;
-  color: rgb(241, 235, 232)!important;
+  color: rgb(204, 132, 96)!important;
   /* text-shadow: 8px 8px 8px 8px rgba(239, 243, 244, 0.927); */
   width: 100%;
 

@@ -59,7 +59,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         <div className="card-image-container">
 
         {isAdmin ? (<div className="buttonsCard">
-            <AdminButtons deletVacation={deleteMe} updateVaction={()=>{navigate("/update")} } />
+            <AdminButtons deletVacation={deleteMe} updateVaction={()=>{navigate(`/update/${props.vacation.vacationId}`)} } />
             </div>
           ) : (<div className="buttonsCard">
             <UserButtons vacation={props.vacation} user={props.user}  />

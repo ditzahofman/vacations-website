@@ -47,9 +47,12 @@ function AddVacation(): JSX.Element {
   return (
     <div className="AddVacation">
       <div>
+
       <form onSubmit={handleSubmit(send)}>
         <h2>Add Vacation</h2>
-        <ContinentSelectionForm onSubmit={register("continentId")} />
+
+        <ContinentSelectionForm  onSubmit={register('continentId')}/>
+
         <TextField label="Destination"   className="textField"
          {...register("destination",VacationdModel.destinationValidation) } 
          helperText={errors.destination?.message}
@@ -87,6 +90,7 @@ function AddVacation(): JSX.Element {
             onChange={handleImageChange}
             className="imgFile"
           />
+          
         </FormControl>
         {selectedImage && <img src={selectedImage} alt="Selected" />}
         <Button className="button" type="submit" variant="contained" color="primary">

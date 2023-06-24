@@ -4,7 +4,7 @@ import VacationdModel from "../Models/Vacation-model";
 
 export class VacationsState {
 
-    public vacations: VacationdModel[]
+    public vacations: VacationdModel[]=[]
     
 }
 
@@ -47,8 +47,9 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             break
 
         case vacationActionType.UpdateVacation:
-            const indexToUpdate = newState.vacations.findIndex(v => v.vacationId === action.paylod)
-            if (indexToUpdate > 0)
+            const indexToUpdate = newState.vacations.findIndex(v => v.vacationId === action.paylod.vacationId);
+            console.log(indexToUpdate)
+            if (indexToUpdate > -1)
                 newState.vacations[indexToUpdate] = action.paylod
             newState.vacations.sort((vacation1, vacation2) => new Date(vacation1.startDate).getTime() - new Date(vacation2.startDate).getTime())
             break
