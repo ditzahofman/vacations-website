@@ -106,16 +106,17 @@ class VacationService {
         await axios.delete(`${appConfig.followerUrl}${userId}/${vacationId}`)
 
         // send follwer to delete to redux 
-        vacationsStore.dispatch({ type: vacationActionType.DeleteFollower, paylod: vacationId })
+        vacationsStore.dispatch({ type: vacationActionType.DeleteFollower, paylod: vacationId ,userId})
 
     }
+
     public async addFollower(userId: number, vacationId: number): Promise<FollowerModel> {
 
         const response = await axios.post(appConfig.followerUrl, { userId, vacationId })
 
         const addFollower = response.data
         // send addFollwer to redux 
-        vacationsStore.dispatch({ type: vacationActionType.AddFollower, paylod: vacationId })
+        vacationsStore.dispatch({ type: vacationActionType.AddFollower, paylod: vacationId ,userId})
 
         return addFollower
 

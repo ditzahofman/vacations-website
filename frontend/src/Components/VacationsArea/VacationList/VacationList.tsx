@@ -84,7 +84,7 @@ function VacationList(): JSX.Element {
         <h2>AROUND THE WORLD</h2>
           <div className="containerList">
             <div className="linksList">
-              <h2>Hello {user.firstName} !</h2>
+              <h2>Adding:</h2>
               <Tooltip title="Add Vacations">
                 <IconButton className="filterButtons add" onClick={() => navigate("/add-vacation")}>
                   <AddIcon />
@@ -127,14 +127,14 @@ function VacationList(): JSX.Element {
             <div className="MyCards">
               <p className="listTitle">Dreams Vacations</p>
 
-              <GetVacationsForm onFilter={handleFilterChange} />
+              <GetVacationsForm />
 
               {currentVacations.length > 0 ? (
                 <>
                   {currentVacations.map((v) => (
                     <VacationCard key={v.vacationId} vacation={v} user={user} />
                   ))}
-                  <Tooltip title="All Vacations">
+                  {/* <Tooltip title="All Vacations">
                     <Button
                       variant="contained"
                       onClick={handleRefreshButtonClick}
@@ -150,7 +150,7 @@ function VacationList(): JSX.Element {
                     >
                       all Vacations
                     </Button>
-                  </Tooltip>
+                  </Tooltip> */}
                 </>
               ) : (<>
                 <p className="noFound">Sorry, no results have been found</p>

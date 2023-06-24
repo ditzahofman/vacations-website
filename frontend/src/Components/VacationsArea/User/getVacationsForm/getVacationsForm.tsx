@@ -5,30 +5,39 @@ import { useForm } from "react-hook-form";
 import { authStore } from "../../../../Redux/AuthState";
 import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
 import filterVacationsService from "../../../../Services/FilterVactionsService";
+import { useState } from "react";
+import VacationCard from "../../VacationCard/VacationCard";
 
-interface GetVacationProps {
-  onFilter: (filteredVacations: VacationModel[] | undefined) => void;
-}
 
-function GetVacationsForm(props: GetVacationProps): JSX.Element {
+function GetVacationsForm(): JSX.Element {
+
   const user = authStore.getState().user;
 
-  const { register, handleSubmit ,reset} = useForm<VacationModel>();
+  const [searched, setSearched] = useState(false);
+  let [vacationsPackage, setvacationsPackage] = useState<VacationModel[]>([])
 
- async function sendAndGet (vacation: VacationModel)  {
+  const { register, handleSubmit, reset } = useForm<VacationModel>();
+
+  async function sendAndGet(vacation: VacationModel) {
     try {
-      const vacationsPackage = filterVacationsService.filterByFormUser(
-
-        vacation.continentId,
-        vacation.startDate,
-        vacation.price
-      );
-      reset();
-      props.onFilter(vacationsPackage);
+      if (searched) {
+        reset();
+        setvacationsPackage([]);
+        setSearched(false);
+      } else {
+        vacationsPackage = filterVacationsService.filterByFormUser(
+          vacation.continentId,
+          vacation.startDate,
+          vacation.price
+        );
+        reset();
+        setvacationsPackage(vacationsPackage);
+        setSearched(true);
+      }
     } catch (error) {
       alert(error);
     }
-  };
+  }
 
   return (
     <div className="getVacationsForm">
@@ -58,10 +67,26 @@ function GetVacationsForm(props: GetVacationProps): JSX.Element {
           margin="normal"
           {...register("price")}
         />
-        <Button type="submit" variant="contained"  className="button">
-          Search
+        <Button
+          type="submit"
+          variant="contained"
+          className="button"
+          onClick={handleSubmit(sendAndGet)}
+        >
+          {searched ? "Clear Search" : "Search"}
         </Button>
-             </form>
+
+      </form>
+      <div className="filterVacations">
+        {vacationsPackage.length > 0 ? (
+          vacationsPackage.map((vacation) => (
+            <VacationCard key={vacation.vacationId} vacation={vacation} user={user} />
+          ))
+        ) : (
+          searched===true&&
+          <p className="noFound">Sorry, no results have been found</p>
+        )}
+      </div>
     </div>
   );
 }
@@ -70,5 +95,5 @@ export default GetVacationsForm;
 
 
 
-     
+
 

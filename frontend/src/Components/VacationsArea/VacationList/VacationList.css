@@ -46,9 +46,10 @@ top: 10%;
 .VacationList h2 {
   position: relative;
   /* left: 2% !important; */
-  font-size: 2rem;
+  font-size: 3rem;
   color: rgb(204, 132, 96)!important;
-  /* text-shadow: 8px 8px 8px 8px rgba(239, 243, 244, 0.927); */
+  text-shadow: 2px 5px 8px rgba(221, 216, 214, 0.927);
+  -webkit-text-stroke: 1px rgb(17, 26, 86);
   width: 100%;
 
 }
