@@ -3432,3 +3432,9 @@
 ----------------------------
 24.6.2023, 23:55:59 	 id 28 not exist
 ----------------------------
+25.6.2023, 4:45:13 	 id 134 not exist
+----------------------------
+25.6.2023, 4:45:37 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+25.6.2023, 4:46:12 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------

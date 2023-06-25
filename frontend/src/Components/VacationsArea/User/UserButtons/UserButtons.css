@@ -20,7 +20,7 @@
     color: rgb(11, 11, 61);
  
  }
-.card-actions {
+ .UserButtons .card-actions {
     display: flex;
     align-items: center;
     justify-content: space-between;

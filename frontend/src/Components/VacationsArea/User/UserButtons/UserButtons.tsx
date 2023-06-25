@@ -27,14 +27,14 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
         const userId = props.user.userId;
 
         if (isFollowing) {
-          // If already followed, send a delete request to remove the follower
+          // אם המשתמש כבר עוקב, שלח בקשת DELETE כדי להסיר את העוקב
           await vacationService.unFollower(userId, vacationId);
         } else {
-          // If not followed, send a post request to add the follower
+          // אם המשתמש אינו עוקב, שלח בקשת POST כדי להוסיף את העוקב
           await vacationService.addFollower(userId, vacationId);
         }
 
-        // Toggle the state after successful API call
+        // החלף את הסטטוס לאחר ביצוע הבקשה בהצלחה
         setIsFollowing((prevIsFollowing) => !prevIsFollowing);
       }
     } catch (error) {
@@ -62,5 +62,3 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
 }
 
 export default UserButtons;
-
-  

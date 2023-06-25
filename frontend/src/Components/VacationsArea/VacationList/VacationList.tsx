@@ -1,8 +1,8 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./VacationList.css";
 import vacationService from "../../../Services/VacationService";
 import VacationCard from "../VacationCard/VacationCard";
-import { Button, Checkbox, Fab, IconButton, Pagination } from "@mui/material";
+import { Button, Checkbox, IconButton, Pagination } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import RoleModel from "../../../Models/Role-model";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ import { authStore } from "../../../Redux/AuthState";
 import NavigationIcon from '@mui/icons-material/Navigation';
 import Chart from "../Admin/Chart/Chart";
 import CsvFile from "../Admin/CsvFile/CsvFile";
-;
+import QueryStatsSharpIcon from '@mui/icons-material/QueryStatsSharp';
 
 
 function VacationList(): JSX.Element {
@@ -45,7 +45,10 @@ function VacationList(): JSX.Element {
     }
 
     const unsubscribe = vacationsStore.subscribe(() => {
-      setVacations([]);
+      if(user.role==="Admin"){
+      setVacations([]);}
+      else{
+      setVacations(vacations)}
     });
 
     return () => {
@@ -58,13 +61,9 @@ function VacationList(): JSX.Element {
     setCurrentPage(1);
   };
 
-  function handleRefreshButtonClick() {
-    window.location.reload();
-
-  }
-
+  // Toggle the value of showList
   const handleListChart = () => {
-    setShowList(!showList); // Toggle the value of showList
+    setShowList(!showList); 
   };
 
   // Calculate pagination data
@@ -82,9 +81,9 @@ function VacationList(): JSX.Element {
         // Admin view
         <>
         <h2>AROUND THE WORLD</h2>
-          <div className="containerList">
+          <div className="containerAdmin">
             <div className="linksList">
-              <h2>Adding:</h2>
+              <h2>Managing</h2>
               <Tooltip title="Add Vacations">
                 <IconButton className="filterButtons add" onClick={() => navigate("/add-vacation")}>
                   <AddIcon />
@@ -118,67 +117,40 @@ function VacationList(): JSX.Element {
         // User view
         <>
           <div className="containerList">
-            <div className="linksList">
-              <h3>Filters:</h3>
-
+            
+            <div className="Cards">
+              <p className="listTitle">Dreams Vacations</p>
+              <div className="linksList">
               <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
 
             </div>
-            <div className="MyCards">
-              <p className="listTitle">Dreams Vacations</p>
-
               <GetVacationsForm />
 
               {currentVacations.length > 0 ? (
                 <>
+             
+                <h2>All vacations</h2>
                   {currentVacations.map((v) => (
                     <VacationCard key={v.vacationId} vacation={v} user={user} />
                   ))}
-                  {/* <Tooltip title="All Vacations">
-                    <Button
-                      variant="contained"
-                      onClick={handleRefreshButtonClick}
-                      style={{
-                        borderRadius: '0',
-                        backgroundColor: 'white',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        padding: '10px',
-                      }}
-                      className="filterButtons"
-                    >
-                      all Vacations
-                    </Button>
-                  </Tooltip> */}
                 </>
               ) : (<>
                 <p className="noFound">Sorry, no results have been found</p>
-                <Fab variant="extended" className="back">
-                  <NavigationIcon
-                    sx={{ mr: 2 }}
-                    onClick={handleRefreshButtonClick} />
-                  <b>back</b>
-                </Fab>
-
               </>
 
               )}
 
             </div>
-
-          </div>
-
-          <div className="pagination">
+            <div className="pagination">
             <Pagination
               count={Math.ceil(filteredVacations.length / vacationsPerPage)}
               page={currentPage}
               onChange={handlePageChange}
-              variant="outlined"
               shape="rounded"
               color="primary"
             />
 
+          </div>
           </div>
         </>
 

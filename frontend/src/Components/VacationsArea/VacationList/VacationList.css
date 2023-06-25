@@ -15,6 +15,25 @@
   padding-bottom:6%;
 }
 
+.VacationList .Cards {
+  position: relative;
+  left: 5%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.779), rgba(173, 89, 5, 0.71)), url("../../../Assets/Images/bastei-3014467_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  margin-left: 2%;
+  margin: 1%;
+  box-shadow: white 2px 3px 4px 2px;
+  padding-bottom:6%;
+}
+
 .MyCards>*{
 width: 1000px;
 }
@@ -39,8 +58,8 @@ top: 10%;
 
 }
 .VacationList h3{
-  font-size: 2rem;
-  color: white;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .VacationList h2 {
@@ -48,7 +67,7 @@ top: 10%;
   /* left: 2% !important; */
   font-size: 3rem;
   color: rgb(204, 132, 96)!important;
-  text-shadow: 2px 5px 8px rgba(221, 216, 214, 0.927);
+  text-shadow: 8px 8px 8px rgba(221, 216, 214, 0.927);
   -webkit-text-stroke: 1px rgb(17, 26, 86);
   width: 100%;
 
@@ -68,14 +87,18 @@ top: 10%;
 }
 
 .containerList {
+  width: 100%;
+  height: 100%;
+}
+.containerAdmin{
   display: flex;
   width: 100%;
   height: 100%;
 }
-
 .linksList {
-  margin-top: 1%;
-  margin-left: 1%;
+  /* margin-top: 1%; */
+ position: relative;
+ right: 0% !important;
 
  }
 .linksList> h2{
