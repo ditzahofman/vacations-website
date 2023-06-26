@@ -2,6 +2,7 @@
     margin-top: 2%;
   text-align: right;
   color: aliceblue !important;
+  display: flex;
 }
  
 .AuthMenu> a{

@@ -15,7 +15,7 @@ function Layout(): JSX.Element {
       </main>
       <footer className="main-footer">
           
-        <Footer/>
+        {/* <Footer/> */}
       </footer>
         </div>
     );

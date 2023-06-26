@@ -9,6 +9,7 @@ import { authStore } from "../../../../Redux/AuthState";
 
 import React, { useState } from "react";
 import VacationModel from "../../../../Models/Vacation-model";
+import notifyService from "../../../../Services/NotifyService";
 
 function AddVacation(): JSX.Element {
   const user = authStore.getState().user.role;
@@ -26,10 +27,10 @@ function AddVacation(): JSX.Element {
         return;
       }
       const addedVacation = await vacationService.addVacation(vacation);
-      alert("The vacation was successfully added");
+     notifyService.success("The vacation was successfully added");
       navigate("/home");
-    } catch (error) {
-      alert(error);
+    } catch (err: any) {
+      notifyService.error(err);
     }
   }
 

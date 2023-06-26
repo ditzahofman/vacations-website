@@ -6,38 +6,53 @@ import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import "./AuthMenu.css";
 import { useEffect, useState } from "react";
 import { authStore } from "../../../Redux/AuthState";
+import Profile from "../Profile/Profile";
+
 function AuthMenu(): JSX.Element {
+  const [user, setUser] = useState<UserModel>();
 
-    const [user, setUser] = useState<UserModel>()
+  useEffect(() => {
+    setUser(authStore.getState().user);
+    const unsubscribe = authStore.subscribe(() => {
+      setUser(authStore.getState().user);
+    });
+    return () => unsubscribe();
+  }, [user]);
 
-    useEffect(() => {
-        setUser(authStore.getState().user)
-        const unsubscribe = authStore.subscribe(() => {
-            setUser(authStore.getState().user);
-        });
-        
-        return () => unsubscribe();
-    }, [user])
-    return (
-        <div className="AuthMenu">
-            {!user &&
-                <>
-                    <span>Hello guest </span>
-                    &nbsp;
-                    <NavLink to={"/register"}> <AppRegistrationIcon/>Register |</NavLink>
-                    &nbsp;
-                    <NavLink to={"/login"}> <LoginIcon/>Login  </NavLink>
-                   
-                </>
-            }
-            {user&& <>
-                <span>Hello {user.firstName+" "+user.lastName}  |</span>
-                &nbsp;
-                <NavLink to={"/logout"}><LogoutIcon/>Logout |</NavLink>
-            </>
-            }
-        </div>
-    );
+  return (
+    <div className="AuthMenu">
+      {!user && (
+        <>
+          <span>Hello guest </span>
+          &nbsp;
+          <NavLink to={"/register"}>
+            <AppRegistrationIcon />
+            Register |
+          </NavLink>
+          &nbsp;
+          <NavLink to={"/login"}>
+            <LoginIcon />
+            Login
+          </NavLink>
+        </>
+      )}
+      {user && (
+        <>
+          <span>Hello {user.firstName + " " + user.lastName} |</span>
+          &nbsp;
+          <NavLink to={"/logout"}>
+            <LogoutIcon />
+            Logout |
+          </NavLink>
+        </>
+      )}
+      <div >
+   
+      </div>
+    </div>
+  );
 }
+
+
 
 export default AuthMenu;

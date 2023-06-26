@@ -25,11 +25,12 @@ function VacationList(): JSX.Element {
   useVerifyLoggedIn();
   const user = authStore.getState().user;
 
+  const [showForm, setShowForm] = useState(false);
   const [showList, setShowList] = useState(false)
   const [vacations, setVacations] = useState<VacationModel[]>([]);
   const [filteredVacations, setFilteredVacations] = useState<VacationModel[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const vacationsPerPage = 6;
+  const vacationsPerPage = 8;
 
   const navigate = useNavigate();
 
@@ -39,16 +40,18 @@ function VacationList(): JSX.Element {
         .getAllVacations()
         .then((v) => {
           setVacations(v);
-          setFilteredVacations(v); 
+          setFilteredVacations(v);
         })
         .catch((e) => alert(e));
     }
 
     const unsubscribe = vacationsStore.subscribe(() => {
-      if(user.role==="Admin"){
-      setVacations([]);}
-      else{
-      setVacations(vacations)}
+      if (user.role === "Admin") {
+        setVacations([]);
+      }
+      else {
+        setVacations(vacations)
+      }
     });
 
     return () => {
@@ -59,11 +62,12 @@ function VacationList(): JSX.Element {
   const handleFilterChange = (filteredVacations: VacationModel[]) => {
     setFilteredVacations(filteredVacations);
     setCurrentPage(1);
+    setShowForm(!showForm);
   };
 
   // Toggle the value of showList
   const handleListChart = () => {
-    setShowList(!showList); 
+    setShowList(!showList);
   };
 
   // Calculate pagination data
@@ -80,17 +84,17 @@ function VacationList(): JSX.Element {
       {user?.role === RoleModel.Admin ? (
         // Admin view
         <>
-        <h2>AROUND THE WORLD</h2>
+         
           <div className="containerAdmin">
             <div className="linksList">
-              <h2>Managing</h2>
+              {/* <h2></h2> */}
               <Tooltip title="Add Vacations">
                 <IconButton className="filterButtons add" onClick={() => navigate("/add-vacation")}>
                   <AddIcon />
                 </IconButton>
               </Tooltip>
 
-              <CsvFile/>
+              <CsvFile />
 
               <Tooltip title="chart">
                 <Checkbox
@@ -103,6 +107,7 @@ function VacationList(): JSX.Element {
               </Tooltip>
             </div>
             <div className="MyCards">
+            <h2>Managing</h2>
               {showList === false ? vacations?.map((v) => (
                 <VacationCard key={v.vacationId} vacation={v} user={user} />
               )) :
@@ -117,19 +122,19 @@ function VacationList(): JSX.Element {
         // User view
         <>
           <div className="containerList">
-            
-            <div className="Cards">
-              <p className="listTitle">Dreams Vacations</p>
-              <div className="linksList">
-              <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
 
-            </div>
-              <GetVacationsForm />
+            <div className="Cards">
+              <p className="listTitle">AROUND THE WORLD</p>
+              <div className="linksUser">
+                <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
+
+              </div>
+              {showForm && <GetVacationsForm />}
 
               {currentVacations.length > 0 ? (
                 <>
-             
-                <h2>All vacations</h2>
+
+                  <h2>***</h2>
                   {currentVacations.map((v) => (
                     <VacationCard key={v.vacationId} vacation={v} user={user} />
                   ))}
@@ -141,7 +146,12 @@ function VacationList(): JSX.Element {
               )}
 
             </div>
-            <div className="pagination">
+
+          </div>
+        </>
+
+      )}
+       <div className="pagination">
             <Pagination
               count={Math.ceil(filteredVacations.length / vacationsPerPage)}
               page={currentPage}
@@ -151,10 +161,6 @@ function VacationList(): JSX.Element {
             />
 
           </div>
-          </div>
-        </>
-
-      )}
     </div>
   );
 }

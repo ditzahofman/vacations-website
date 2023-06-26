@@ -8,6 +8,7 @@ import { useState, ChangeEvent } from "react";
 import NavbarForTheLittleScreen from "../NavbarFor THe Little Screen/NavbarForTheLittleScreen";
 
 import { authStore } from "../../../Redux/AuthState";
+import Profile from "../../AuthArea/Profile/Profile";
 function Menu(): JSX.Element {
   const user = authStore.getState().user
   const [selectedLink, setSelectedLink] = useState('');
@@ -48,14 +49,21 @@ function Menu(): JSX.Element {
         </IconButton>
        
       </div>
+      {/* <div className="profileAuth">
+      <Profile />
+      </div> */}
+     
        <Box className="authMenu">
+    
        <IconButton color="inherit" aria-label="auth-menu">
+      
          <AuthMenu />
        </IconButton>
      </Box>
         </>
       )}
     </Toolbar>
+  
   </AppBar>
     </div>
   );

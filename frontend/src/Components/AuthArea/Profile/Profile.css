@@ -1,3 +1,25 @@
 .Profile {
-	
+    position: absolute;	
+    top: 0%;
+    right: 2%;
+    width: 120px;
 }
+.Profile  .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Profile  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+  
+  .Profile  .text-field {
+    margin-bottom: 16px;
+  }
+  
+  .Profile   .button {
+    margin-bottom: 16px;
+  }

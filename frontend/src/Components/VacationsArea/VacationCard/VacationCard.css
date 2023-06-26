@@ -9,20 +9,20 @@
 }
 
 
-.card-content {
+.VacationCard .card-content {
   padding: 8px;
   height: 130px;
 
   
 }
-.buttonsCard{
+.VacationCard .buttonsCard{
   position: absolute;
 
  z-index: 1000;
 
 
 }
-.card-image {
+.VacationCard .card-image {
   height: 70%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.card-description {
+.VacationCard .card-description {
   margin-bottom: 8px;
   font-size: 14px;
   line-height: 1;
@@ -39,7 +39,7 @@
   max-height: 70%; /* Set a maximum height relative to the parent container */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important
 }
-.card-destination,
+.VacationCard  .card-destination,
 .card-dates {
   margin-bottom: 2px;
   font-size: 20px;
@@ -49,18 +49,18 @@
 
 
 
-.card-followers {
+.VacationCard  .card-followers {
   display: flex;
   align-items: center;
   color: gray;
   font-size: 12px;
 }
 
-.card-image-container {
+.VacationCard   .card-image-container {
   position: relative;
 }
 
-.location-icon {
+.VacationCard    .location-icon {
   position: absolute;
   bottom:  10%;
   left: 0;
@@ -69,7 +69,7 @@ font-size: larger;
 font-weight: 800;
 background-color: rgba(240, 248, 255, 0.452);
 }
-.price{
+.VacationCard    .price{
   border: solid 1px grey;
   background-color: orange;
   position: relative;
@@ -82,6 +82,8 @@ background-color: rgba(240, 248, 255, 0.452);
  font-weight: 800;
 
 }
-.detailsButton{
-  margin-top: 1%;
+.button{
+background-color: orange !important;
+color: aliceblue !important;
+border: solid 1px rgb(10, 10, 63) !important;
 }

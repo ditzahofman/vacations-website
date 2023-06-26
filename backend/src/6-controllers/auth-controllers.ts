@@ -10,7 +10,7 @@ router.get("/users" , async(request:Request,response:Response,next:NextFunction)
     try {
         const users = await authLogic.getAllUsers()
         response.json(users)   
-    } catch (err) {
+    } catch (err:any) {
         next(err)
     }
     
@@ -21,7 +21,7 @@ router.post("/register" , async(request:Request,response:Response,next:NextFunct
         const user = new UserModel(request.body)
         const token = await authLogic.register(user)
         response.json(token)   
-    } catch (err) {
+    } catch (err:any) {
         next(err)
     }
     
@@ -29,11 +29,12 @@ router.post("/register" , async(request:Request,response:Response,next:NextFunct
 
     router.post("/login" , async(request:Request,response:Response,next:NextFunction)=>{
         try {
+        
             const user = new CredentialsModel(request.body)
             
             const token = await authLogic.login(user)
             response.json(token)   
-        } catch (err) {
+        } catch (err:any) {
             next(err)
         }
         

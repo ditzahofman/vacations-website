@@ -15,12 +15,13 @@ export enum vacationActionType {
     UpdateVacation,
     AddFollower,
     DeleteFollower,
+    ClearVacations 
 
 }
 
 export interface VacationAction {
     type: vacationActionType
-    paylod: any
+    paylod?: any
 }
 
 export function vacationsReducer(currentState = new VacationsState(), action: VacationAction): VacationsState {
@@ -67,6 +68,10 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             newState.vacations[indexToDeleteFolowers].isFollowing = false
             newState.vacations[indexToDeleteFolowers].followerCount--
             break
+            
+        case vacationActionType.ClearVacations:
+        newState.vacations=[]
+        break   
     }
 
     return newState

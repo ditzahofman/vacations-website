@@ -7,18 +7,20 @@ import { Avatar, Box, Button, Checkbox, Container, CssBaseline, FormControlLabel
 import { NavLink } from "react-router-dom";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Copyright } from "@mui/icons-material";
+import notifyService from "../../../Services/NotifyService";
 
 function Login(): JSX.Element {
 
-  const { register, handleSubmit } = useForm<CredentialsModel>()
+  const { register, handleSubmit, formState} = useForm<CredentialsModel>()
   const navigate = useNavigate()
+
   async function send(credentials: CredentialsModel) {
     try {
-      authService.loggin(credentials)
-      alert("wellcome")
+     await  authService.loggin(credentials)
+      notifyService.success("wellcome Back!!")
       navigate("/home")
     } catch (err: any) {
-      alert(err.message)
+      notifyService.error(err)
     }
   }
   return (
@@ -49,7 +51,9 @@ function Login(): JSX.Element {
               name="email"
               autoComplete="email"
               autoFocus
-              {...register("email")}
+              error={!!formState.errors.email?.message}
+              helperText={formState.errors.email?.message}
+              {...register('email', CredentialsModel.emailValidation)}
             />
             <TextField
               margin="normal"
@@ -60,7 +64,9 @@ function Login(): JSX.Element {
               type="password"
               id="password"
               autoComplete="current-password"
-              {...register("password")}
+              error={!!formState.errors.password?.message}
+              helperText={formState.errors.password?.message}
+              {...register("password", CredentialsModel.passwordValidation)}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -68,6 +74,7 @@ function Login(): JSX.Element {
             />
             <Button
               type="submit"
+              disabled={Object.values(formState.dirtyFields).length < 2}
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}

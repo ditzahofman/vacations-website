@@ -67,7 +67,6 @@ async function register(newUser: UserModel): Promise<string> {
 }
 
 async function login(credentials: CredentialsModel): Promise<string> {
-
     const error = credentials.validate()
     if (error) throw new ValidationErrorModel(error)
 
@@ -85,6 +84,7 @@ async function login(credentials: CredentialsModel): Promise<string> {
     const token = cyber.getNewToken(user)
     return token
 }
+
 export default {
     getAllUsers,
     register,

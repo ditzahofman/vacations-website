@@ -1,8 +1,16 @@
+.Login{
+  /* background-image: url("src/Assets/Images/background1.jpg"); */
+}
+
 .login{
-  margin-top: 1%;
+  
    border: 1px solid rgb(58, 96, 222);
   box-sizing: border-box;
   display: inline-block;
+  background-color: rgba(240, 248, 255, 0.737);
+ 
+  height: 60% !important;
+ 
 }
 
 .lock{
@@ -11,5 +19,7 @@
 }
 .Login{
   width: 100%;
-  
+/* background-image:linear-gradient(45deg rgb(18, 25, 47),orange,red) ; */
+background-image:url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
+
 }

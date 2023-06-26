@@ -2,13 +2,14 @@ import { useNavigate } from "react-router-dom";
 import "./LogOut.css";
 import { useEffect } from "react";
 import authService from "../../../Services/AuthService";
+import notifyService from "../../../Services/NotifyService";
 
 function LogOut(): JSX.Element {
     const navigate = useNavigate()
 
     useEffect(() => {
         authService.logout()
-        alert("bye bye")
+       notifyService.success("bye bye")
         navigate("/home")
     }, [])
 

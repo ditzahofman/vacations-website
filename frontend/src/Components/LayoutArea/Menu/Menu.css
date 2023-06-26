@@ -44,9 +44,13 @@
  }
  
  .selectButton {
-   margin-left: 10px; /* Adjust the margin as needed */
+   margin-left: 10px; 
  }
- 
+ /* .Menu .profileAuth{
+  top: 5%;
+  position: absolute;
+  right: 2%;
+} */
  @media (max-width: 600px) {
    .selectButton {
      display: block;
@@ -54,8 +58,8 @@
       }
    
    .selectButton .MuiSelect-select {
-     padding: 8px 12px; /* Adjust the padding as needed */
-     font-size: 14px; /* Adjust the font size as needed */
+     padding: 8px 12px; 
+     font-size: 14px;
    }
    
    .MuiIconButton-label {

@@ -3438,3 +3438,45 @@
 ----------------------------
 25.6.2023, 4:46:12 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
 ----------------------------
+25.6.2023, 14:18:03 	 connect ECONNREFUSED ::1:3306
+----------------------------
+26.6.2023, 12:49:20 	 Incorrect email or password
+----------------------------
+26.6.2023, 13:30:55 	 Incorrect email or password
+----------------------------
+26.6.2023, 13:31:40 	 Incorrect email or password
+----------------------------
+26.6.2023, 13:52:17 	 undefined
+----------------------------
+26.6.2023, 13:58:22 	 undefined
+----------------------------
+26.6.2023, 13:58:50 	 undefined
+----------------------------
+26.6.2023, 14:24:28 	 undefined
+----------------------------
+26.6.2023, 14:28:19 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:29:05 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:29:27 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:33:02 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:33:03 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:33:10 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:33:15 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:33:23 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:36:02 	 undefined
+----------------------------
+26.6.2023, 14:36:07 	 undefined
+----------------------------
+26.6.2023, 14:39:42 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:40:34 	 Incorrect email or password
+----------------------------
+26.6.2023, 14:42:21 	 Incorrect email or password
+----------------------------

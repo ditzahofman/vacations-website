@@ -8,6 +8,7 @@ import vacationService from "../../../../Services/VacationService";
 import utils from "../../../../Utils/utils";
 import VacationdModel from "../../../../Models/Vacation-model";
 import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
+import notifyService from "../../../../Services/NotifyService";
 
 
 
@@ -47,10 +48,10 @@ function EditVacation(): JSX.Element {
      
      await vacationService.editVacation(vacation)
     
-      alert("The vacation was successfully added");
+      notifyService.success("The vacation was successfully edit");
       navigate("/home");
     } catch (error) {
-      alert(error);
+    notifyService.error(error);
     }
   }
 
