@@ -5,8 +5,12 @@ import vacationService from "../../../../Services/VacationService";
 import VacationdModel from "../../../../Models/Vacation-model";
 import {stringify} from 'csv-stringify/browser/esm/sync';
 import { IconButton, Tooltip } from "@mui/material";
+import useVerifyAdmin from "../../../../Utils/UseVerifyAdmin";
+import { useNavigate } from "react-router-dom";
 
 function CsvFile(): JSX.Element  {
+  useVerifyAdmin()
+  const navigate=useNavigate()
     const handleExport = async () => {
       // Make an API call to get the data
    
@@ -22,6 +26,7 @@ function CsvFile(): JSX.Element  {
           Followers:item.followerCount,
           Price:item.price
         };
+
       });
       
       // Convert the array of objects into a CSV string
@@ -36,6 +41,7 @@ function CsvFile(): JSX.Element  {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      navigate("/home")
     };
     return (
         <div className="CsvFile">

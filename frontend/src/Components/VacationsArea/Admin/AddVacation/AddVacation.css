@@ -1,40 +1,54 @@
+/* AddVacation.css */
+
 .AddVacation {
-  background-image: url("../../../../Assets/Images/background-g304829845_1920.jpg");
- 
+  background-image: url("../../../../Assets/Images/geography-42292_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .AddVacation form {
-    margin: 1rem;
-    padding: 1rem;
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-       grid-column: 2;
-    box-shadow: 1px 2px 4px 2px grey;
-    width: 400px;
-    min-width: 9rem;
-    align-items: left;
-background-color: rgba(240, 248, 255, 0.466);
-   
-  }
-form .imgFile {
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  grid-column: 2;
+  box-shadow: 1px 2px 4px 2px grey;
+  width: 30%;
+  min-width: 9rem;
+  align-items: left;
+  background-color: rgba(240, 248, 255, 0.89);
+}
+
+.AddVacation form .imgFile {
   position: relative;
   left: 40%;
   margin: 1%;
 }
-  form .textField{
-    margin: 1.5%;
+
+.AddVacation form .textField {
+  margin: 1.5%;
+}
+
+.AddVacation form > .button {
+  transition: all 0.1s;
+  border-radius: 0.5rem;
+  background-color: #eb8f51;
+  font-weight: bold;
+}
+
+.AddVacation form > .button:hover {
+  background-color: #eaa476;
+}
+
+.AddVacation form > .button:active {
+  background-color: #c17f53;
+}
+
+@media (max-width: 600px) {
+  .AddVacation form {
+    width: 80%;
+   
   }
-  form>.button {
-    transition: all 0.1s;
-    border-radius: 0.5rem;
-    background-color: #eb8f51;
-    font-weight: bold;
-  }
-  
- form>.button:hover {
-    background-color: #eaa476;
-  }
-  
-  form>.button:active {
-    background-color: #c17f53;
-  }
+}

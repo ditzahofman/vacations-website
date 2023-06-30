@@ -4,6 +4,7 @@ class VacationdModel {
     public vacationId: number
     public continentId: number
     public destination: string
+    public brief:string
     public description: string
     public startDate: string
     public endDate: string
@@ -17,6 +18,7 @@ class VacationdModel {
         this.vacationId = vacation.vacationId
         this.continentId = vacation.continentId
         this.destination = vacation.destination
+        this.brief=vacation.brief
         this.description = vacation.description
         this.startDate = vacation.startDate
         this.endDate = vacation.endDate
@@ -31,7 +33,8 @@ class VacationdModel {
         vacationId: joi.number().optional().positive(),
         continentId:joi.number().required().positive(),
         destination: joi.string().min(3).max(30).required(),
-        description: joi.string().min(5).max(1200).required(),
+        brief:joi.string().min(5).max(4000).required(),
+        description: joi.string().min(5).max(10000).required(),
         startDate: joi.string().required(),
         endDate: joi.string().required(),
         price: joi.number().required(),

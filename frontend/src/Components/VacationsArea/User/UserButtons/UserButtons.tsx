@@ -27,14 +27,14 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
         const userId = props.user.userId;
 
         if (isFollowing) {
-          // אם המשתמש כבר עוקב, שלח בקשת DELETE כדי להסיר את העוקב
+         
           await vacationService.unFollower(userId, vacationId);
         } else {
-          // אם המשתמש אינו עוקב, שלח בקשת POST כדי להוסיף את העוקב
+         
           await vacationService.addFollower(userId, vacationId);
         }
 
-        // החלף את הסטטוס לאחר ביצוע הבקשה בהצלחה
+      
         setIsFollowing((prevIsFollowing) => !prevIsFollowing);
       }
     } catch (error) {

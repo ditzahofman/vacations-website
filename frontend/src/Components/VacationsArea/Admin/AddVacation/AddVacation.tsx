@@ -4,15 +4,16 @@ import VacationdModel from "../../../../Models/Vacation-model";
 import { Button, FormControl, TextField } from "@mui/material";
 import vacationService from "../../../../Services/VacationService";
 import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
-import { useNavigate } from "react-router-dom";
-import { authStore } from "../../../../Redux/AuthState";
-
+import { useNavigate } from "react-router-dom"
 import React, { useState } from "react";
 import VacationModel from "../../../../Models/Vacation-model";
 import notifyService from "../../../../Services/NotifyService";
+import useVerifyAdmin from "../../../../Utils/UseVerifyAdmin";
 
 function AddVacation(): JSX.Element {
-  const user = authStore.getState().user.role;
+  useVerifyAdmin()
+
+
   const navigate = useNavigate();
 
 
@@ -27,7 +28,7 @@ function AddVacation(): JSX.Element {
         return;
       }
       const addedVacation = await vacationService.addVacation(vacation);
-     notifyService.success("The vacation was successfully added");
+      notifyService.success("The vacation was successfully added");
       navigate("/home");
     } catch (err: any) {
       notifyService.error(err);
@@ -49,55 +50,64 @@ function AddVacation(): JSX.Element {
     <div className="AddVacation">
       <div>
 
-      <form onSubmit={handleSubmit(send)}>
-        <h2>Add Vacation</h2>
+        <form onSubmit={handleSubmit(send)}>
+          <h2>Add Vacation</h2>
 
-        <ContinentSelectionForm  onSubmit={register('continentId')}/>
+          <ContinentSelectionForm onSubmit={register('continentId')} />
 
-        <TextField label="Destination"   className="textField"
-         {...register("destination",VacationdModel.destinationValidation) } 
-         helperText={errors.destination?.message}
-         focused />
-
-        <TextField label="Description"   className="textField"
-        {...register("description",VacationdModel.descriptionValidation)}
-        helperText={errors.description?.message}
-       focused />
-      
-        <TextField type="date" label="Start Date"   className="textField"
-         {...register("startDate",VacationdModel.startDateValidation)}
-         helperText={errors.startDate?.message}
-        focused />
-       
-        <TextField type="date" label="End Date"   className="textField"
-         {...register("endDate",VacationdModel.endDateValidation)} 
-         helperText={errors.endDate?.message}
-         focused 
-         />
-       
-        <TextField type="number" label="Price" 
-         {...register("price",VacationdModel.priceValidation)}
-         helperText={errors.price?.message}
-         focused />
-      
-        <FormControl>
-          <label htmlFor="image">Image</label>
-          <input
-            type="file"
-            id="image"
-            accept="image/*"
-            {...register("image",VacationdModel.imageValidation)}
-            required
-            onChange={handleImageChange}
-            className="imgFile"
+          <TextField label="Destination" className="textField"
+            {...register("destination", VacationdModel.destinationValidation)}
+            helperText={errors.destination?.message}
+            focused />
+          <TextField label="Brief" className="textField"
+            {...register("brief", VacationdModel.briefValidation)}
+            helperText={errors.brief?.message}
+            focused />
+            
+          <TextField
+            label="Description"
+            className="textField"
+            multiline
+            rows={6}
+            {...register("description", VacationdModel.descriptionValidation)}
+            helperText={errors.description?.message}
+            focused
           />
-          
-        </FormControl>
-        {selectedImage && <img src={selectedImage} alt="Selected" />}
-        <Button className="button" type="submit" variant="contained" color="primary">
-          Submit
-        </Button>
-      </form>
+
+          <TextField type="date" label="Start Date" className="textField"
+            {...register("startDate", VacationdModel.startDateValidation)}
+            helperText={errors.startDate?.message}
+            focused />
+
+          <TextField type="date" label="End Date" className="textField"
+            {...register("endDate", VacationdModel.endDateValidation)}
+            helperText={errors.endDate?.message}
+            focused
+          />
+
+          <TextField type="number" label="Price" className="textField"
+            {...register("price", VacationdModel.priceValidation)}
+            helperText={errors.price?.message}
+            focused />
+
+          <FormControl>
+            <label htmlFor="image">Image</label>
+            <input
+              type="file"
+              id="image"
+              accept="image/*"
+              {...register("image", VacationdModel.imageValidation)}
+              required
+              onChange={handleImageChange}
+              className="imgFile"
+            />
+
+          </FormControl>
+          {selectedImage && <img src={selectedImage} alt="Selected" />}
+          <Button className="button" type="submit" variant="contained" color="primary">
+            Submit
+          </Button>
+        </form>
       </div>
       <img />
     </div>

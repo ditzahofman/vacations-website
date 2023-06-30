@@ -2,7 +2,6 @@
 import "./Home.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
-import GetVacationsForm from "../../VacationsArea/User/getVacationsForm/getVacationsForm";
 import VacationList from "../../VacationsArea/VacationList/VacationList";
 import { authStore } from "../../../Redux/AuthState";
 import { useEffect, useState } from "react";
@@ -19,6 +18,7 @@ function Home(): JSX.Element {
 
     return () => unsubscribe();
   }, [setUser])
+  
   return (
     <div className="homeComponent">
       {user &&

@@ -28,11 +28,7 @@ function Menu(): JSX.Element {
       {isSmallScreen ? (
         <>
      <NavbarForTheLittleScreen/>
-     {user?.role==="Admin"&&
-        <IconButton  color="inherit" aria-label="travels" className="link">
-          <NavLink className="link" to={"/vacations"}><Flight /> Chart</NavLink>
-        </IconButton>}
-       <div >
+          <div >
         <img src={logo} alt="Logo"className="logoInLittleScreen" />
       </div>
       </>

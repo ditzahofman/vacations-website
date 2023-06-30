@@ -17,7 +17,7 @@ class VacationService {
 
     public async getAllVacations(): Promise<VacationdModel[]> {
         let vacations = vacationsStore.getState().vacations
-        if (vacations.length===0 ) {
+        if (vacations.length === 0) {
             const response = await axios.get<VacationModel[]>(appConfig.vacationUrl)
             vacations = response.data
             // send vacations to redux 
@@ -58,9 +58,10 @@ class VacationService {
 
     public async addVacation(vacation: VacationModel): Promise<void> {
         const formData = new FormData()
-      
+
         formData.append("continentId", vacation.continentId.toString())
         formData.append("destination", vacation.destination)
+        formData.append("brief", vacation.brief)
         formData.append("description", vacation.description)
         formData.append("startDate", vacation.startDate)
         formData.append("endDate", vacation.endDate)
@@ -74,20 +75,24 @@ class VacationService {
     }
 
     public async editVacation(vacation: VacationModel): Promise<void> {
-       
+
         const formData = new FormData()
-    
+
         formData.append("continentId", vacation.continentId.toString())
         formData.append("destination", vacation.destination)
+        formData.append("brief", vacation.brief)
         formData.append("description", vacation.description)
         formData.append("startDate", vacation.startDate)
         formData.append("endDate", vacation.endDate)
         formData.append("price", vacation.price.toString())
-        if(vacation.image) formData.append("image", vacation.image[0])        
-        const response = await axios.put(appConfig.vacationUrl+vacation.vacationId, formData)
+        formData.append("imageName", vacation.imageName)
+        formData.append("image", vacation.image[0])
+       console.log(vacation.imageName,"kjkk")
+
+        const response = await axios.put<VacationModel>(appConfig.vacationUrl + vacation.vacationId, formData)
         const updateVacation = response.data
-        vacationsStore.dispatch({ type:vacationActionType.UpdateVacation, paylod:updateVacation})
-       
+        vacationsStore.dispatch({ type: vacationActionType.UpdateVacation, paylod: updateVacation })
+        console.log(updateVacation)
 
     }
 
@@ -106,7 +111,7 @@ class VacationService {
         await axios.delete(`${appConfig.followerUrl}${userId}/${vacationId}`)
 
         // send follwer to delete to redux 
-        vacationsStore.dispatch({ type: vacationActionType.DeleteFollower, paylod: vacationId ,userId})
+        vacationsStore.dispatch({ type: vacationActionType.DeleteFollower, paylod: vacationId, userId })
 
     }
 
@@ -116,7 +121,7 @@ class VacationService {
 
         const addFollower = response.data
         // send addFollwer to redux 
-        vacationsStore.dispatch({ type: vacationActionType.AddFollower, paylod: vacationId ,userId})
+        vacationsStore.dispatch({ type: vacationActionType.AddFollower, paylod: vacationId, userId })
 
         return addFollower
 

@@ -3,10 +3,12 @@ import VacationModel from "../../../../Models/Vacation-model";
 import vacationService from "../../../../Services/VacationService";
 import { FaChartBar, FaChartPie } from 'react-icons/fa';
 import { Button } from '@mui/material';
+import useVerifyAdmin from '../../../../Utils/UseVerifyAdmin';
 const Canvas = require("canvasjs-react-charts");
 var CanvasJSChart = Canvas.CanvasJSChart;
 
 function Chart(): JSX.Element {
+  useVerifyAdmin()
   const [vacations, setVacations] = useState<VacationModel[]>([]);
   const [chartType, setChartType] = useState<'column' | 'pie'>('column');
 

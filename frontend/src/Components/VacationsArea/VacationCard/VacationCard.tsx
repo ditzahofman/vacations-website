@@ -18,29 +18,12 @@ import notifyService from "../../../Services/NotifyService";
 interface VacationCardProps {
   vacation: VacationModel
   user: UserModel
-
 }
 
 function VacationCard(props: VacationCardProps): JSX.Element {
-
-  const [isExpanded, setIsExpanded] = useState(false);
   const [openDialog, setOpenDialog] = useState(false);
-
-  const toggleExpandDescription = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  const renderDescription = () => {
-    if (isExpanded || props.vacation.description.length <= 100) {
-      return props.vacation.description;
-    } else {
-      return props.vacation.description.slice(0, 100) + '...';
-    }
-  };
   async function deleteMe() {
     try {
-      // // Validate if the admin is sure:
-      // if (!window.confirm("Are you sure?")) return;
       setOpenDialog(true);
     } catch (err: any) {
       notifyService.error(err);
@@ -60,7 +43,9 @@ function VacationCard(props: VacationCardProps): JSX.Element {
   function cancelDelete() {
     setOpenDialog(false);
   }
-
+  const handleDetailsClick = () => {
+    navigate(`/details/${props.vacation.vacationId}`);
+  };
   const navigate = useNavigate()
 
   const isAdmin = props.user.role === 'Admin'
@@ -93,7 +78,11 @@ function VacationCard(props: VacationCardProps): JSX.Element {
               src={appConfig.vacationImagesUrl + props.vacation.imageName}
               alt="Card Image"
             />
-
+            <div className="image-overlay">
+              <Button className="details-button" onClick={handleDetailsClick}>
+                More 
+              </Button>
+            </div>
             <div className="location-icon">
               <LocationOnIcon />{props.vacation.destination}
             </div>
@@ -106,19 +95,10 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             <Typography variant="body2" color="text.secondary" className="card-dates">
               <EventIcon />  {new Date(props.vacation.startDate).toLocaleDateString()}⇝{new Date(props.vacation.endDate).toLocaleDateString()}
             </Typography>
-            <Typography variant="body2" color="text.secondary" className="card-description">
-              {renderDescription()}
-            </Typography >
-            {props.vacation.description.length > 100 && (
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                onClick={toggleExpandDescription}
-                style={{ cursor: 'pointer', textDecoration: 'underline' }}
-              >
-                {isExpanded ? 'Read Less' : 'Read More'}
-              </Typography>
-            )}
+            <Typography variant="body2" color="text.secondary" className="brief">
+              <b>  {props.vacation.brief} </b>
+            </Typography>
+           
             <Dialog open={openDialog} onClose={cancelDelete}>
               <DialogTitle>Delete Vacation</DialogTitle>
               <DialogContent>
@@ -129,9 +109,6 @@ function VacationCard(props: VacationCardProps): JSX.Element {
                 <Button className="button" onClick={confirmDelete} autoFocus>Delete</Button>
               </DialogActions>
             </Dialog>
-            {/* <Button className="detailsButton" onClick={()=>{
-        
-          }}>More Details</Button> */}
           </CardContent>
 
         </Card>

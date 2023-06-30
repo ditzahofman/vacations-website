@@ -14,10 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import VacationsFilterButtons from "../User/VacationsFilterButtons/VacationsFilterButtons";
 import BarChartIcon from '@mui/icons-material/BarChart';
 import { authStore } from "../../../Redux/AuthState";
-import NavigationIcon from '@mui/icons-material/Navigation';
 import Chart from "../Admin/Chart/Chart";
 import CsvFile from "../Admin/CsvFile/CsvFile";
-import QueryStatsSharpIcon from '@mui/icons-material/QueryStatsSharp';
+
 
 
 function VacationList(): JSX.Element {
@@ -50,18 +49,19 @@ function VacationList(): JSX.Element {
         setVacations([]);
       }
       else {
-        setVacations(vacations)
+        setVacations([])
       }
     });
 
     return () => {
       unsubscribe();
     };
-  }, [user, vacations]);
+  }, [user]);
 
   const handleFilterChange = (filteredVacations: VacationModel[]) => {
     setFilteredVacations(filteredVacations);
     setCurrentPage(1);
+    
     setShowForm(!showForm);
   };
 
@@ -84,10 +84,8 @@ function VacationList(): JSX.Element {
       {user?.role === RoleModel.Admin ? (
         // Admin view
         <>
-         
           <div className="containerAdmin">
             <div className="linksList">
-              {/* <h2></h2> */}
               <Tooltip title="Add Vacations">
                 <IconButton className="filterButtons add" onClick={() => navigate("/add-vacation")}>
                   <AddIcon />
@@ -107,33 +105,28 @@ function VacationList(): JSX.Element {
               </Tooltip>
             </div>
             <div className="MyCards">
-            <h2>Managing</h2>
-              {showList === false ? vacations?.map((v) => (
+              <h2>Managing</h2>
+              {showList === false ? currentVacations ?.map((v) => (
                 <VacationCard key={v.vacationId} vacation={v} user={user} />
               )) :
                 <Chart />
               }
-
             </div>
-
           </div>
         </>
       ) : (
         // User view
         <>
           <div className="containerList">
-
             <div className="Cards">
               <p className="listTitle">AROUND THE WORLD</p>
               <div className="linksUser">
                 <VacationsFilterButtons vacations={vacations} onFilterChange={handleFilterChange} />
-
               </div>
               {showForm && <GetVacationsForm />}
 
               {currentVacations.length > 0 ? (
                 <>
-
                   <h2>***</h2>
                   {currentVacations.map((v) => (
                     <VacationCard key={v.vacationId} vacation={v} user={user} />
@@ -151,16 +144,17 @@ function VacationList(): JSX.Element {
         </>
 
       )}
-       <div className="pagination">
-            <Pagination
-              count={Math.ceil(filteredVacations.length / vacationsPerPage)}
-              page={currentPage}
-              onChange={handlePageChange}
-              shape="rounded"
-              color="primary"
-            />
+      
+      <div className="pagination">
+        <Pagination
+          count={Math.ceil(filteredVacations.length / vacationsPerPage)}
+          page={currentPage}
+          onChange={handlePageChange}
+          shape="rounded"
+          color="primary"
+        />
 
-          </div>
+      </div>
     </div>
   );
 }

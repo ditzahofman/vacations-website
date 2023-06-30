@@ -7,6 +7,7 @@ import { UseFormRegisterReturn } from "react-hook-form";
 
 interface ContinentSelectionFormProps {
   onSubmit: UseFormRegisterReturn<"continentId">;
+  defaultValue?:number
 }
 
 
@@ -42,10 +43,11 @@ vacationService.getAllContinents()
           onChange={getValueFromSelect}
           required
           fullWidth
+          defaultValue={props.defaultValue}
           {...props.onSubmit}
         >
           {continent.map((c) => (
-            <MenuItem className="option" key={c.continentId} value={c.continentId}>
+            <MenuItem className="option" key={c.continentId} value={c.continentId} defaultChecked>
               {c.continentName}  
             </MenuItem>
           ))}

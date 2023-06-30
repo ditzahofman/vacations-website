@@ -1,58 +1,79 @@
-.getVacationsForm{
+.getVacationsForm {
   width: 90%;
-    position: relative;
+  position: relative;
   text-align: center;
   border: solid 2px orange;
   padding: 1%;
- 
 }
-.getVacationsForm form {
-    position: relative;
-    display: flex;
+
+@media (max-width: 768px) {
+  .getVacationsForm form {
+    flex-direction: column;
     align-items: center;
-    background-color:rgba(255, 255, 255, 0.025);
-    border: solid rgba(194, 204, 216, 0.571) 1px;
-    border-radius: 4%;
-     }
-  
-.getVacationsForm .MuiTextField-root {
-    margin-right: 16px;
-    margin-bottom: 16px;
   }
   
-  .getVacationsForm .textField {
-    flex: 1;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    background-color: aliceblue;
+  .getVacationsForm .MuiTextField-root,
+  .getVacationsForm .button {
+    width: 100%;
+    margin-right: 0;
   }
   
+  .getVacationsForm  {
+    width: 100%;
+  }
+
   .getVacationsForm .button {
     margin-top: 16px;
   }
-  
-  .getVacationsForm form {
-    width:80%;
-    margin-left: 10%;
-    padding: 1%;
-    box-shadow: 1px 2px 4px 1px rgb(216, 232, 228);
-  }
-  .getVacationsForm div{
- justify-content: center;
- 
-  }
+}
 
-  .getVacationsForm .filterFormUser{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .getVacationsForm , h2{
-margin: 0%;
-color: rgb(29, 51, 83) !important;
-  }
-  
-  .getVacationsForm  .filterVacations{
-    display: flex;
-    flex-wrap: wrap;
-  }
+.getVacationsForm form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.025);
+  border: solid rgba(194, 204, 216, 0.571) 1px;
+  border-radius: 4%;
+}
+
+.getVacationsForm .MuiTextField-root {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.getVacationsForm .textField {
+  flex: 1;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: aliceblue;
+}
+
+.getVacationsForm .button {
+  margin-top: 16px;
+}
+
+.getVacationsForm form {
+  width: 80%;
+  margin-left: 10%;
+  padding: 1%;
+  box-shadow: 1px 2px 4px 1px rgb(216, 232, 228);
+}
+
+.getVacationsForm div {
+  justify-content: center;
+}
+
+.getVacationsForm .filterFormUser {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.getVacationsForm h2 {
+  margin: 0%;
+  color: rgb(29, 51, 83) !important;
+}
+
+.getVacationsForm .filterVacations {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -20,7 +20,7 @@ class NotifyService {
     types: [
       {
         type: 'success',
-        backgroundColor: 'orange', // Use the custom CSS class for success notifications
+        backgroundColor: 'orange', 
       },
     ],
   });

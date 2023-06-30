@@ -3480,3 +3480,565 @@
 ----------------------------
 26.6.2023, 14:42:21 	 Incorrect email or password
 ----------------------------
+28.6.2023, 1:55:11 	 connect ECONNREFUSED ::1:3306
+----------------------------
+28.6.2023, 18:40:50 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 18:40:59 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 18:41:13 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 18:41:24 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 18:41:30 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 18:41:36 	 ER_ROW_IS_REFERENCED_2: Cannot delete or update a parent row: a foreign key constraint fails (`vacations`.`followers`, CONSTRAINT `followers_ibfk_1` FOREIGN KEY (`vacationId`) REFERENCES `vacation` (`vacationId`))
+----------------------------
+28.6.2023, 19:42:27 	 connect ECONNREFUSED ::1:3306
+----------------------------
+28.6.2023, 21:13:08 	 connect ECONNREFUSED ::1:3306
+----------------------------
+28.6.2023, 21:13:10 	 connect ECONNREFUSED ::1:3306
+----------------------------
+29.6.2023, 0:40:15 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 0:40:19 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 0:40:47 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 0:41:52 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 0:41:53 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 0:41:55 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 2:36:40 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:40 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:40 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:40 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:52 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:52 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:52 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 2:36:52 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+29.6.2023, 3:24:38 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 3:24:42 	 Route /api/vacations/ not exist
+----------------------------
+29.6.2023, 12:29:22 	 connect ECONNREFUSED ::1:3306
+----------------------------
+29.6.2023, 13:23:23 	 You are not logged in
+----------------------------
+29.6.2023, 13:23:32 	 You are not logged in
+----------------------------
+29.6.2023, 13:24:38 	 You are not logged in
+----------------------------
+29.6.2023, 15:26:54 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:26:54 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\bbc2a514-bed9-4179-b3b3-e71fc2a9321c.jpg'
+----------------------------
+29.6.2023, 15:27:01 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:27:01 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\bbc2a514-bed9-4179-b3b3-e71fc2a9321c.jpg'
+----------------------------
+29.6.2023, 15:27:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:27:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\bbc2a514-bed9-4179-b3b3-e71fc2a9321c.jpg'
+----------------------------
+29.6.2023, 15:27:25 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\bbc2a514-bed9-4179-b3b3-e71fc2a9321c.jpg'
+----------------------------
+29.6.2023, 15:27:43 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\66e7d867-0dd7-4b76-bae1-e9d2903f7028.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:28:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:28:28 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\66e7d867-0dd7-4b76-bae1-e9d2903f7028.jpg'
+----------------------------
+29.6.2023, 15:28:35 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:28:35 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:28:35 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:28:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:28:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:28:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:28:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:28:47 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:29:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:30:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:32:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:36:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:37:43 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 15:38:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c64fc9e3-9efc-499d-b92c-0880d1cbe947.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 15:38:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:38:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:38:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:38:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:38:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:38:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:38:32 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:38:32 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:41:07 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:41:36 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 15:42:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:20:01 	 connect ECONNREFUSED ::1:3306
+----------------------------
+29.6.2023, 20:20:22 	 Incorrect email or password
+----------------------------
+29.6.2023, 20:20:33 	 Incorrect email or password
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:20:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:20:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c988fa4c-41f8-49b5-b56a-b2c3461525c9.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:21:05 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:21:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:22:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:22:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:26:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:27:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:27:11 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\cf497c8f-6886-49f9-8250-3371a24622de.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:27:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\cf497c8f-6886-49f9-8250-3371a24622de.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:27:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\cf497c8f-6886-49f9-8250-3371a24622de.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:29:04 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:29:06 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\fe3138c6-16e0-4a99-aed6-3b9498d09469.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\cf497c8f-6886-49f9-8250-3371a24622de.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:29:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:29:41 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\cf497c8f-6886-49f9-8250-3371a24622de.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\b7aedca3-8bee-4b6e-949d-b8451aa12aa7.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:29:48 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:30:14 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\b7aedca3-8bee-4b6e-949d-b8451aa12aa7.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:30:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:30:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:32:20 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:32:46 	 ENOENT: no such file or directory, unlink './src/1-assets/images/8304bc12-035f-4b2d-a6e2-c046570f44ec.jpg'
+----------------------------
+29.6.2023, 20:32:53 	 id 47 not exist
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\f6d7cbed-5c01-4d67-99ab-5a93890f9121.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\4522bfa8-08e4-461d-9c65-780d5cf6aa31.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\6c8fbda4-b38d-4418-8016-02a664087e57.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\2acf94b1-0af9-49b7-b01e-48c038117f88.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\c5234127-a7c4-436e-b804-10468c90db21.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\7aeaf5a4-da14-4254-b6ff-664cf8aef1cc.jpg'
+----------------------------
+29.6.2023, 20:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\62b76788-996c-4625-962c-76d72760f72b.jpg'
+----------------------------
+29.6.2023, 20:56:08 	 ER_BAD_NULL_ERROR: Column 'imageName' cannot be null
+----------------------------
+29.6.2023, 21:47:08 	 You are not logged in
+----------------------------
+29.6.2023, 21:48:30 	 The "path" argument must be of type string. Received undefined
+----------------------------
+29.6.2023, 21:50:15 	 id 9 not exist
+----------------------------
+29.6.2023, 22:01:49 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\d506c81c-c5e3-4908-9016-7b0f2b1af551.jpg'
+----------------------------
+29.6.2023, 22:01:49 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:01:50 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\d506c81c-c5e3-4908-9016-7b0f2b1af551.jpg'
+----------------------------
+29.6.2023, 22:01:59 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:02:10 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:02:26 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:10:50 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:11:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:11:25 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:14:03 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:16:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:16:42 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 22:17:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\43092972-004a-461c-87f4-dd7d9bff9ee7.jpg'
+----------------------------
+29.6.2023, 23:01:13 	 "email" must be a valid email
+----------------------------
+29.6.2023, 23:04:39 	 Incorrect email or password
+----------------------------
+29.6.2023, 23:04:49 	 Incorrect email or password
+----------------------------
+29.6.2023, 23:05:02 	 Incorrect email or password
+----------------------------
+29.6.2023, 23:05:45 	 This email :ditza@gmail.com  has already been taken!
+----------------------------
+29.6.2023, 23:06:58 	 This email :ditza@gmail.com  has already been taken!
+----------------------------
+29.6.2023, 23:07:59 	 Incorrect email or password
+----------------------------
+29.6.2023, 23:12:00 	 "lastName" length must be less than or equal to 10 characters long
+----------------------------
+30.6.2023, 2:44:12 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
