@@ -4,11 +4,15 @@ import vacationService from "../../../../Services/VacationService";
 import { FaChartBar, FaChartPie } from 'react-icons/fa';
 import { Button } from '@mui/material';
 import useVerifyAdmin from '../../../../Utils/UseVerifyAdmin';
+import notifyService from '../../../../Services/NotifyService';
+
+
 const Canvas = require("canvasjs-react-charts");
 var CanvasJSChart = Canvas.CanvasJSChart;
 
 function Chart(): JSX.Element {
-  useVerifyAdmin()
+useVerifyAdmin()
+
   const [vacations, setVacations] = useState<VacationModel[]>([]);
   const [chartType, setChartType] = useState<'column' | 'pie'>('column');
 
@@ -19,7 +23,7 @@ function Chart(): JSX.Element {
         setVacations(v);
       })
       .catch((err: any) => {
-        alert(err);
+        notifyService.error(err);
       });
   }, []);
 
@@ -32,8 +36,18 @@ function Chart(): JSX.Element {
     exportEnabled: true,
     animationEnabled: true,
     title: {
-      text: "Vacation Follower Count",
+      text: "Vacations Report",
     },
+    
+axisX: {
+  interval: 1,
+  labelMaxWidth: 100,
+  labelWrap: true,
+  labelAutoFit: true,
+  labelFontSize: 12,
+  labelAngle: -45,
+  title: "Destinations",
+},
     data: [
       {
         type: chartType,
@@ -41,7 +55,7 @@ function Chart(): JSX.Element {
         toolTipContent: chartType === 'pie' ? "<b>{label}</b>: {y}%" : undefined,
         showInLegend: chartType === 'pie',
         legendText: "{label}",
-        indexLabelFontSize: 16,
+        indexLabelFontSize: 12,
         indexLabel: chartType === 'pie' ? "{label} - {y}%" : undefined,
         dataPoints: dataPoints,
       },
@@ -56,7 +70,7 @@ function Chart(): JSX.Element {
     <div className="Chart">
 
 <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-  <Button className="buttonMode" style={{ backgroundColor: 'white',height:"50px" ,fontSize:"30px"}} onClick={handleChartTypeChange}>
+  <Button className="buttonMode" style={{ backgroundColor: 'white',height:"50px" ,fontSize:"20px"}} onClick={handleChartTypeChange}>
 
     {chartType === 'column' ? <FaChartBar /> : <FaChartPie />}
   </Button>

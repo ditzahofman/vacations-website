@@ -14,17 +14,13 @@ function CsvFile(): JSX.Element  {
     const handleExport = async () => {
       // Make an API call to get the data
    
-      const data = await vacationService.getAllVacations()
+      const vacationFollowers = await vacationService.getAllVacations()
       
       // Format the data into an array of objects
-      const csvData = data.map(item => {
+      const csvData = vacationFollowers.map(item => {
         return {
         Destination:item.destination,
-         Description: item.description,
-          StartDate: item.startDate,
-          endDate:item.endDate,
-          Followers:item.followerCount,
-          Price:item.price
+       Followers:item.followerCount
         };
 
       });
@@ -37,7 +33,7 @@ function CsvFile(): JSX.Element  {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'data.csv');
+      link.setAttribute('download', 'vacation Followers.csv');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

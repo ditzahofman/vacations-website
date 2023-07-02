@@ -12,7 +12,9 @@ export default function useVerifyAdmin() {
         const userRole = authStore.getState().user?.role;
 
         if (!user) {
+            notifyService.error("You are not logged in!");
             navigate("/login");
+          
         }
 else{
         if (userRole !== "Admin") {

@@ -111,6 +111,9 @@ async function addVacation(vacation: VacationdModel): Promise<VacationdModel> {
     const error = vacation.validate()
     if (error) throw new ValidationErrorModel(error)
 
+    if (await isDuplicatedVacation(vacation)) {
+        throw new ValidationErrorModel(`A vacation to ${vacation.destination} on these dates is in the list of vacations`);
+      }
    // Save image to disk if new image was uploaded
    if (vacation.image) {
        // Save new image to disk
@@ -150,6 +153,23 @@ async function deleteVacation(id: number): Promise<void> {
     fs.unlinkSync("./src/1-assets/images/" + vacation.imageName);
 
 }
+
+// Duplication validation
+const isDuplicatedVacation = async (vacation: VacationdModel): Promise<boolean> => {
+    // Query
+    const sql = `
+      SELECT COUNT(*) AS count
+      FROM vacation
+      WHERE  continentId = ? AND destination = ?AND brief = ? AND description = ? AND startDate = ? AND endDate = ? AND price = ?
+    `;
+  
+    // Execute
+    const result = await dal.execute(sql, [vacation.continentId ,vacation.destination, vacation.brief,vacation.description, vacation.startDate, vacation.endDate, vacation.price]);
+    
+    // Check if already exists
+    return result[0].count > 0;
+  };
+
 // Images path
 const imagesPath = path.join(__dirname, '..', '1-assets', 'images');
 

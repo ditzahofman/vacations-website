@@ -37,14 +37,21 @@ class VacationdModel{
             return true;
           }
       }
+      public static updateStartDateValidation = {
+        required: { value: true, message: 'Missing start date' }
+          }
       public static endDateValidation = {
         required: { value: true, message: 'Missing end date' }
       }
+      
       public static priceValidation = {
         required: { value: true, message: 'Missing price' },
         min: { value: 1, message: 'Invalid price' },
         max:{value:10000 , message:"Do not enter a price higher than 10000"}
       }
+
+      
+      
       public static imageValidation = {
         required: { value: true, message: 'Missing image' }
       }

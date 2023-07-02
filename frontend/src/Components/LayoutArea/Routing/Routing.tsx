@@ -4,12 +4,14 @@ import Home from "../../HomeArea/Home/Home";
 import Register from "../../AuthArea/Register/Register";
 import Login from "../../AuthArea/Login/Login";
 import LogOut from "../../AuthArea/LogOut/LogOut";
-import VacationList from "../../VacationsArea/VacationList/VacationList";
+import VacationList from "../../VacationsArea/SharedArea/VacationList/VacationList";
 import AddVacation from "../../VacationsArea/Admin/AddVacation/AddVacation";
 import Chart from "../../VacationsArea/Admin/Chart/Chart";
 import EditVacation from "../../VacationsArea/Admin/EditVacation/EditVacation";
 import CsvFile from "../../VacationsArea/Admin/CsvFile/CsvFile";
-import VacationDetails from "../../VacationsArea/VacationDetails/VacationDetails";
+import VacationDetails from "../../VacationsArea/SharedArea/VacationDetails/VacationDetails";
+import About from "../../AboutArea/About/About";
+
 
 
 
@@ -17,8 +19,9 @@ import VacationDetails from "../../VacationsArea/VacationDetails/VacationDetails
 function Routing(): JSX.Element {
     return (
         <div className="Routing">
+           
             <Routes>
-                
+           
                 <Route path="/home" element={<Home />}></Route>
                 <Route path="/update/:vacationId" element={<EditVacation/>}></Route>
                 <Route path="/add-vacation" element={<AddVacation/>}></Route>
@@ -28,6 +31,7 @@ function Routing(): JSX.Element {
                 <Route path="/logout" element={<LogOut />}></Route>
                 <Route path="/chart" element={<Chart />}></Route>
                 <Route path="/csv" element={ <CsvFile />}></Route>
+                <Route path="/about" element={ <About/>}></Route>
                 <Route path="/" element={<Home />}></Route>
             </Routes>
         </div>

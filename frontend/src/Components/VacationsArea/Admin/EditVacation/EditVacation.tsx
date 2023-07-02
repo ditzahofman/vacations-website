@@ -1,16 +1,16 @@
 import { useForm } from "react-hook-form";
 import "./EditVacation.css";
-import { Button, FormControl, TextField } from "@mui/material";
+import { Button, FormControl, IconButton, TextField } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { BaseSyntheticEvent, useEffect, useState } from "react";
 import vacationService from "../../../../Services/VacationService";
 import utils from "../../../../Utils/utils";
 import VacationdModel from "../../../../Models/Vacation-model";
-import ContinentSelectionForm from "../../continentSelectionForm/continentSelectionForm";
+import ContinentSelectionForm from "../../SharedArea/continentSelectionForm/continentSelectionForm";
 import notifyService from "../../../../Services/NotifyService";
 import useVerifyAdmin from "../../../../Utils/UseVerifyAdmin";
-import continentModel from "../../../../Models/Continent-model";
 import appConfig from "../../../../Utils/AppConfig";
+import { PhotoCamera } from "@mui/icons-material";
 
 
 
@@ -23,7 +23,8 @@ function EditVacation(): JSX.Element {
 
   const { register, handleSubmit, setValue, formState: { errors }, setError } = useForm<VacationdModel>();
   const [vacation, setVacation] = useState<VacationdModel>(null);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedFile, setSelectedFile] = useState<File>();
+  const [preview, setPreview] = useState<string>();
 
   useEffect(() => {
     const id = +params.vacationId;
@@ -38,12 +39,31 @@ function EditVacation(): JSX.Element {
         setValue("startDate", utils.formatDate(v.startDate));
         setValue("endDate", utils.formatDate(v.endDate));
         setValue("price", v.price);
-        setValue("imageName", v.imageName);
+        setValue("imageName", v?.imageName);
       })
       .catch((err) => alert(err.message));
   }, []);
 
+  // On selected file changes
+  useEffect(() => {
+    if (!selectedFile) {
+      setPreview(undefined);
+      return;
+    }
+    const objectUrl = URL.createObjectURL(selectedFile);
+    setPreview(objectUrl);
+    // Free memory when ever this component is unmounted
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [selectedFile]);
 
+  // Set selected file
+  const onSelectFile = (e: BaseSyntheticEvent): void => {
+    if (!e.target.files || e.target.files.length === 0) {
+      setSelectedFile(undefined);
+      return;
+    }
+    setSelectedFile(e.target.files[0]);
+  };
 
   async function send(vacation: VacationdModel): Promise<void> {
     try {
@@ -62,21 +82,8 @@ function EditVacation(): JSX.Element {
     }
   }
 
-  const imageChange = (e: any) => {
-    if (e.target.files && e.target.files.length > 0) {
-      setSelectedImage(e.target.files[0]);
-    }
-  };
-  // const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   const file = event.target.files?.[0];
-  //   if (file) {
-  //     const reader = new FileReader();
-  //     reader.onloadend = () => {
-  //       setSelectedImage(reader.result as string);
-  //     };
-  //     reader.readAsDataURL(file);
-  //   }
-  // }
+ 
+
 
   return (
     <div className="EditVacation">
@@ -92,69 +99,62 @@ function EditVacation(): JSX.Element {
             <ContinentSelectionForm
               onSubmit={register("continentId")}
               defaultValue={vacation.continentId}
+              
             />
           )}
+          <div className="errorContinent">{errors.continentId?.message}</div>
+          
           <TextField label="Destination" className="textField"
             {...register("destination", VacationdModel.destinationValidation)}
-            helperText={errors.destination?.message}
-            focused
-          />
+            focused />
+          <div className="error">{errors.destination?.message}</div>
+
           <TextField label="Brief" className="textField"
             {...register("brief", VacationdModel.briefValidation)}
-            helperText={errors.brief?.message}
             focused />
-            
+          <div className="error">{errors.brief?.message}</div>
+
           <TextField
             label="Description"
             className="textField"
             multiline
             rows={6}
             {...register("description", VacationdModel.descriptionValidation)}
-            helperText={errors.description?.message}
             focused
           />
+          <div className="error">{errors.description?.message}</div>
 
           <TextField type="date" label="Start Date" className="textField"
-            {...register("startDate", VacationdModel.startDateValidation)}
+            {...register("startDate", VacationdModel.updateStartDateValidation)}
             focused />
+          <div className="error">{errors.startDate?.message}</div>
 
           <TextField type="date" label="End Date" className="textField"
             {...register("endDate", VacationdModel.endDateValidation)}
-            helperText={errors.endDate?.message}
             focused
           />
+          <div className="error">{errors.endDate?.message}</div>
 
           <TextField type="number" label="Price" className="textField"
             {...register("price", VacationdModel.priceValidation)}
-            helperText={errors.price?.message}
             focused />
-          <label>Image: </label>
-          <img src={vacation && appConfig.vacationImagesUrl + vacation?.imageName} />
-          <input type="file" accept="image/*" onChange={imageChange} defaultValue={vacation?.imageName} {...register("image")} />
-          {/* {vacation !== null && (
-          <FormControl
-            style={{
-              backgroundImage: `url(${appConfig.vacationImagesUrl}${vacation?.imageName})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              height: '100%',
-            }}
-          >
-            <label htmlFor="image">Image</label>
-            <input
-              type="file"
-              id="image"
-              accept="image/*"
-              {...register("image", VacationdModel.imageValidation)}
-              required
-              onChange={imageChange}
-              className="imgFile"
-            />
-            {selectedImage && <img src={selectedImage} alt="Selected" />}
-          </FormControl>
-        )} */}
-
-
+          <div className="error">{errors.price?.message}</div>
+           
+           <div className="Preview">
+            <IconButton color="primary" aria-label="upload picture" component="label" title="Select a picture">
+              <input hidden type="file" accept="image/*" onChangeCapture={onSelectFile} {...register("image")} />
+            <PhotoCamera />
+            </IconButton>
+            {
+              preview ?
+              <img src={preview} width="50%"  alt={vacation?.imageName} /> : // preview for new uploaded image
+              <>
+                {/* preview for current image from backend */}
+                <img src={appConfig.vacationImagesUrl + vacation?.imageName} width="50%" alt={vacation?.imageName} />
+                {/* <input type="hidden" {...register("imageName")} /> */}
+              </>
+            }
+          </div>
           <Button className="button" type="submit" variant="contained" color="primary">
             Submit
           </Button>

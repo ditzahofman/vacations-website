@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import { AppBar, IconButton, Toolbar, SelectChangeEvent, Box } from '@mui/material';
 import logo from "../../../Assets/Images/vacation-website-high-resolution-logo-white-on-transparent-background.png";
 import AuthMenu from "../../AuthArea/AuthMenu/AuthMenu";
-import { Home, Info, Flight } from "@mui/icons-material";
-import { useState, ChangeEvent } from "react";
-import NavbarForTheLittleScreen from "../NavbarFor THe Little Screen/NavbarForTheLittleScreen";
+import { Home, Info } from "@mui/icons-material";
+import { useState } from "react";
 
 import { authStore } from "../../../Redux/AuthState";
-import Profile from "../../AuthArea/Profile/Profile";
+import ResponsiveNavbar from "../ResponsiveNavbar/ResponsiveNavbar";
+
 function Menu(): JSX.Element {
   const user = authStore.getState().user
   const [selectedLink, setSelectedLink] = useState('');
@@ -27,7 +27,7 @@ function Menu(): JSX.Element {
       
       {isSmallScreen ? (
         <>
-     <NavbarForTheLittleScreen/>
+    <ResponsiveNavbar/>
           <div >
         <img src={logo} alt="Logo"className="logoInLittleScreen" />
       </div>
@@ -59,7 +59,7 @@ function Menu(): JSX.Element {
         </>
       )}
     </Toolbar>
-  
+   
   </AppBar>
     </div>
   );

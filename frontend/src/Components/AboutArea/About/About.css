@@ -1,0 +1,55 @@
+.About {
+    background-image: url("../../../Assets/Images/polynesia-3021072_1280.jpg");
+    overflow:auto;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+       background-blend-mode: lighten;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    
+  }
+  .about{
+    margin-top: 8%;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(196, 204, 218, 0.692);
+    
+  }
+  .about h2 {
+    font-size: 2rem;
+    color: rgb(204, 132, 96)!important;
+    text-shadow: 8px 8px 8px rgba(221, 216, 214, 0.927);
+    -webkit-text-stroke: 1px rgb(17, 26, 86);
+    width: 100%;
+  margin: 0%;
+  }
+  
+  .about .image-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .about .profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .about .social-icons {
+    margin-top: 20px;
+  }
+  
+  .about .icon {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  

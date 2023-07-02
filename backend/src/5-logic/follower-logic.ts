@@ -1,11 +1,28 @@
 import { OkPacket } from "mysql";
 import dal from "../2-utills/dal";
 import FollowerModel from "../4-models/follower-model";
-import { ResourceNotFoundErrorModel } from "../4-models/error-models";
+import { ResourceNotFoundErrorModel, ValidationErrorModel } from "../4-models/error-models";
+
+
+
+  // Check if user is following specific vacation
+async function checkIfFollowed(follower:FollowerModel): Promise<boolean> {
+    const sql = `SELECT EXISTS(SELECT * FROM followers WHERE userId =? AND vacationId =?) AS isFollowed`;
+  
+    const isFollowed = await dal.execute(sql, [follower.userId , follower.vacationId]);
+  
+    // Returns true if following
+    return isFollowed[0].isFollowed === 1;
+  }
 
 
 
 async function addFollower(follower:FollowerModel): Promise<FollowerModel> {
+
+    const isFollowed= await checkIfFollowed(follower)
+    if(isFollowed ){
+    throw new ValidationErrorModel("You are already following this vacation")
+    }
     const sql = `INSERT INTO followers VALUES(?,?)`
    const addFollower:OkPacket=  await dal.execute(sql, [
     follower.userId ,
@@ -24,5 +41,6 @@ if(info.affectedRows===0) throw new ResourceNotFoundErrorModel(userId)
 export default {
     
     addFollower,
-    unFollow
+    unFollow,
+ 
 }

@@ -8,6 +8,8 @@ import interseptoreService from './Services/InterseptorService';
 
 
 
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -15,6 +17,7 @@ interseptoreService.createInterseptors()
 root.render(
  
     <BrowserRouter>
+  
     <Layout/>
     </BrowserRouter>
 
