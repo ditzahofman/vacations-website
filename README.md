@@ -1,4 +1,4 @@
-Vacation Website - README
+Vacation Website
 Description
 
 This repository contains the source code for a Vacation website. The website allows users to search and filter vacations based on different categories. It is built using a responsive design and utilizes a server-side language (Node.js) and a client-side language (React) to provide an interactive user experience.
