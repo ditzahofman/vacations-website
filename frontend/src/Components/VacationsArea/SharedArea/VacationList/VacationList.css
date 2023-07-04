@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 768px) {
-  .VacationList .MyCards {
+  .VacationList .MyCards ,.Cards  {
     width: 90%;
   margin-left: 2%;}
     .VacationList .add{
@@ -34,7 +34,7 @@ margin-right:2%!important;
     }
   }
 @media (min-width: 1200px) {
-  .VacationList .MyCards {
+  .VacationList .MyCards ,.Cards {
     width: 1180px;
   }
   
@@ -50,6 +50,7 @@ margin-right:2%!important;
   background-size: cover;
   background-position: center;
   width: 90%;
+  max-width: 1180px;
   margin-left: 2%;
   justify-content: center;
   margin: 1%;
@@ -57,7 +58,6 @@ margin-right:2%!important;
   padding-bottom:6%;
 }
 .VacationList .AllCards{
-  
   margin-left: 2%;
   display: flex;
   align-items: center;
@@ -85,6 +85,7 @@ width: 100%;
   position: relative;
 top: 10%;
 overflow: hidden;
+justify-content: center;
 }
 .VacationList h3{
   font-size: 30px;

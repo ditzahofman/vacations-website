@@ -195,7 +195,7 @@ const handleFilterChange = (filteredVacations: VacationModel[]) => {
 
       )}
 
-// Display pagination  if showList is false
+
 {!showList&&
       <div className="pagination">
         <Pagination

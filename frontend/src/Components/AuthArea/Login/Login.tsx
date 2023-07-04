@@ -3,39 +3,51 @@ import "./Login.css";
 import CredentialsModel from "../../../Models/Credentials-model";
 import { useForm } from "react-hook-form";
 import authService from "../../../Services/AuthService";
-import { Avatar, Box, Button, Checkbox, Container, CssBaseline, FormControlLabel, Grid, Link, TextField, Typography } from "@mui/material";
-import { NavLink } from "react-router-dom";
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { Copyright } from "@mui/icons-material";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import notifyService from "../../../Services/NotifyService";
 
-function Login(): JSX.Element {
+import {
+  Avatar,
+  Box,
+  Button,
+  Checkbox,
+  Container,
+  CssBaseline,
+  FormControlLabel,
+  Grid,
+  Link,
+  TextField,
+  Typography
+} from "@mui/material";
+import { NavLink } from "react-router-dom";
 
-  const { register, handleSubmit, formState} = useForm<CredentialsModel>()
-  const navigate = useNavigate()
+function Login(): JSX.Element {
+  const { register, handleSubmit, formState } = useForm<CredentialsModel>();
+  const navigate = useNavigate();
 
   async function send(credentials: CredentialsModel) {
     try {
-     await  authService.loggin(credentials)
-      notifyService.success("wellcome Back!!")
-      navigate("/home")
+      await authService.loggin(credentials);
+      notifyService.success("Welcome Back!!");
+      navigate("/home");
     } catch (err: any) {
-      notifyService.error(err)
+      notifyService.error(err);
     }
   }
+
   return (
     <div className="Login">
-      <Container className="login" component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" className="login">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 4,
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'center'
           }}
         >
-          <Avatar sx={{ m: 1} }className="lock">
+          <Avatar sx={{ m: 1 }} className="lock">
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
@@ -88,16 +100,14 @@ function Login(): JSX.Element {
                 </Link>
               </Grid>
               <Grid item>
-                <NavLink to={"/register"} >
+                <NavLink to={"/register"}>
                   {"Don't have an account? Sign Up"}
                 </NavLink>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
       </Container>
-
     </div>
   );
 }

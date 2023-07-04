@@ -27,14 +27,11 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
         const userId = props.user.userId;
 
         if (isFollowing) {
-         
           await vacationService.unFollower(userId, vacationId);
         } else {
-         
           await vacationService.addFollower(userId, vacationId);
         }
 
-      
         setIsFollowing((prevIsFollowing) => !prevIsFollowing);
       }
     } catch (error) {
@@ -45,14 +42,9 @@ function UserButtons(props: UserButtonsProps): JSX.Element {
   return (
     <div className="UserButtons">
       <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
-        <FormControlLabel
-          control={
-            <IconButton onClick={handleToggleFollow} className={`like ${isFollowing ? "active" : ""}`}>
-              {isFollowing ? <FavoriteIcon style={{ color: "orange" }} /> : <FavoriteBorderIcon />}
-            </IconButton>
-          }
-          label={isFollowing ? "👍🏻" : "👎🏻"}
-        />
+        <IconButton onClick={handleToggleFollow} className={`like ${isFollowing ? "active" : ""}`}>
+          {isFollowing ? <FavoriteIcon style={{ color: "orange" }} /> : <FavoriteBorderIcon />}
+        </IconButton>
         <Typography className="folowers">
           <GroupIcon />+{props.vacation.followerCount}
         </Typography>

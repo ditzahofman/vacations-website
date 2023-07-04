@@ -1,22 +1,43 @@
-
-
-.login{
-  
-   border: 1px solid rgb(58, 96, 222);
-  box-sizing: border-box;
-  display: inline-block;
-  background-color: rgba(240, 248, 255, 0.737);
- 
-  height: 60% !important;
- 
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: auto;
 }
 
-.lock{
-  background-color: rgb(212, 147, 62)!important;
-    font-size: x-large !important;
+.Login .login {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  max-height: 100vh;
 }
-.Login{
+
+.Login .lock {
+  background-color: #cd8715;
+}
+
+.Login form {
   width: 100%;
-background-image:url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
+  margin-top: 1rem;
+}
 
+.Login form > * {
+  margin-bottom: 1rem;
+}
+
+.Login button {
+  color: white;
+  background-color: #cd8715;
 }
