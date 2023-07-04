@@ -15,7 +15,7 @@ class VacationdModel{
     public static destinationValidation = {
         required: { value: true, message: 'Missing destination' },
         minLength: { value: 2, message: 'Destination too short' },
-        maxLength: { value: 100, message: 'Destination too long' },
+        maxLength: { value: 50, message: 'Destination too long' },
       }
       public static briefValidation = {
         required: { value: true, message: 'Missing brief' },

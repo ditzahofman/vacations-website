@@ -35,18 +35,6 @@ function VacationList(): JSX.Element {
   const vacationsPerPage = 8;
 
   const navigate = useNavigate();
-  // Fetch vacations for filters
-  useEffect(() => {
-    if (user && user.userId) {
-      vacationService
-        .getAllVacations()
-        .then((v) => {
-          setFilteredVacations(v);
-
-        })
-        .catch((e) => notifyService.error(e));
-    }
-  }, [user])
 
   // Fetch all vacations and handle store changes
   useEffect(() => {
@@ -66,6 +54,23 @@ function VacationList(): JSX.Element {
       unsubscribe();
     };
   }, [user, vacations]);
+
+    // Fetch vacations for filters
+    useEffect(() => {
+      if (user && user.userId) {
+        vacationService
+          .getAllVacations()
+          .then((v) => {
+            setFilteredVacations(v);
+  
+          })
+          .catch((e) => notifyService.error(e));
+      }
+      const unsubscribe = vacationsStore.subscribe(() => {
+        setVacations(vacations)
+    });
+    unsubscribe();  
+    }, [user])
 
  // Handle the change in filters
 const handleFilterChange = (filteredVacations: VacationModel[]) => {
@@ -190,6 +195,8 @@ const handleFilterChange = (filteredVacations: VacationModel[]) => {
 
       )}
 
+// Display pagination  if showList is false
+{!showList&&
       <div className="pagination">
         <Pagination
           count={Math.ceil(filteredVacations.length / vacationsPerPage)}
@@ -199,7 +206,7 @@ const handleFilterChange = (filteredVacations: VacationModel[]) => {
           color="primary"
         />
 
-      </div>
+      </div>}
     </div>
   );
 }

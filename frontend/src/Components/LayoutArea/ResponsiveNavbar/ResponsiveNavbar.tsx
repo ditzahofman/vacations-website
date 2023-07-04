@@ -42,57 +42,34 @@ function ResponsiveNavbar(): JSX.Element {
       </IconButton>
 
       <Menu
-        className="menu"
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleMenuClose}
-      >
-        <IconButton onClick={() => handleLinkClick('home')} aria-label="home">
-          <NavLink className="link" to={'home'}>
-            <Home /> Home
-          </NavLink>
-        </IconButton>
-        <IconButton onClick={() => handleLinkClick('about')} aria-label="about">
-          <NavLink className="link" to={'about'}>
-            <Info /> About
-          </NavLink>
-        </IconButton>
-        {user === 'Admin' && (
-          <>
-            <IconButton onClick={() => handleLinkClick('add-vacation')} aria-label="about">
-              <NavLink className="link" to={'add-vacation'}>
-                <AddIcon /> Add
-              </NavLink>
-            </IconButton>
-            {/* <IconButton onClick={() => handleLinkClick('Travels')}  aria-label="travels" color="inherit"  >
-            <NavLink className="link" to={"/vacations"}><Flight /> Travels</NavLink>
-            </IconButton> */}
-            <IconButton onClick={() => handleLinkClick('Chart')} color="inherit" aria-label="travels">
-              <NavLink className="link" to={'/chart'}>
-                <BarChartIcon /> Chart
-              </NavLink>
-            </IconButton>
-            <IconButton onClick={() => handleLinkClick('Csv')} color="inherit" aria-label="travels">
-              <NavLink className="link" to={'/csv'}>
-                <CsvFile /> Csv
-              </NavLink>
-            </IconButton>
-          </>
-        )}
-        <IconButton onClick={() => handleLinkClick('Login')} color="inherit" aria-label="travels">
-          <NavLink className="link" to={'/login'}>
-            <LoginIcon /> Login
-          </NavLink>
-        </IconButton>
-        <IconButton onClick={() => handleLinkClick('Logout')} color="inherit" aria-label="travels">
-          <NavLink className="link" to={'/logout'}>
-            <LogoutIcon /> Logout
-          </NavLink>
-        </IconButton>
-      </Menu>
+  className="menu"
+  anchorEl={anchorEl}
+  open={Boolean(anchorEl)}
+  onClose={handleMenuClose}
+>
+  {[
+    { label: 'Home', icon: <Home />, link: 'home' },
+    { label: 'About', icon: <Info />, link: 'about' },
+    user === 'Admin' && { label: 'Add', icon: <AddIcon />, link: 'add-vacation' },
+    user === 'Admin' && { label: 'Chart', icon: <BarChartIcon />, link: '/chart' },
+    user === 'Admin' && { label: 'Csv', icon: <CsvFile />, link: '/csv' },
+    { label: 'Login', icon: <LoginIcon />, link: '/login' },
+    { label: 'Logout', icon: <LogoutIcon />, link: '/logout' },
+  ].map((item, index) => {
+    if (!item) return null;
+    const { label, icon, link } = item;
+    return (
+      <IconButton key={index} onClick={() => handleLinkClick(link)} aria-label={label}>
+        <NavLink className="link" to={link}>
+          {icon} {label}
+        </NavLink>
+      </IconButton>
+    );
+  })}
+</Menu>
     </div>
   );
 }
 
 
-export default  ResponsiveNavbar;
+export default ResponsiveNavbar;

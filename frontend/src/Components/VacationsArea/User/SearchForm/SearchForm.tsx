@@ -22,16 +22,18 @@ function SearchForm(): JSX.Element {
   async function sendAndGet(vacation: VacationModel) {
     try {
       if (searched) {
-        reset();
+        reset()
+ 
         setvacationsPackage([]);
         setSearched(false);
+    
       } else {
         vacationsPackage = filterVacationsService.filterByFormUser(
           vacation.continentId,
           vacation.startDate,
           vacation.price
         );
-        reset();
+       
         setvacationsPackage(vacationsPackage);
         setSearched(true);
       }
@@ -49,7 +51,7 @@ function SearchForm(): JSX.Element {
           className="textField"
           required
           id="date"
-          label="Date 📅"
+          label="From date 📅"
           type="date"
           variant="outlined"
           margin="normal"
@@ -62,7 +64,7 @@ function SearchForm(): JSX.Element {
           className="textField"
           required
           id="price"
-          label="Price 💳"
+          label="Max-Price 💳"
           type="number"
           variant="outlined"
           margin="normal"

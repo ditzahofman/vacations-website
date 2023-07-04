@@ -59,21 +59,23 @@ async function getOneVacation(vcationId: number): Promise<VacationdModel> {
 
 
 async function updateVacation(vacation: VacationdModel): Promise<VacationdModel> {
-
+   
     const error = vacation.validate()
 
     if (error) throw new ValidationErrorModel(error)
-    // Save image to disk if new image was uploaded
-    if (vacation.image){    
-        if (fs.existsSync("./src/1-assets/images/" + vacation.imageName)) {
 
-            // Delete it:
-            fs.unlinkSync("./src/1-assets/images/" + vacation.imageName);
-        }
-        const extension = vacation.image.name.substring(vacation.image.name.lastIndexOf("."))
-        vacation.imageName = uuid() + extension;
-        await vacation.image.mv("./src/1-assets/images/" + vacation.imageName);
+  
+    // Save image to disk if new image was uploaded
+    if (vacation.image) {
+        // Delete current image
+        deleteImage(vacation);
+        // Save new image to disk
+        saveImage(vacation);
+        // Don't save new image in the database
         delete vacation.image;
+      }
+    else{
+        vacation.imageName=vacation.imageName
     }
 
     const sql = `

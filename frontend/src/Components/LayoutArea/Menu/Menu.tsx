@@ -11,12 +11,12 @@ import ResponsiveNavbar from "../ResponsiveNavbar/ResponsiveNavbar";
 
 function Menu(): JSX.Element {
   const user = authStore.getState().user
-  const [selectedLink, setSelectedLink] = useState('');
+  // const [selectedLink, setSelectedLink] = useState('');
   
 
-  const handleLinkChange = (event: SelectChangeEvent<string>) => {
-    setSelectedLink(event.target.value);
-  };
+  // const handleLinkChange = (event: SelectChangeEvent<string>) => {
+  //   setSelectedLink(event.target.value);
+  // };
 
   const isSmallScreen = window.innerWidth < 600;
 
@@ -45,9 +45,7 @@ function Menu(): JSX.Element {
         </IconButton>
        
       </div>
-      {/* <div className="profileAuth">
-      <Profile />
-      </div> */}
+     
      
        <Box className="authMenu">
     

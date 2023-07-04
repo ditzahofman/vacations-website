@@ -16,12 +16,17 @@ import { PhotoCamera } from "@mui/icons-material";
 
 function EditVacation(): JSX.Element {
 
-  useVerifyAdmin()
+  useVerifyAdmin();
   const navigate = useNavigate();
-  const params = useParams()
+  const params = useParams();
 
-
-  const { register, handleSubmit, setValue, formState: { errors }, setError } = useForm<VacationdModel>();
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+    setError,
+  } = useForm<VacationdModel>();
   const [vacation, setVacation] = useState<VacationdModel>(null);
   const [selectedFile, setSelectedFile] = useState<File>();
   const [preview, setPreview] = useState<string>();
@@ -31,7 +36,7 @@ function EditVacation(): JSX.Element {
     vacationService
       .getOneVacation(id)
       .then((v) => {
-        setVacation(v)
+        setVacation(v);
         setValue("vacationId", v.vacationId);
         setValue("destination", v.destination);
         setValue("brief", v.brief);
@@ -39,7 +44,7 @@ function EditVacation(): JSX.Element {
         setValue("startDate", utils.formatDate(v.startDate));
         setValue("endDate", utils.formatDate(v.endDate));
         setValue("price", v.price);
-        setValue("imageName", v?.imageName);
+        setValue("imageName", v.imageName);
       })
       .catch((err) => alert(err.message));
   }, []);
@@ -69,18 +74,21 @@ function EditVacation(): JSX.Element {
     try {
       console.log(vacation);
       if (vacation.endDate <= vacation.startDate) {
-        setError("endDate", { message: "End date must be later than the start date" });
+        setError("endDate", {
+          message: "End date must be later than the start date",
+        });
         return;
       }
 
-      await vacationService.editVacation(vacation)
+      await vacationService.editVacation(vacation);
 
-      notifyService.success("The vacation was successfully edit");
+      notifyService.success("The vacation was successfully edited");
       navigate("/home");
     } catch (error) {
       notifyService.error(error);
     }
   }
+
 
  
 
@@ -140,23 +148,43 @@ function EditVacation(): JSX.Element {
             focused />
           <div className="error">{errors.price?.message}</div>
            
-           <div className="Preview">
-            <IconButton color="primary" aria-label="upload picture" component="label" title="Select a picture">
-              <input hidden type="file" accept="image/*" onChangeCapture={onSelectFile} {...register("image")} />
-            <PhotoCamera />
-            </IconButton>
-            {
-              preview ?
-              <img src={preview} width="50%"  alt={vacation?.imageName} /> : // preview for new uploaded image
-              <>
-                {/* preview for current image from backend */}
-                <img src={appConfig.vacationImagesUrl + vacation?.imageName} width="50%" alt={vacation?.imageName} />
-                {/* <input type="hidden" {...register("imageName")} /> */}
-              </>
-            }
-          </div>
+          <div className="Preview">
+  <IconButton
+    color="primary"
+    aria-label="upload picture"
+    component="label"
+    title="Select a picture"
+  >
+    <input
+      hidden
+      type="file"
+      accept="image/*"
+      onChangeCapture={onSelectFile}
+      {...register("image")}
+    />
+    <PhotoCamera />
+  </IconButton>
+  {preview ? (
+    <img src={preview} width="50%" alt="" /> // preview for new uploaded image
+  ) : (
+    <>
+      {/* preview for current image from backend */}
+      {vacation && vacation.imageName && (
+        <>
+          <img
+            src={appConfig.vacationImagesUrl + vacation.imageName}
+            width="50%"
+            alt={vacation.imageName}
+          />
+          <input type="hidden" {...register("imageName")} />
+        </>
+      )}
+    </>
+  )}
+</div>
+
           <Button className="button" type="submit" variant="contained" color="primary">
-            Submit
+            Edit
           </Button>
         </form>
       </div>

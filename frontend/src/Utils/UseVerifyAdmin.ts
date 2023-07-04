@@ -8,8 +8,7 @@ export default function useVerifyAdmin() {
 
     useEffect(() => {
         const user= authStore.getState().user
-        console.log(user)
-        const userRole = authStore.getState().user?.role;
+               const userRole = authStore.getState().user?.role;
 
         if (!user) {
             notifyService.error("You are not logged in!");

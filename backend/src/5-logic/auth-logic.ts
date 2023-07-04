@@ -73,7 +73,7 @@ async function login(credentials: CredentialsModel): Promise<string> {
     credentials.password = cyber.hash(credentials.password)
 
     const sql = "SELECT * FROM users WHERE email = ? AND password = ? "
-    console.log(credentials.email + credentials.password)
+
     const users = await dal.execute(sql, [credentials.email, credentials.password])
 
     const user = users[0]

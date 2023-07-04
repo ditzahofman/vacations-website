@@ -59,16 +59,6 @@ function AddVacation(): JSX.Element {
     }
   }
 
-  // const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   const file = event.target.files?.[0];
-  //   if (file) {
-  //     const reader = new FileReader();
-  //     reader.onloadend = () => {
-  //       setSelectedImage(reader.result as string);
-  //     };
-  //     reader.readAsDataURL(file);
-  //   }
-  // }
 
   return (
     <div className="AddVacation">
@@ -126,7 +116,7 @@ function AddVacation(): JSX.Element {
           <div >{errors.image?.message}</div>
 
           <Button className="button" type="submit" variant="contained" color="primary">
-            Submit
+           Add
           </Button>
         </form>
       </div>

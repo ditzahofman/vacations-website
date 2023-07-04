@@ -4174,3 +4174,135 @@
 ----------------------------
 2.7.2023, 13:38:21 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
 ----------------------------
+2.7.2023, 18:04:54 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:04:55 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:04:55 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:04:56 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:04:57 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:04:59 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:00 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:02 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:03 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:03 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:07 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:07 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:07 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:14 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:14 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:05:14 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:06:43 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:06:48 	 connect ECONNREFUSED ::1:3306
+----------------------------
+2.7.2023, 18:17:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+2.7.2023, 18:20:38 	 Incorrect email or password
+----------------------------
+3.7.2023, 11:27:02 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 11:39:29 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:12:51 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:28:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:30:33 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:31:32 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:32:38 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:37:01 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:37:40 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:38:39 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:40:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:41:35 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:42:31 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:43:12 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:44:53 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:48:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:52:17 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 12:58:24 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:00:33 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:03:16 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:05:54 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:10:27 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:13:28 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:16:52 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:16:56 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:17:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:18:25 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:19:07 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+3.7.2023, 13:19:50 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+3.7.2023, 13:20:16 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+3.7.2023, 13:21:33 	 ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+----------------------------
+3.7.2023, 13:21:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:23:03 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:23:26 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:23:51 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:28:19 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:28:58 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:30:10 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:35:13 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:39:23 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:45:22 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+3.7.2023, 13:48:24 	 ENOENT: no such file or directory, stat 'C:\Users\דיצה 1\Documents\vacation - project\Vacations-project\backend\src\1-assets\images\undefined'
+----------------------------
+4.7.2023, 4:04:59 	 You are not logged in
+----------------------------
+4.7.2023, 4:04:59 	 You are not logged in
+----------------------------
+4.7.2023, 4:05:19 	 You are not logged in
+----------------------------
+4.7.2023, 4:05:19 	 You are not logged in
+----------------------------

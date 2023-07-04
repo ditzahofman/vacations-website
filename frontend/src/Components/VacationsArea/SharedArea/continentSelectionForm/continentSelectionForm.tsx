@@ -8,52 +8,50 @@ import notifyService from "../../../../Services/NotifyService";
 
 interface ContinentSelectionFormProps {
   onSubmit: UseFormRegisterReturn<"continentId">;
-  defaultValue?:number
+  defaultValue?: number;
 }
 
+function ContinentSelectionForm(props: ContinentSelectionFormProps): JSX.Element {
+  const [continent, setContinent] = useState<continentModel[]>([]);
 
-function ContinentSelectionForm(props:ContinentSelectionFormProps): JSX.Element {
+  useEffect(() => {
+    vacationService
+      .getAllContinents()
+      .then((c) => setContinent(c))
+      .catch((err) => notifyService.error(err));
+  }, []);
 
-    const [continent , setcontinent] = useState<continentModel[]>([])
-    
-    
-    useEffect(()=>{
-vacationService.getAllContinents()
-.then((c)=>setcontinent(c))
-.catch((err)=>notifyService.error(err))
-    },[])
+  function getValueFromSelect(event: React.ChangeEvent<{ value: unknown }>) {
+    let selectedContinentId = +event.target.value;
+    const syntheticEvent = { target: { value: selectedContinentId }, type: "change" };
+    props.onSubmit.onChange(syntheticEvent);
+   
+  }
 
-    function getValueFromSelect(event: React.ChangeEvent<{ value: unknown }>) {
-     let selectedContinentId = +event.target.value;
-      const syntheticEvent = { target: { value: selectedContinentId }, type: "change" };
+  return (
+    <div className="continentSelectionForm">
+      <TextField
+        className="select"
+        id="continent"
+        label="Continent 🌏"
+        select
+        variant="outlined"
+        margin="normal"
+        onChange={getValueFromSelect}
+        fullWidth
       
-      props.onSubmit.onChange(syntheticEvent);
-    
- 
-    }
-    
-    return (
-        <div className="continentSelectionForm">
-			 <TextField
-       className="select"
-          id="continent"
-          label="Continent 🌏"
-          select
-          variant="outlined"
-          margin="normal"
-          onChange={getValueFromSelect}
-          fullWidth
-          defaultValue={props.defaultValue}
-          {...props.onSubmit}
-        >
-          {continent.map((c) => (
-            <MenuItem className="option" key={c.continentId} value={c.continentId} defaultChecked>
-              {c.continentName}  
-            </MenuItem>
-          ))}
-        </TextField>
-        </div>
-    );
+        defaultValue={props.defaultValue !== undefined ? props.defaultValue : ""}
+        {...props.onSubmit}
+      >
+        <MenuItem value={0}>Select continent</MenuItem>
+            {continent.map((c) => (
+          <MenuItem className="option" key={c.continentId} value={c.continentId} defaultChecked >
+            {c.continentName}
+          </MenuItem>
+        ))}
+      </TextField>
+    </div>
+  );
 }
 
 export default ContinentSelectionForm;

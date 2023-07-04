@@ -85,9 +85,10 @@ class VacationService {
         formData.append("startDate", vacation.startDate)
         formData.append("endDate", vacation.endDate)
         formData.append("price", vacation.price.toString())
+        if(vacation.image){
         formData.append("imageName", vacation.imageName)
         formData.append("image", vacation.image[0])
-       console.log(vacation.imageName,"kjkk")
+    }
 
         const response = await axios.put<VacationModel>(appConfig.vacationUrl + vacation.vacationId, formData)
         const updateVacation = response.data
