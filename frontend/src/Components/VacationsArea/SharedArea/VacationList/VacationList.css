@@ -138,17 +138,13 @@ margin-bottom: 2%;
   height: 100%;
 }
 .linksList {
-  /* margin-top: 1%; */
+ 
  position: relative;
  margin-top: 2% !important;
 
 
  }
- /* .VacationList .linksUser{
-  position: relative;
-  right: 45%!important;
-  top:50%!important
- } */
+
 .linksList> h2{
   color: aliceblue;
 

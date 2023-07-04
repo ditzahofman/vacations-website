@@ -14,8 +14,7 @@ function AdminButtons(props: AdminButtonsProps): JSX.Element {
   return (
     <div className="AdminButtons">
       <Grid container alignItems="center" justifyContent="space-between" className="card-actions">
-        {/* <span>Delete</span> */}
-        <Tooltip title="Delete Vacation">
+            <Tooltip title="Delete Vacation">
         <IconButton className="delete" size="small" onClick={props.deletVacation}>
           <DeleteIcon />
         </IconButton>

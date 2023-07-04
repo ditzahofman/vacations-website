@@ -11,6 +11,7 @@ import EditVacation from "../../VacationsArea/Admin/EditVacation/EditVacation";
 import CsvFile from "../../VacationsArea/Admin/CsvFile/CsvFile";
 import VacationDetails from "../../VacationsArea/SharedArea/VacationDetails/VacationDetails";
 import About from "../../AboutArea/About/About";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 
 
@@ -32,6 +33,7 @@ function Routing(): JSX.Element {
                 <Route path="/chart" element={<Chart />}></Route>
                 <Route path="/csv" element={ <CsvFile />}></Route>
                 <Route path="/about" element={ <About/>}></Route>
+                <Route path="*" element={<PageNotFound/>}></Route>
                 <Route path="/" element={<Home />}></Route>
             </Routes>
         </div>
