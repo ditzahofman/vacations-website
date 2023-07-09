@@ -34,7 +34,7 @@ margin-right:2%!important;
     }
   }
 @media (min-width: 1200px) {
-  .VacationList .MyCards ,.Cards {
+  .VacationList .MyCards  {
     width: 1180px;
   }
   
@@ -50,8 +50,7 @@ margin-right:2%!important;
   background-size: cover;
   background-position: center;
   width: 90%;
-  max-width: 1180px;
-  margin-left: 2%;
+   margin-left: 2%;
   justify-content: center;
   margin: 1%;
   box-shadow: white 2px 3px 4px 2px;

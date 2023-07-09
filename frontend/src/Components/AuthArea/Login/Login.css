@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 83vh;
   background-image: url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .Login .login {
@@ -21,7 +21,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 400px;
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 .Login .lock {
