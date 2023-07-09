@@ -5,7 +5,7 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 ## Features
 
 - **Login and Registration**: Users can create accounts and log in to access personalized features, including the ability to upload their profile picture.
-- ![register](frontend\src\Assets\Images\ReadMe\Register.png)
+- ![register](./frontend/src/Assets/Images/ReadMe/Register.png)
 - **Home Page**: The website's main landing page sends the user to register for information
 - **Admin Page**: Admins have special privileges, allowing them to manage vacation details, such as adding, editing, and deleting vacations.
 - ![Managing](frontend\src\Assets\Images\ReadMe\Managing.png)
@@ -18,9 +18,9 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 - **Chart**: The website includes a charting feature using CanvasJS, providing visual representations of vacation statistics.
 -   ![Chart](frontend\src\Assets\Images\ReadMe\Chart.png)
 - **Pie Chart**: A pie chart visually represents the distribution of vacation types or destinations, enhancing the user experience.
-   ![Pie Chart](/frontend/src/Assets/Images/ReadMe/Pie Chart.png)
+   ![Pie Chart](frontend\src\Assets\Images\ReadMe\Pie Chart.png)
 - **Responsive**: The website is designed with responsiveness in mind to ensure optimal viewing and usability across various devices and screen sizes
-   ![responsive](/frontend\src\Assets\Images\ReadMe\Responsive 2.png)
+   ![responsive](frontend\src\Assets\Images\ReadMe\Responsive 2.png)
   
 ## Installation
 
