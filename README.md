@@ -18,7 +18,7 @@ The website uses a MySQL database for data storage and retrieval. It is deployed
       ![Managers Graph](https://github.com/ditzahofman/vacations-website/commit/59c781ecb420395ba9c5e2c2345d62c3825be947)
 
 6. Customer Page:
-   ![Customer Page](https://github.com/ditzahofman/vacations-website/commit/59c781ecb420395ba9c5e2c2345d62c3825be947)
+   ![Customer Page](https://github.com/ditzahofman/vacations-website/blob/master/Filter%20like.png)
 
 7. Adding and Editing Leave:
    ![Adding and Editing Leave](https://github.com/ditzahofman/vacations-website/blob/master/Edit.png)
