@@ -18,7 +18,7 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 - **Chart**: The website includes a charting feature using CanvasJS, providing visual representations of vacation statistics.
 -   ![Chart](frontend\src\Assets\Images\ReadMe\Chart.png)
 - **Pie Chart**: A pie chart visually represents the distribution of vacation types or destinations, enhancing the user experience.
-   ![Pie Chart](/frontend\src\Assets\Images\ReadMe\Pie Chart.png)
+   ![Pie Chart](/frontend/src/Assets/Images/ReadMe/Pie Chart.png)
 - **Responsive**: The website is designed with responsiveness in mind to ensure optimal viewing and usability across various devices and screen sizes
    ![responsive](/frontend\src\Assets\Images\ReadMe\Responsive 2.png)
   
