@@ -9,14 +9,15 @@
 
 .main-content {
   flex-grow: 1;
-  height: 100%;
+  height: 80%;
   
 }
 .main-header{
   z-index: 1000;
+  height: 15%;
 }
 .main-footer {
   /* background-color: rgb(215, 209, 149); */
   z-index: 1000;
-
+height: 5%;
 }

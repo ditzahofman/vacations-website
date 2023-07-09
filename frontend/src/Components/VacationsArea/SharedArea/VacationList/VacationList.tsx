@@ -32,7 +32,7 @@ function VacationList(): JSX.Element {
   const [filteredVacations, setFilteredVacations] = useState<VacationModel[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const vacationsPerPage = 8;
+  const vacationsPerPage = 12;
 
   const navigate = useNavigate();
 

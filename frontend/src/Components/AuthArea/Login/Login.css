@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 87vh;
   background-image: url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .Login .login {
