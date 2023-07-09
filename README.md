@@ -6,7 +6,7 @@ The website has three main entities: Admin, Guest, and Registered User. The admi
 The website uses a MySQL database for data storage and retrieval. It is deployed using Docker, which provides a containerized application for easy deployment and management.
 
 1. Registration Page:
-   ![Registration Page](path/to/[registration-page-screenshot.png](https://github.com/ditzahofman/vacations-website/blob/master/Register.png))
+   ![Registration Page](https://github.com/ditzahofman/vacations-website/blob/master/Register.png))
 
 2. Identification Page:
    ![Identification Page](path/to/identification-page-screenshot.png)
