@@ -12,15 +12,15 @@ The website uses a MySQL database for data storage and retrieval. It is deployed
    ![Identification Page](path/to/identification-page-screenshot.png)
 
 3. Manager Page:
-   ![Manager Page](path/to/manager-page-screenshot.png)
-
+   ![Manager Page](https://github.com/ditzahofman/vacations-website/blob/master/Managing.png)
 4. Manager Graph:
-   ![Manager Graph](path/to/manager-graph-screenshot.png)
+   ![Manager Graph](https://github.com/ditzahofman/vacations-website/blob/master/Chart.png)
+      ![Manager Graph2](https://github.com/ditzahofman/vacations-website/commit/59c781ecb420395ba9c5e2c2345d62c3825be947)
 
-5. Customer Page:
+6. Customer Page:
    ![Customer Page](path/to/customer-page-screenshot.png)
 
-6. Adding and Editing Leave:
+7. Adding and Editing Leave:
    ![Adding and Editing Leave](path/to/leave-management-screenshot.png)
 ## Features:
 
