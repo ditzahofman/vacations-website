@@ -1,4 +1,4 @@
-# Vacation Website
+# Vacations Website
 
 This is a vacation website built with Node.js, React, TypeScript, MySQL, and CanvasJS for charting. It provides separate pages for admins and logged-in users, offering various features and functionalities. The website aims to deliver a seamless and enjoyable experience for users to explore and plan their vacations.
 
