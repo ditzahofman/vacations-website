@@ -4,9 +4,10 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 
 ## Features
 
+- **Home Page**: The website's main landing page sends the user to register for information
+- ![Home](./frontend/src/Assets/Images/ReadMe/Home.png)
 - **Login and Registration**: Users can create accounts and log in to access personalized features, including the ability to upload their profile picture.
 - ![register](./frontend/src/Assets/Images/ReadMe/Register.png)
-- **Home Page**: The website's main landing page sends the user to register for information
 - **Admin Page**: Admins have special privileges, allowing them to manage vacation details, such as adding, editing, and deleting vacations.
 -   ![Managing](./frontend/src/Assets/Images/ReadMe/Managing.png)
 - **User Page**: Logged in users can view and interact with their saved vacations, get information about current and future vacations

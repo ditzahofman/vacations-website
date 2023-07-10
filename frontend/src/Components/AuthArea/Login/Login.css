@@ -2,15 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  height: 83vh;
-=======
-  height: 87vh;
->>>>>>> 6370ef4bb51f546c168d20c8afba39a78f865c54
   background-image: url("https://cdn.pixabay.com/photo/2021/01/10/12/00/road-5904909_1280.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 87vh;
   overflow: hidden;
 }
 
