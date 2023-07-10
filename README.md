@@ -10,9 +10,9 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 - **Admin Page**: Admins have special privileges, allowing them to manage vacation details, such as adding, editing, and deleting vacations.
 - ![Managing](./frontend/src/Assets/Images/ReadMe/Managing.png)
 - **User Page**: Logged in users can view and interact with their saved vacations, get information about current and future vacations
--![filter](./frontend/src/Assets/Images/ReadMe/FilterLike.png)
+- ![filter](./frontend/src/Assets/Images/ReadMe/FilterLike.png)
 - **Filter Vacations**: Users can utilize filters to search for vacations based on specific criteria such as destination, price range, or dates.
-- - ![User](./frontend/src/Assets/Images/ReadMe/FormFilter.png)
+-   ![User](./frontend/src/Assets/Images/ReadMe/FormFilter.png)
 - **Edit Vacation**: Admins can modify vacation details, including destination, dates, prices, descriptions, and upload vacation pictures.
 -  ![Edit Vacation](./frontend/src/Assets/Images/ReadMe/Edit.png)
 - **Chart**: The website includes a charting feature using CanvasJS, providing visual representations of vacation statistics.
