@@ -20,8 +20,7 @@ This is a vacation website built with Node.js, React, TypeScript, MySQL, and Can
 - **Pie Chart**: A pie chart visually represents the distribution of vacation types or destinations, enhancing the user experience.
    ![PieChart](./frontend/src/Assets/Images/ReadMe/PieChart.png)
 - **Responsive**: The website is designed with responsiveness in mind to ensure optimal viewing and usability across various devices and screen sizes
-<br/>
-   ![responsive](./frontend/src/Assets/Images/ReadMe/ResponsiveNavbar.png)
+   ![Responsive](./frontend/src/Assets/Images/ReadMe/ResponsiveNavbar.png)
   
 ## Installation
 
